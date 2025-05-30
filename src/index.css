@@ -1,0 +1,132 @@
+:root {
+  --blue-light: #e0f0ff;
+  --blue: #007bff;
+  --blue-dark: #003366;
+  --yellow: #ffd700;
+  --yellow-dark: #ffcc00;
+  --white: #ffffff;
+  --gray-light: #f2f2f2;
+  --gray-dark: #444;
+  --border-radius: 12px;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--blue-light);
+  color: var(--gray-dark);
+}
+
+/* === Сайдбар === */
+.sidebar {
+  width: 240px;
+  background-color: var(--blue);
+  color: var(--white);
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.sidebar a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius);
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: var(--yellow);
+  color: var(--blue-dark);
+}
+
+/* === Основна частина === */
+.main {
+  margin-left: 240px;
+  padding: 32px;
+}
+
+/* === Карти / картки === */
+.card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* === Кнопки === */
+.btn {
+  padding: 10px 20px;
+  background-color: var(--yellow);
+  color: var(--blue-dark);
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--yellow-dark);
+}
+
+/* === Таблиці === */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--gray-light);
+  text-align: left;
+}
+
+.table tr:hover {
+  background-color: var(--blue-light);
+}
+
+/* === Графіки / блоки === */
+.chart-container {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-top: 24px;
+}
+
+h1, h2, h3 {
+  color: var(--blue-dark);
+}
+
+/* === Сповіщення / завдання === */
+.notification, .task {
+  background-color: var(--white);
+  padding: 12px;
+  border-radius: var(--border-radius);
+  margin-bottom: 12px;
+  border-left: 4px solid var(--yellow);
+}
+
+.task {
+  border-left-color: var(--blue);
+}
