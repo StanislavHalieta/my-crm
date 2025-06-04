@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { ListItemButton } from "@mui/material";
 import { NavLink } from "react-router";
 import styled from "@emotion/styled";
@@ -30,3 +31,13 @@ export const StyledListItemButton = styled(ListItemButton)`
     font-weight: bold;
   }
 `;
+=======
+import { NavLink } from "react-router";
+import styled from "styled-components";
+
+export const StyledNavLink = styled(NavLink)`
+  a {
+    text-decoration: none;
+  }
+`;
+>>>>>>> c61f093 (main menu drawer)

@@ -1,103 +1,145 @@
 {
-  "header": {
-    "name": "CRMUA"
-  },
-  "home": {
-    "home_key": "Home"
-  },
   "menu": {
-    "auth_key": "Authorization",
-    "auth": {
-      "login": "Login",
-      "register": "Register",
-      "roles": "Roles"
+    "products": "Products / Inventory",
+    "products": {
+      "manage": "Manage Products",
+      "categories": "Categories",
+      "stock": "Stock Balances",
+      "batch": "Batch Accounting",
+      "codes": "Codes & Barcodes",
+      "kits": "Components / Kits",
+      "optimization": "Stock Optimization"
     },
-    "clients_key": "Clients",
-    "clients": {
-      "cards": "Client Cards",
-      "history": "Client History",
-      "contacts": "Contacts",
-      "analytics": "Client Analytics",
-      "segmentation": "Segmentation"
+    "purchases": "Purchases",
+    "purchases": {
+      "orders": "Supplier Orders",
+      "vendors": "Supplier Management",
+      "deliveryTerms": "Delivery Deadlines",
+      "linkToProduction": "Link to Production / Client Order",
+      "expenses": "Delivery and Import Expenses",
+      "analysis": "Price and Terms Analysis"
     },
-    "email_key": "Email",
-    "email": {
-      "confirmation": "Confirmation",
-      "reminders": "Reminders",
-      "service": "Service Emails",
-      "marketing": "Marketing Campaigns"
-    },
-    "sms_key": "SMS",
-    "sms": {
-      "reminders": "Reminders",
-      "notifications": "Notifications"
-    },
-    "ipTelephony_key": "IP Telephony",
-    "ipTelephony": {
-      "calls_key": "Calls",
-      "calls": {
-        "incoming": "Incoming Calls",
-        "outgoing": "Outgoing Calls",
-        "recordings": "Call Recordings"
-      },
-      "clientCards": "Client Cards"
-    },
-    "tasks_key": "Tasks",
-    "tasks": {
-      "statuses": "Task Statuses",
-      "taskManager": "Task Manager",
-      "messages": "Messages",
-      "chat": "Chat"
-    },
-    "delivery_key": "Delivery",
-    "delivery": {
-      "novaPoshta": "Nova Poshta",
-      "ukrPoshta": "Ukrposhta",
-      "meest": "Meest",
-      "justin": "Justin",
-      "dhl": "DHL",
-      "fedex": "FedEx",
-      "international": "International Delivery"
-    },
-    "marketplaces_key": "Marketplaces",
-    "marketplaces": {
-      "prom": "Prom.ua",
-      "rozetka": "Rozetka",
-      "amazon": "Amazon",
-      "ebay": "eBay",
-      "etsy": "Etsy"
-    },
-    "production_key": "Production",
+    "production": "Production",
     "production": {
-      "orders": "Orders",
-      "materials": "Materials",
-      "statuses": "Production Statuses"
+      "bom": "BOM & Recipes",
+      "planning": "Production Planning",
+      "tracking": "Production Process Tracking",
+      "costs": "Material & Time Costs",
+      "orders": "Production Orders",
+      "quality": "Product Quality Control",
+      "reports": "Production Reports"
     },
-    "sales_key": "Sales",
+    "sales": "Sales",
     "sales": {
-      "orders": "Orders",
-      "analytics": "Sales Analytics",
-      "customers": "Customers"
+      "orders": "Client Orders",
+      "documents": "Offers, Invoices, Acts",
+      "pricing": "Flexible Pricing",
+      "multiCurrency": "Multi-currency Support",
+      "export": "Document Export (PDF, Email)",
+      "statuses": "Order Statuses",
+      "returns": "Returns Management"
     },
-    "finance_key": "Finance",
+    "clients": "Clients / Contractors",
+    "clients": {
+      "cards": "Client and Supplier Cards",
+      "history": "Interaction History",
+      "contacts": "Contacts, Addresses, Managers",
+      "analytics": "Client Statistics",
+      "segmentation": "Segmentation (VIP, Debtors, New)"
+    },
+    "finance": "Finance",
     "finance": {
-      "banks": "Banks",
+      "payments": "Payments",
+      "payments": {
+        "inOut": "Incoming / Outgoing Payments",
+        "orders": "Payment to Orders / Invoices",
+        "accounts": "Cash / Bank Accounts",
+        "currency": "Multi-currency and Exchange Rates",
+        "calendar": "Payment Calendar"
+      },
+      "salary": "Salary",
+      "salary": {
+        "calculation": "Salary Accrual",
+        "bonuses": "Bonuses, Penalties, Awards",
+        "advances": "Advance Payments",
+        "payouts": "Salary Payouts",
+        "paySheets": "Pay Sheets",
+        "reports": "Salary Reports",
+        "hrIntegration": "HR Module Integration"
+      },
       "taxes": "Taxes",
-      "reports": "Financial Reports"
+      "taxes": {
+        "vat": "VAT Accounting",
+        "docs": "Tax Invoices",
+        "other": "Other Taxes (unified, pension, etc.)",
+        "status": "Tax Status with Authorities",
+        "export": "Export to Accounting Software"
+      },
+      "employees": "Employees (Finance)",
+      "employees": {
+        "contracts": "Contract Rates",
+        "schedule": "Work Schedule / Time Tracking",
+        "vacations": "Leaves and Sick Days",
+        "salaryLink": "Salary Link",
+        "docs": "HR Documents"
+      },
+      "banks": "Banks & Payment Systems",
+      "banks": {
+        "api": "API Integration",
+        "statements": "Bank Statement Sync",
+        "matching": "Payment Matching",
+        "multiAccounts": "Multiple Accounts / Currencies",
+        "realtime": "Realtime Monitoring",
+        "gateways": "Payment Gateways",
+        "onlinePayments": "Online Payments",
+        "statusUpdate": "Auto Status Update",
+        "reporting": "Transaction Reporting",
+        "qr": "QR Code Generation",
+        "invoiceLinks": "Invoice Links",
+        "docAuto": "Auto Document Creation"
+      },
+      "taxSystem": "Tax Systems",
+      "taxSystem": {
+        "supported": "Supported Systems (FOP, LLC, VAT)",
+        "rates": "Tax Rates Setup",
+        "autoCalc": "Auto Tax Calculation",
+        "binding": "Tax Binding",
+        "autoReports": "Auto Reporting",
+        "reminders": "Payment Deadlines & Reminders",
+        "integrations": "Integrations with Tax Software"
+      }
     },
-    "analytics_key": "Analytics",
+    "analytics": "Analytics & Reporting",
     "analytics": {
-      "reports": "Reports",
-      "kpis": "KPIs",
-      "custom": "Custom Analytics"
+      "sales": "Sales by Period / Manager / Region",
+      "purchases": "Purchases and Profitability",
+      "stock": "Stock and Turnover",
+      "profit": "Profitability Analysis",
+      "kpi": "Employee KPIs",
+      "productionCosts": "Production Cost Reports"
+    },
+    "personnel": "Personnel",
+    "personnel": {
+      "roles": "Process Ownership",
+      "permissions": "Roles and Access Rights",
+      "performance": "Manager Productivity",
+      "tasks": "Internal Tasks / Reminders"
+    },
+    "integrations": "Integrations",
+    "integrations": {
+      "api": "API for Sites / 1C / Marketplaces",
+      "delivery": "Postal Services",
+      "payment": "Payment Systems / Banks",
+      "messaging": "Email / SMS Services"
+    },
+    "system": "System Features",
+    "system": {
+      "web": "Web Interface & Mobile Version",
+      "backups": "Auto Backups",
+      "logs": "User Action Logging",
+      "languages": "Multilingual Support",
+      "customization": "Module Customization",
+      "deployment": "Cloud / Local Deployment"
     }
-  },
-  "charts": {
-    "unpaid": "Unpaid bills",
-    "paid": "Paid bills",
-    "awaitingPayments": "Invoices awaiting payment",
-    "convertedLeads": "Converted leads",
-    "projectsInProgress": "Projects in progress",
-    "unfinishedTasks": "Unfinished tasks"
   }
 }

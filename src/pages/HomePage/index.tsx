@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 import { useEffect, type FC } from "react";
-import { Grid } from "@mui/material";
+import { Grid, Paper } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage } from "../../store/home/homeSlice";
 import { MainCard, MainChart, ShapePieChart } from "../../components";
@@ -67,11 +66,11 @@ const parseCardData = (data: typeof cards_1) => {
   return Object.keys(data).map((card) => {
     const ddd = {
       title: card,
-      ...data[card]
-    }
+      ...data[card],
+    };
     return Object.keys(data[card]).map((key) => {
-      if(key !== "id"){
-        return ddd.v1 = data[card][key]
+      if (key !== "id") {
+        return (ddd.v1 = data[card][key]);
       }
       return data[card][key];
     });
@@ -165,32 +164,5 @@ const HomePage: FC = () => {
         </Grid> */}
       </StyledHomePageGrid>
     </StyledHomePage>
-=======
-import { Grid, Paper } from "@mui/material";
-import { FC } from "react";
-
-interface HomePageProps {}
-
-const HomePage: FC<HomePageProps> = () => {
-  return (
-    <div>
-      <Grid container spacing={2}>
-        <Grid size={{ xs: 5, sm: 4, md: 4 }}>
-          <Paper>size=8</Paper>
-        </Grid>
-        <Grid size={{ xs: 2, sm: 4, md: 4 }}>
-          <Paper>size=4</Paper>
-        </Grid>
-        <Grid size={{ xs: 2, sm: 4, md: 4 }}>
-          <Paper>size=4</Paper>
-        </Grid>
-        <Grid size={{ xs: 2, sm: 4, md: 4 }}>
-          <Paper>size=8</Paper>
-        </Grid>
-      </Grid>
-    </div>
->>>>>>> 6c1c4fd (backup)
   );
 };
-
-export default HomePage;

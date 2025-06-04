@@ -1,95 +1,145 @@
 {
-  "header": {
-    "name": "CRMUA"
-  },
-  "home": {
-    "home_key": "Accueil"
-  },
   "menu": {
-    "auth_key": "Autorisation",
-    "auth": {
-      "login": "Connexion",
-      "register": "Inscription",
-      "roles": "Rôles"
+    "products": "Produits / Inventaire",
+    "products": {
+      "manage": "Gérer les produits",
+      "categories": "Catégories",
+      "stock": "Stocks disponibles",
+      "batch": "Gestion des lots",
+      "codes": "Codes & Codes-barres",
+      "kits": "Composants / Kits",
+      "optimization": "Optimisation des stocks"
     },
-    "clients_key": "Clients",
-    "clients": {
-      "cards": "Fiches clients",
-      "history": "Historique des clients",
-      "contacts": "Contacts",
-      "analytics": "Analyse clients",
-      "segmentation": "Segmentation"
+    "purchases": "Achats",
+    "purchases": {
+      "orders": "Commandes fournisseurs",
+      "vendors": "Gestion des fournisseurs",
+      "deliveryTerms": "Conditions de livraison",
+      "linkToProduction": "Lien vers production / commande client",
+      "expenses": "Frais de livraison et importation",
+      "analysis": "Analyse des prix et conditions"
     },
-    "email_key": "Email",
-    "email": {
-      "confirmation": "Confirmation",
-      "reminders": "Rappels",
-      "service": "Emails de service",
-      "marketing": "Campagnes marketing"
-    },
-    "sms_key": "SMS",
-    "sms": {
-      "reminders": "Rappels",
-      "notifications": "Notifications"
-    },
-    "ipTelephony_key": "Téléphonie IP",
-    "ipTelephony": {
-      "calls_key": "Appels",
-      "calls": {
-        "incoming": "Appels entrants",
-        "outgoing": "Appels sortants",
-        "recordings": "Enregistrements d'appels"
-      },
-      "clientCards": "Fiches clients"
-    },
-    "tasks_key": "Tâches",
-    "tasks": {
-      "statuses": "Statuts des tâches",
-      "taskManager": "Gestionnaire de tâches",
-      "messages": "Messages",
-      "chat": "Chat"
-    },
-    "delivery_key": "Livraison",
-    "delivery": {
-      "novaPoshta": "Nova Poshta",
-      "ukrPoshta": "Ukrposhta",
-      "meest": "Meest",
-      "justin": "Justin",
-      "dhl": "DHL",
-      "fedex": "FedEx",
-      "international": "Livraison internationale"
-    },
-    "marketplaces_key": "Places de marché",
-    "marketplaces": {
-      "prom": "Prom.ua",
-      "rozetka": "Rozetka",
-      "amazon": "Amazon",
-      "ebay": "eBay",
-      "etsy": "Etsy"
-    },
-    "production_key": "Production",
+    "production": "Production",
     "production": {
-      "orders": "Commandes",
-      "materials": "Matériaux",
-      "statuses": "Statuts de production"
+      "bom": "Nomenclatures & Recettes",
+      "planning": "Planification de la production",
+      "tracking": "Suivi du processus de production",
+      "costs": "Coûts des matériaux et temps",
+      "orders": "Ordres de production",
+      "quality": "Contrôle qualité produit",
+      "reports": "Rapports de production"
     },
-    "sales_key": "Ventes",
+    "sales": "Ventes",
     "sales": {
-      "orders": "Commandes",
-      "analytics": "Analyse des ventes",
-      "customers": "Clients"
+      "orders": "Commandes clients",
+      "documents": "Offres, Factures, Actes",
+      "pricing": "Tarification flexible",
+      "multiCurrency": "Support multi-devises",
+      "export": "Export de documents (PDF, Email)",
+      "statuses": "Statuts des commandes",
+      "returns": "Gestion des retours"
     },
-    "finance_key": "Finance",
+    "clients": "Clients / Contractants",
+    "clients": {
+      "cards": "Fiches clients et fournisseurs",
+      "history": "Historique des interactions",
+      "contacts": "Contacts, adresses, responsables",
+      "analytics": "Statistiques clients",
+      "segmentation": "Segmentation (VIP, débiteurs, nouveaux)"
+    },
+    "finance": "Finance",
     "finance": {
-      "banks": "Banques",
+      "payments": "Paiements",
+      "payments": {
+        "inOut": "Paiements entrants / sortants",
+        "orders": "Paiement des commandes / factures",
+        "accounts": "Comptes espèces / bancaires",
+        "currency": "Multi-devises et taux de change",
+        "calendar": "Calendrier des paiements"
+      },
+      "salary": "Salaires",
+      "salary": {
+        "calculation": "Calcul des salaires",
+        "bonuses": "Bonus, pénalités, primes",
+        "advances": "Avances sur salaire",
+        "payouts": "Versements des salaires",
+        "paySheets": "Fiches de paie",
+        "reports": "Rapports salariaux",
+        "hrIntegration": "Intégration module RH"
+      },
       "taxes": "Taxes",
-      "reports": "Rapports financiers"
+      "taxes": {
+        "vat": "Gestion TVA",
+        "docs": "Factures fiscales",
+        "other": "Autres taxes (simplifiées, retraite, etc.)",
+        "status": "Statut fiscal auprès des autorités",
+        "export": "Export vers logiciel comptable"
+      },
+      "employees": "Employés (Finance)",
+      "employees": {
+        "contracts": "Tarifs contractuels",
+        "schedule": "Planning / suivi temps",
+        "vacations": "Congés et arrêts maladie",
+        "salaryLink": "Lien avec salaires",
+        "docs": "Documents RH"
+      },
+      "banks": "Banques & systèmes de paiement",
+      "banks": {
+        "api": "Intégration API",
+        "statements": "Synchronisation relevés bancaires",
+        "matching": "Appariement des paiements",
+        "multiAccounts": "Comptes multiples / devises",
+        "realtime": "Suivi en temps réel",
+        "gateways": "Passerelles de paiement",
+        "onlinePayments": "Paiements en ligne",
+        "statusUpdate": "Mise à jour automatique du statut",
+        "reporting": "Reporting des transactions",
+        "qr": "Génération de codes QR",
+        "invoiceLinks": "Liens factures",
+        "docAuto": "Création automatique de documents"
+      },
+      "taxSystem": "Systèmes fiscaux",
+      "taxSystem": {
+        "supported": "Systèmes supportés (auto-entrepreneur, SARL, TVA)",
+        "rates": "Configuration des taux d’imposition",
+        "autoCalc": "Calcul automatique des taxes",
+        "binding": "Assignation fiscale",
+        "autoReports": "Rapports automatiques",
+        "reminders": "Délais et rappels de paiement",
+        "integrations": "Intégrations avec logiciels fiscaux"
+      }
     },
-    "analytics_key": "Analyse",
+    "analytics": "Analyses & Rapports",
     "analytics": {
-      "reports": "Rapports",
-      "kpis": "KPIs",
-      "custom": "Analyse personnalisée"
+      "sales": "Ventes par période / responsable / région",
+      "purchases": "Achats et rentabilité",
+      "stock": "Stocks et rotations",
+      "profit": "Analyse de rentabilité",
+      "kpi": "KPI des employés",
+      "productionCosts": "Rapports sur coûts de production"
+    },
+    "personnel": "Personnel",
+    "personnel": {
+      "roles": "Responsabilités des processus",
+      "permissions": "Rôles et droits d’accès",
+      "performance": "Productivité des managers",
+      "tasks": "Tâches internes / rappels"
+    },
+    "integrations": "Intégrations",
+    "integrations": {
+      "api": "API pour sites / 1C / marketplaces",
+      "delivery": "Services postaux",
+      "payment": "Systèmes de paiement / banques",
+      "messaging": "Services Email / SMS"
+    },
+    "system": "Fonctionnalités système",
+    "system": {
+      "web": "Interface web & version mobile",
+      "backups": "Sauvegardes automatiques",
+      "logs": "Journalisation des actions utilisateurs",
+      "languages": "Support multilingue",
+      "customization": "Personnalisation des modules",
+      "deployment": "Déploiement cloud / local"
     }
   }
 }
