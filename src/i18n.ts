@@ -6,7 +6,11 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+<<<<<<< HEAD
     fallbackLng: 'ua',
+=======
+    fallbackLng: 'uk',
+>>>>>>> ed4027380f1194450543ea99beebdcc3fb1c16d1
     debug: false,
     interpolation: {
       escapeValue: false,
