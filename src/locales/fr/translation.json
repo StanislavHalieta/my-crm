@@ -1,0 +1,145 @@
+{
+  "menu": {
+    "products": "Produits / Inventaire",
+    "products": {
+      "manage": "Gérer les produits",
+      "categories": "Catégories",
+      "stock": "Stocks disponibles",
+      "batch": "Gestion des lots",
+      "codes": "Codes & Codes-barres",
+      "kits": "Composants / Kits",
+      "optimization": "Optimisation des stocks"
+    },
+    "purchases": "Achats",
+    "purchases": {
+      "orders": "Commandes fournisseurs",
+      "vendors": "Gestion des fournisseurs",
+      "deliveryTerms": "Conditions de livraison",
+      "linkToProduction": "Lien vers production / commande client",
+      "expenses": "Frais de livraison et importation",
+      "analysis": "Analyse des prix et conditions"
+    },
+    "production": "Production",
+    "production": {
+      "bom": "Nomenclatures & Recettes",
+      "planning": "Planification de la production",
+      "tracking": "Suivi du processus de production",
+      "costs": "Coûts des matériaux et temps",
+      "orders": "Ordres de production",
+      "quality": "Contrôle qualité produit",
+      "reports": "Rapports de production"
+    },
+    "sales": "Ventes",
+    "sales": {
+      "orders": "Commandes clients",
+      "documents": "Offres, Factures, Actes",
+      "pricing": "Tarification flexible",
+      "multiCurrency": "Support multi-devises",
+      "export": "Export de documents (PDF, Email)",
+      "statuses": "Statuts des commandes",
+      "returns": "Gestion des retours"
+    },
+    "clients": "Clients / Contractants",
+    "clients": {
+      "cards": "Fiches clients et fournisseurs",
+      "history": "Historique des interactions",
+      "contacts": "Contacts, adresses, responsables",
+      "analytics": "Statistiques clients",
+      "segmentation": "Segmentation (VIP, débiteurs, nouveaux)"
+    },
+    "finance": "Finance",
+    "finance": {
+      "payments": "Paiements",
+      "payments": {
+        "inOut": "Paiements entrants / sortants",
+        "orders": "Paiement des commandes / factures",
+        "accounts": "Comptes espèces / bancaires",
+        "currency": "Multi-devises et taux de change",
+        "calendar": "Calendrier des paiements"
+      },
+      "salary": "Salaires",
+      "salary": {
+        "calculation": "Calcul des salaires",
+        "bonuses": "Bonus, pénalités, primes",
+        "advances": "Avances sur salaire",
+        "payouts": "Versements des salaires",
+        "paySheets": "Fiches de paie",
+        "reports": "Rapports salariaux",
+        "hrIntegration": "Intégration module RH"
+      },
+      "taxes": "Taxes",
+      "taxes": {
+        "vat": "Gestion TVA",
+        "docs": "Factures fiscales",
+        "other": "Autres taxes (simplifiées, retraite, etc.)",
+        "status": "Statut fiscal auprès des autorités",
+        "export": "Export vers logiciel comptable"
+      },
+      "employees": "Employés (Finance)",
+      "employees": {
+        "contracts": "Tarifs contractuels",
+        "schedule": "Planning / suivi temps",
+        "vacations": "Congés et arrêts maladie",
+        "salaryLink": "Lien avec salaires",
+        "docs": "Documents RH"
+      },
+      "banks": "Banques & systèmes de paiement",
+      "banks": {
+        "api": "Intégration API",
+        "statements": "Synchronisation relevés bancaires",
+        "matching": "Appariement des paiements",
+        "multiAccounts": "Comptes multiples / devises",
+        "realtime": "Suivi en temps réel",
+        "gateways": "Passerelles de paiement",
+        "onlinePayments": "Paiements en ligne",
+        "statusUpdate": "Mise à jour automatique du statut",
+        "reporting": "Reporting des transactions",
+        "qr": "Génération de codes QR",
+        "invoiceLinks": "Liens factures",
+        "docAuto": "Création automatique de documents"
+      },
+      "taxSystem": "Systèmes fiscaux",
+      "taxSystem": {
+        "supported": "Systèmes supportés (auto-entrepreneur, SARL, TVA)",
+        "rates": "Configuration des taux d’imposition",
+        "autoCalc": "Calcul automatique des taxes",
+        "binding": "Assignation fiscale",
+        "autoReports": "Rapports automatiques",
+        "reminders": "Délais et rappels de paiement",
+        "integrations": "Intégrations avec logiciels fiscaux"
+      }
+    },
+    "analytics": "Analyses & Rapports",
+    "analytics": {
+      "sales": "Ventes par période / responsable / région",
+      "purchases": "Achats et rentabilité",
+      "stock": "Stocks et rotations",
+      "profit": "Analyse de rentabilité",
+      "kpi": "KPI des employés",
+      "productionCosts": "Rapports sur coûts de production"
+    },
+    "personnel": "Personnel",
+    "personnel": {
+      "roles": "Responsabilités des processus",
+      "permissions": "Rôles et droits d’accès",
+      "performance": "Productivité des managers",
+      "tasks": "Tâches internes / rappels"
+    },
+    "integrations": "Intégrations",
+    "integrations": {
+      "api": "API pour sites / 1C / marketplaces",
+      "delivery": "Services postaux",
+      "payment": "Systèmes de paiement / banques",
+      "messaging": "Services Email / SMS"
+    },
+    "system": "Fonctionnalités système",
+    "system": {
+      "web": "Interface web & version mobile",
+      "backups": "Sauvegardes automatiques",
+      "logs": "Journalisation des actions utilisateurs",
+      "languages": "Support multilingue",
+      "customization": "Personnalisation des modules",
+      "deployment": "Déploiement cloud / local"
+    }
+  }
+}

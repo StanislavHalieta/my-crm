@@ -1,0 +1,89 @@
+import {
+  Inventory2Outlined,
+  ShoppingCartOutlined,
+  PrecisionManufacturing,
+  PointOfSaleOutlined,
+  GroupsOutlined,
+} from "@mui/icons-material";
+import { SvgIconTypeMap } from "@mui/material";
+import { OverridableComponent } from "@mui/material/OverridableComponent";
+
+export const mainMenu: IMainMenu[] = [
+  {
+    key: "products",
+    label: "menu.products",
+    Icon: Inventory2Outlined,
+    children: [
+      { key: "products.manage", label: "menu.products.manage" },
+      { key: "products.categories", label: "menu.products.categories" },
+      { key: "products.stock", label: "menu.products.stock" },
+      { key: "products.batch", label: "menu.products.batch" },
+      { key: "products.codes", label: "menu.products.codes" },
+      { key: "products.kits", label: "menu.products.kits" },
+      { key: "products.optimization", label: "menu.products.optimization" },
+    ],
+  },
+  {
+    key: "purchases",
+    label: "menu.purchases",
+    Icon: ShoppingCartOutlined,
+    children: [
+      { key: "purchases.orders", label: "menu.purchases.orders" },
+      { key: "purchases.vendors", label: "menu.purchases.vendors" },
+      { key: "purchases.deliveryTerms", label: "menu.purchases.deliveryTerms" },
+      {
+        key: "purchases.linkToProduction",
+        label: "menu.purchases.linkToProduction",
+      },
+      { key: "purchases.expenses", label: "menu.purchases.expenses" },
+      { key: "purchases.analysis", label: "menu.purchases.analysis" },
+    ],
+  },
+  {
+    key: "production",
+    label: "menu.production",
+    Icon: PrecisionManufacturing,
+    children: [
+      { key: "production.bom", label: "menu.production.bom" },
+      { key: "production.planning", label: "menu.production.planning" },
+      { key: "production.tracking", label: "menu.production.tracking" },
+      { key: "production.costs", label: "menu.production.costs" },
+      { key: "production.orders", label: "menu.production.orders" },
+      { key: "production.quality", label: "menu.production.quality" },
+      { key: "production.reports", label: "menu.production.reports" },
+    ],
+  },
+  {
+    key: "sales",
+    label: "menu.sales",
+    Icon: PointOfSaleOutlined,
+    children: [
+      { key: "sales.orders", label: "menu.sales.orders" },
+      { key: "sales.documents", label: "menu.sales.documents" },
+      { key: "sales.pricing", label: "menu.sales.pricing" },
+      { key: "sales.multiCurrency", label: "menu.sales.multiCurrency" },
+      { key: "sales.export", label: "menu.sales.export" },
+      { key: "sales.statuses", label: "menu.sales.statuses" },
+      { key: "sales.returns", label: "menu.sales.returns" },
+    ],
+  },
+  {
+    key: "clients",
+    label: "menu.clients",
+    Icon: GroupsOutlined,
+    children: [
+      { key: "clients.cards", label: "menu.clients.cards" },
+      { key: "clients.history", label: "menu.clients.history" },
+      { key: "clients.contacts", label: "menu.clients.contacts" },
+      { key: "clients.analytics", label: "menu.clients.analytics" },
+      { key: "clients.segmentation", label: "menu.clients.segmentation" },
+    ],
+  },
+];
+
+export interface IMainMenu {
+  key: string;
+  label: string;
+  Icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string };
+  children?: IMainMenu[];
+}

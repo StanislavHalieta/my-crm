@@ -1,0 +1,145 @@
+{
+  "menu": {
+    "products": "Products / Inventory",
+    "products": {
+      "manage": "Manage Products",
+      "categories": "Categories",
+      "stock": "Stock Balances",
+      "batch": "Batch Accounting",
+      "codes": "Codes & Barcodes",
+      "kits": "Components / Kits",
+      "optimization": "Stock Optimization"
+    },
+    "purchases": "Purchases",
+    "purchases": {
+      "orders": "Supplier Orders",
+      "vendors": "Supplier Management",
+      "deliveryTerms": "Delivery Deadlines",
+      "linkToProduction": "Link to Production / Client Order",
+      "expenses": "Delivery and Import Expenses",
+      "analysis": "Price and Terms Analysis"
+    },
+    "production": "Production",
+    "production": {
+      "bom": "BOM & Recipes",
+      "planning": "Production Planning",
+      "tracking": "Production Process Tracking",
+      "costs": "Material & Time Costs",
+      "orders": "Production Orders",
+      "quality": "Product Quality Control",
+      "reports": "Production Reports"
+    },
+    "sales": "Sales",
+    "sales": {
+      "orders": "Client Orders",
+      "documents": "Offers, Invoices, Acts",
+      "pricing": "Flexible Pricing",
+      "multiCurrency": "Multi-currency Support",
+      "export": "Document Export (PDF, Email)",
+      "statuses": "Order Statuses",
+      "returns": "Returns Management"
+    },
+    "clients": "Clients / Contractors",
+    "clients": {
+      "cards": "Client and Supplier Cards",
+      "history": "Interaction History",
+      "contacts": "Contacts, Addresses, Managers",
+      "analytics": "Client Statistics",
+      "segmentation": "Segmentation (VIP, Debtors, New)"
+    },
+    "finance": "Finance",
+    "finance": {
+      "payments": "Payments",
+      "payments": {
+        "inOut": "Incoming / Outgoing Payments",
+        "orders": "Payment to Orders / Invoices",
+        "accounts": "Cash / Bank Accounts",
+        "currency": "Multi-currency and Exchange Rates",
+        "calendar": "Payment Calendar"
+      },
+      "salary": "Salary",
+      "salary": {
+        "calculation": "Salary Accrual",
+        "bonuses": "Bonuses, Penalties, Awards",
+        "advances": "Advance Payments",
+        "payouts": "Salary Payouts",
+        "paySheets": "Pay Sheets",
+        "reports": "Salary Reports",
+        "hrIntegration": "HR Module Integration"
+      },
+      "taxes": "Taxes",
+      "taxes": {
+        "vat": "VAT Accounting",
+        "docs": "Tax Invoices",
+        "other": "Other Taxes (unified, pension, etc.)",
+        "status": "Tax Status with Authorities",
+        "export": "Export to Accounting Software"
+      },
+      "employees": "Employees (Finance)",
+      "employees": {
+        "contracts": "Contract Rates",
+        "schedule": "Work Schedule / Time Tracking",
+        "vacations": "Leaves and Sick Days",
+        "salaryLink": "Salary Link",
+        "docs": "HR Documents"
+      },
+      "banks": "Banks & Payment Systems",
+      "banks": {
+        "api": "API Integration",
+        "statements": "Bank Statement Sync",
+        "matching": "Payment Matching",
+        "multiAccounts": "Multiple Accounts / Currencies",
+        "realtime": "Realtime Monitoring",
+        "gateways": "Payment Gateways",
+        "onlinePayments": "Online Payments",
+        "statusUpdate": "Auto Status Update",
+        "reporting": "Transaction Reporting",
+        "qr": "QR Code Generation",
+        "invoiceLinks": "Invoice Links",
+        "docAuto": "Auto Document Creation"
+      },
+      "taxSystem": "Tax Systems",
+      "taxSystem": {
+        "supported": "Supported Systems (FOP, LLC, VAT)",
+        "rates": "Tax Rates Setup",
+        "autoCalc": "Auto Tax Calculation",
+        "binding": "Tax Binding",
+        "autoReports": "Auto Reporting",
+        "reminders": "Payment Deadlines & Reminders",
+        "integrations": "Integrations with Tax Software"
+      }
+    },
+    "analytics": "Analytics & Reporting",
+    "analytics": {
+      "sales": "Sales by Period / Manager / Region",
+      "purchases": "Purchases and Profitability",
+      "stock": "Stock and Turnover",
+      "profit": "Profitability Analysis",
+      "kpi": "Employee KPIs",
+      "productionCosts": "Production Cost Reports"
+    },
+    "personnel": "Personnel",
+    "personnel": {
+      "roles": "Process Ownership",
+      "permissions": "Roles and Access Rights",
+      "performance": "Manager Productivity",
+      "tasks": "Internal Tasks / Reminders"
+    },
+    "integrations": "Integrations",
+    "integrations": {
+      "api": "API for Sites / 1C / Marketplaces",
+      "delivery": "Postal Services",
+      "payment": "Payment Systems / Banks",
+      "messaging": "Email / SMS Services"
+    },
+    "system": "System Features",
+    "system": {
+      "web": "Web Interface & Mobile Version",
+      "backups": "Auto Backups",
+      "logs": "User Action Logging",
+      "languages": "Multilingual Support",
+      "customization": "Module Customization",
+      "deployment": "Cloud / Local Deployment"
+    }
+  }
+}
