@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 // import DraftsIcon from "@mui/icons-material/Drafts";
 // import PriorityHighIcon from "@mui/icons-material/PriorityHigh";
 import {
-  Delete,
   Engineering,
   Factory,
   Home,
