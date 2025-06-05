@@ -1,6 +1,6 @@
 {
   "menu": {
-    "products": "Produkte / Inventar",
+    "products_key": "Produkte / Inventar",
     "products": {
       "manage": "Produkte verwalten",
       "categories": "Kategorien",
@@ -10,7 +10,7 @@
       "kits": "Komponenten / Kits",
       "optimization": "Lageroptimierung"
     },
-    "purchases": "Einkäufe",
+    "purchases_key": "Einkäufe",
     "purchases": {
       "orders": "Lieferantenbestellungen",
       "vendors": "Lieferantenverwaltung",
@@ -19,7 +19,7 @@
       "expenses": "Liefer- und Importkosten",
       "analysis": "Preis- und Konditionenanalyse"
     },
-    "production": "Produktion",
+    "production_key": "Produktion",
     "production": {
       "bom": "Stücklisten & Rezepte",
       "planning": "Produktionsplanung",
@@ -29,7 +29,7 @@
       "quality": "Produktqualitätskontrolle",
       "reports": "Produktionsberichte"
     },
-    "sales": "Vertrieb",
+    "sales_key": "Vertrieb",
     "sales": {
       "orders": "Kundenaufträge",
       "documents": "Angebote, Rechnungen, Protokolle",
@@ -39,7 +39,7 @@
       "statuses": "Auftragsstatus",
       "returns": "Retourenverwaltung"
     },
-    "clients": "Kunden / Auftraggeber",
+    "clients_key": "Kunden / Auftraggeber",
     "clients": {
       "cards": "Kunden- und Lieferantenkarten",
       "history": "Interaktionshistorie",
@@ -47,9 +47,9 @@
       "analytics": "Kundenstatistiken",
       "segmentation": "Segmentierung (VIP, Schuldner, Neu)"
     },
-    "finance": "Finanzen",
+    "finance_key": "Finanzen",
     "finance": {
-      "payments": "Zahlungen",
+      "payments_key": "Zahlungen",
       "payments": {
         "inOut": "Eingehende / ausgehende Zahlungen",
         "orders": "Zahlung zu Aufträgen / Rechnungen",
@@ -57,7 +57,7 @@
         "currency": "Mehrwährung und Wechselkurse",
         "calendar": "Zahlungskalender"
       },
-      "salary": "Gehalt",
+      "salary_key": "Gehalt",
       "salary": {
         "calculation": "Gehaltsabrechnung",
         "bonuses": "Prämien, Strafen, Auszeichnungen",
@@ -67,7 +67,7 @@
         "reports": "Gehaltsberichte",
         "hrIntegration": "HR-Modul Integration"
       },
-      "taxes": "Steuern",
+      "taxes_key": "Steuern",
       "taxes": {
         "vat": "Umsatzsteuerbuchhaltung",
         "docs": "Steuerrechnungen",
@@ -75,7 +75,7 @@
         "status": "Steuerstatus bei Behörden",
         "export": "Export zur Buchhaltungssoftware"
       },
-      "employees": "Mitarbeiter (Finanzen)",
+      "employees_key": "Mitarbeiter (Finanzen)",
       "employees": {
         "contracts": "Vertragsraten",
         "schedule": "Arbeitszeitplan / Zeiterfassung",
@@ -83,7 +83,7 @@
         "salaryLink": "Gehaltsverknüpfung",
         "docs": "HR-Dokumente"
       },
-      "banks": "Banken & Zahlungssysteme",
+      "banks_key": "Banken & Zahlungssysteme",
       "banks": {
         "api": "API-Integration",
         "statements": "Bankauszugs-Synchronisierung",
@@ -98,7 +98,7 @@
         "invoiceLinks": "Rechnungslinks",
         "docAuto": "Automatische Dokumentenerstellung"
       },
-      "taxSystem": "Steuersysteme",
+      "taxSystem_key": "Steuersysteme",
       "taxSystem": {
         "supported": "Unterstützte Systeme (Einzelunternehmen, GmbH, Umsatzsteuer)",
         "rates": "Steuersätze konfigurieren",
@@ -109,7 +109,7 @@
         "integrations": "Integration mit Steuersoftware"
       }
     },
-    "analytics": "Analyse & Berichte",
+    "analytics_key": "Analyse & Berichte",
     "analytics": {
       "sales": "Verkäufe nach Zeitraum / Manager / Region",
       "purchases": "Einkäufe und Rentabilität",
@@ -118,21 +118,21 @@
       "kpi": "Mitarbeiter-KPIs",
       "productionCosts": "Berichte zu Produktionskosten"
     },
-    "personnel": "Personal",
+    "personnel_key": "Personal",
     "personnel": {
       "roles": "Prozessverantwortlichkeiten",
       "permissions": "Rollen und Zugriffsrechte",
       "performance": "Manager-Produktivität",
       "tasks": "Interne Aufgaben / Erinnerungen"
     },
-    "integrations": "Integrationen",
+    "integrations_key": "Integrationen",
     "integrations": {
       "api": "API für Webseiten / 1C / Marktplätze",
       "delivery": "Postdienste",
       "payment": "Zahlungssysteme / Banken",
       "messaging": "E-Mail / SMS-Dienste"
     },
-    "system": "Systemfunktionen",
+    "system_key": "Systemfunktionen",
     "system": {
       "web": "Web-Interface & mobile Version",
       "backups": "Automatische Backups",
