@@ -1,4 +1,7 @@
 {
+  "home": {
+    "home_key": "Home"
+  },
   "menu": {
     "products_key": "Products / Inventory",
     "products": {

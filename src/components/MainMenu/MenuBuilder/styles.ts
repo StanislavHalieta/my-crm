@@ -36,8 +36,15 @@ import { NavLink } from "react-router";
 import styled from "styled-components";
 
 export const StyledNavLink = styled(NavLink)`
-  a {
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+
+  &.active {
+    font-weight: bold;
+    background-color: ${({theme}) => theme.palette.secondary.main}; /* жовтий */
+    color:  ${({theme}) => theme.palette.text.primary}; /* темно-синій */
   }
 `;
 >>>>>>> c61f093 (main menu drawer)

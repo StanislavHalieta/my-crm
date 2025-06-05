@@ -1,4 +1,7 @@
 {
+  "home": {
+    "home_key": "Додому"
+  },
   "menu": {
     "products_key": "Товари / Склад",
     "products": {
