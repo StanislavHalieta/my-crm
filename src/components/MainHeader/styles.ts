@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Header = styled(Box)`
   height: 60px;
   width: 100%;
-  background-color: #1976d2;
+  background-color:${({theme})=>theme.palette.primary.main};
   color: white;
   display: flex;
   align-items: center;

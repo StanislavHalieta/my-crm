@@ -4,11 +4,17 @@ import {
   PrecisionManufacturing,
   PointOfSaleOutlined,
   GroupsOutlined,
+  Home,
 } from "@mui/icons-material";
 import { SvgIconTypeMap } from "@mui/material";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 
 export const mainMenu: IMainMenu[] = [
+  {
+    key: "",
+    label: "home.home_key",
+    Icon: Home,
+  },
   {
     key: "products",
     label: "menu.products",

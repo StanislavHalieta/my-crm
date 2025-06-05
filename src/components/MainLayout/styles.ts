@@ -6,4 +6,5 @@ export const Main = styled(Box)`
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  background-color: ${({theme})=>theme.palette.background.default};
 `;

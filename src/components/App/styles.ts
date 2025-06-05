@@ -7,4 +7,6 @@ export const StyledApp = styled(Box)`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background-color: ${({theme})=>theme?.palette?.background?.default};
+  color: ${({theme})=>theme?.palette?.background?.default};
 `;
