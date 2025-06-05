@@ -1,6 +1,6 @@
 {
   "menu": {
-    "products": "Produits / Inventaire",
+    "products_key": "Produits / Inventaire",
     "products": {
       "manage": "Gérer les produits",
       "categories": "Catégories",
@@ -10,7 +10,7 @@
       "kits": "Composants / Kits",
       "optimization": "Optimisation des stocks"
     },
-    "purchases": "Achats",
+    "purchases_key": "Achats",
     "purchases": {
       "orders": "Commandes fournisseurs",
       "vendors": "Gestion des fournisseurs",
@@ -19,7 +19,7 @@
       "expenses": "Frais de livraison et importation",
       "analysis": "Analyse des prix et conditions"
     },
-    "production": "Production",
+    "production_key": "Production",
     "production": {
       "bom": "Nomenclatures & Recettes",
       "planning": "Planification de la production",
@@ -29,7 +29,7 @@
       "quality": "Contrôle qualité produit",
       "reports": "Rapports de production"
     },
-    "sales": "Ventes",
+    "sales_key": "Ventes",
     "sales": {
       "orders": "Commandes clients",
       "documents": "Offres, Factures, Actes",
@@ -39,7 +39,7 @@
       "statuses": "Statuts des commandes",
       "returns": "Gestion des retours"
     },
-    "clients": "Clients / Contractants",
+    "clients_key": "Clients / Contractants",
     "clients": {
       "cards": "Fiches clients et fournisseurs",
       "history": "Historique des interactions",
@@ -47,9 +47,9 @@
       "analytics": "Statistiques clients",
       "segmentation": "Segmentation (VIP, débiteurs, nouveaux)"
     },
-    "finance": "Finance",
+    "finance_key": "Finance",
     "finance": {
-      "payments": "Paiements",
+      "payments_key": "Paiements",
       "payments": {
         "inOut": "Paiements entrants / sortants",
         "orders": "Paiement des commandes / factures",
@@ -57,7 +57,7 @@
         "currency": "Multi-devises et taux de change",
         "calendar": "Calendrier des paiements"
       },
-      "salary": "Salaires",
+      "salary_key": "Salaires",
       "salary": {
         "calculation": "Calcul des salaires",
         "bonuses": "Bonus, pénalités, primes",
@@ -67,7 +67,7 @@
         "reports": "Rapports salariaux",
         "hrIntegration": "Intégration module RH"
       },
-      "taxes": "Taxes",
+      "taxes_key": "Taxes",
       "taxes": {
         "vat": "Gestion TVA",
         "docs": "Factures fiscales",
@@ -75,7 +75,7 @@
         "status": "Statut fiscal auprès des autorités",
         "export": "Export vers logiciel comptable"
       },
-      "employees": "Employés (Finance)",
+      "employees_key": "Employés (Finance)",
       "employees": {
         "contracts": "Tarifs contractuels",
         "schedule": "Planning / suivi temps",
@@ -83,7 +83,7 @@
         "salaryLink": "Lien avec salaires",
         "docs": "Documents RH"
       },
-      "banks": "Banques & systèmes de paiement",
+      "banks_key": "Banques & systèmes de paiement",
       "banks": {
         "api": "Intégration API",
         "statements": "Synchronisation relevés bancaires",
@@ -98,7 +98,7 @@
         "invoiceLinks": "Liens factures",
         "docAuto": "Création automatique de documents"
       },
-      "taxSystem": "Systèmes fiscaux",
+      "taxSystem_key": "Systèmes fiscaux",
       "taxSystem": {
         "supported": "Systèmes supportés (auto-entrepreneur, SARL, TVA)",
         "rates": "Configuration des taux d’imposition",
@@ -109,7 +109,7 @@
         "integrations": "Intégrations avec logiciels fiscaux"
       }
     },
-    "analytics": "Analyses & Rapports",
+    "analytics_key": "Analyses & Rapports",
     "analytics": {
       "sales": "Ventes par période / responsable / région",
       "purchases": "Achats et rentabilité",
@@ -118,21 +118,21 @@
       "kpi": "KPI des employés",
       "productionCosts": "Rapports sur coûts de production"
     },
-    "personnel": "Personnel",
+    "personnel_key": "Personnel",
     "personnel": {
       "roles": "Responsabilités des processus",
       "permissions": "Rôles et droits d’accès",
       "performance": "Productivité des managers",
       "tasks": "Tâches internes / rappels"
     },
-    "integrations": "Intégrations",
+    "integrations_key": "Intégrations",
     "integrations": {
       "api": "API pour sites / 1C / marketplaces",
       "delivery": "Services postaux",
       "payment": "Systèmes de paiement / banques",
       "messaging": "Services Email / SMS"
     },
-    "system": "Fonctionnalités système",
+    "system_key": "Fonctionnalités système",
     "system": {
       "web": "Interface web & version mobile",
       "backups": "Sauvegardes automatiques",

@@ -1,6 +1,6 @@
 {
   "menu": {
-    "products": "Products / Inventory",
+    "products_key": "Products / Inventory",
     "products": {
       "manage": "Manage Products",
       "categories": "Categories",
@@ -10,7 +10,7 @@
       "kits": "Components / Kits",
       "optimization": "Stock Optimization"
     },
-    "purchases": "Purchases",
+    "purchases_key": "Purchases",
     "purchases": {
       "orders": "Supplier Orders",
       "vendors": "Supplier Management",
@@ -19,7 +19,7 @@
       "expenses": "Delivery and Import Expenses",
       "analysis": "Price and Terms Analysis"
     },
-    "production": "Production",
+    "production_key": "Production",
     "production": {
       "bom": "BOM & Recipes",
       "planning": "Production Planning",
@@ -29,7 +29,7 @@
       "quality": "Product Quality Control",
       "reports": "Production Reports"
     },
-    "sales": "Sales",
+    "sales_key": "Sales",
     "sales": {
       "orders": "Client Orders",
       "documents": "Offers, Invoices, Acts",
@@ -39,7 +39,7 @@
       "statuses": "Order Statuses",
       "returns": "Returns Management"
     },
-    "clients": "Clients / Contractors",
+    "clients_key": "Clients / Contractors",
     "clients": {
       "cards": "Client and Supplier Cards",
       "history": "Interaction History",
@@ -47,9 +47,9 @@
       "analytics": "Client Statistics",
       "segmentation": "Segmentation (VIP, Debtors, New)"
     },
-    "finance": "Finance",
+    "finance_key": "Finance",
     "finance": {
-      "payments": "Payments",
+      "payments_key": "Payments",
       "payments": {
         "inOut": "Incoming / Outgoing Payments",
         "orders": "Payment to Orders / Invoices",
@@ -57,7 +57,7 @@
         "currency": "Multi-currency and Exchange Rates",
         "calendar": "Payment Calendar"
       },
-      "salary": "Salary",
+      "salary_key": "Salary",
       "salary": {
         "calculation": "Salary Accrual",
         "bonuses": "Bonuses, Penalties, Awards",
@@ -67,7 +67,7 @@
         "reports": "Salary Reports",
         "hrIntegration": "HR Module Integration"
       },
-      "taxes": "Taxes",
+      "taxes_key": "Taxes",
       "taxes": {
         "vat": "VAT Accounting",
         "docs": "Tax Invoices",
@@ -75,7 +75,7 @@
         "status": "Tax Status with Authorities",
         "export": "Export to Accounting Software"
       },
-      "employees": "Employees (Finance)",
+      "employees_key": "Employees (Finance)",
       "employees": {
         "contracts": "Contract Rates",
         "schedule": "Work Schedule / Time Tracking",
@@ -83,7 +83,7 @@
         "salaryLink": "Salary Link",
         "docs": "HR Documents"
       },
-      "banks": "Banks & Payment Systems",
+      "banks_key": "Banks & Payment Systems",
       "banks": {
         "api": "API Integration",
         "statements": "Bank Statement Sync",
@@ -98,7 +98,7 @@
         "invoiceLinks": "Invoice Links",
         "docAuto": "Auto Document Creation"
       },
-      "taxSystem": "Tax Systems",
+      "taxSystem_key": "Tax Systems",
       "taxSystem": {
         "supported": "Supported Systems (FOP, LLC, VAT)",
         "rates": "Tax Rates Setup",
@@ -109,7 +109,7 @@
         "integrations": "Integrations with Tax Software"
       }
     },
-    "analytics": "Analytics & Reporting",
+    "analytics_key": "Analytics & Reporting",
     "analytics": {
       "sales": "Sales by Period / Manager / Region",
       "purchases": "Purchases and Profitability",
@@ -118,21 +118,21 @@
       "kpi": "Employee KPIs",
       "productionCosts": "Production Cost Reports"
     },
-    "personnel": "Personnel",
+    "personnel_key": "Personnel",
     "personnel": {
       "roles": "Process Ownership",
       "permissions": "Roles and Access Rights",
       "performance": "Manager Productivity",
       "tasks": "Internal Tasks / Reminders"
     },
-    "integrations": "Integrations",
+    "integrations_key": "Integrations",
     "integrations": {
       "api": "API for Sites / 1C / Marketplaces",
       "delivery": "Postal Services",
       "payment": "Payment Systems / Banks",
       "messaging": "Email / SMS Services"
     },
-    "system": "System Features",
+    "system_key": "System Features",
     "system": {
       "web": "Web Interface & Mobile Version",
       "backups": "Auto Backups",
