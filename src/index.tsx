@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router";
 import ReactDOM from "react-dom/client";
 import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
+import './fonts.css';
 import "./index.css";
 import { AppThemeProvider } from "./contexts/ThemeContext";
 

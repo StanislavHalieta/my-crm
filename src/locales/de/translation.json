@@ -1,4 +1,7 @@
 {
+  "header":{
+    "name": "CRMUA"
+  },
   "home": {
     "home_key": "Startseite"
   },
@@ -144,5 +147,9 @@
       "customization": "Modulanpassungen",
       "deployment": "Cloud- / lokale Bereitstellung"
     }
+  },
+  "charts":{
+    "unpaid": "Unbezahlte Rechnungen",
+    "paid": "Bezahlte Rechnungen"
   }
 }
