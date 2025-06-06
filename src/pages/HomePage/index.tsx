@@ -32,16 +32,16 @@ const HomePage: FC<HomePageProps> = () => {
     <StyledHomePage>
       <StyledHomePageGrid container spacing={2}>
         <Grid size={{ xs: 5, sm: 4, md: 3 }}>
-          <MainSlider value={40} max={50} title="Рахунки в очикувнні оплати" />
+          <MainSlider value={40} max={50} title="charts.awaitingPayments" />
         </Grid>
         <Grid size={{ xs: 5, sm: 4, md: 3 }}>
-          <MainSlider value={40} max={50} title="Конвертовані ліди" />
+          <MainSlider value={40} max={50} title="charts.convertedLeads" />
         </Grid>
         <Grid size={{ xs: 5, sm: 4, md: 3 }}>
-          <MainSlider value={10} max={12} title="Проекти в процесі" />
+          <MainSlider value={10} max={12} title="charts.projectsInProgress" />
         </Grid>
         <Grid size={{ xs: 5, sm: 4, md: 3 }}>
-          <MainSlider value={2} max={10} title="Незавершені завдання" />
+          <MainSlider value={2} max={10} title="charts.unfinishedTasks" />
         </Grid>
         {/* ********************************************************************* */}
         <Grid size={{ xs: 5, sm: 4, md: 6 }}>

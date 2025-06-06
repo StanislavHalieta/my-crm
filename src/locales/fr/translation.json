@@ -148,8 +148,12 @@
       "deployment": "Déploiement cloud / local"
     }
   },
-  "charts":{
+  "charts": {
     "unpaid": "Factures impayées",
-    "paid": "Factures payées"
+    "paid": "Factures payées",
+    "awaitingPayments": "Factures en attente de paiement",
+    "convertedLeads": "Prospects convertis",
+    "projectsInProgress": "Projets en cours",
+    "unfinishedTasks": "Tâches inachevées"
   }
 }

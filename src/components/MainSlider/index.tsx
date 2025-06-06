@@ -1,16 +1,19 @@
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 import { StyledCard, StyledSlider } from "./styles";
 
 interface MainSliderProps {
   value: number;
   max: number;
-  title: string
+  title: string;
 }
 
 const MainSlider: FC<MainSliderProps> = ({ value, max, title }) => {
+  const { t } = useTranslation();
+
   return (
     <StyledCard>
-      <span>{title}</span>
+      <span>{t(title)}</span>
       <span>{`${value}/${max}`}</span>
       <StyledSlider
         defaultValue={value}

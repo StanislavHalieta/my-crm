@@ -1,5 +1,5 @@
 {
-  "header":{
+  "header": {
     "name": "CRMUA"
   },
   "home": {
@@ -54,8 +54,12 @@
       "segmentation": "Сегментація (VIP, боржники, нові)"
     }
   },
-  "charts":{
+  "charts": {
     "unpaid": "Неоплачені рахунки",
-    "paid": "Оплачені рахунки"
+    "paid": "Оплачені рахунки",
+    "awaitingPayments": "Рахунки в очікуванні оплати",
+    "convertedLeads": "Конвертовані ліди",
+    "projectsInProgress": "Проекти в процесі",
+    "unfinishedTasks": "Незавершені завдання"
   }
 }
