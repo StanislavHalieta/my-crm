@@ -3,3 +3,7 @@ export { default as MainLayout } from "./MainLayout";
 export { default as MainMenu } from "./MainMenu";
 export { default as MainSidebar } from "./MainSidebar";
 export { default as MainContent } from "./MainContent";
+export { default as MainChart } from "./MainChart";
+export { default as MainPieChart } from "./MainPieChart";
+export { default as MainCard } from "./MainCard";
+export { default as MainSlider } from "./MainSlider";

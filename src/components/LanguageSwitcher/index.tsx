@@ -2,6 +2,7 @@ import { Language } from "@mui/icons-material";
 import { Button, Menu, MenuItem } from "@mui/material";
 import { MouseEvent, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { StyledLanguageSwitcher } from "./styles";
 
 interface ILang {
   key: string;
@@ -11,19 +12,19 @@ interface ILang {
 const langs: ILang[] = [
   {
     key: "uk",
-    label: "Україська",
+    label: "Укр",
   },
   {
     key: "en",
-    label: "English",
+    label: "Eng",
   },
   {
     key: "de",
-    label: "Deutsch",
+    label: "De",
   },
   {
     key: "fr",
-    label: "Français",
+    label: "Fr",
   },
 ];
 
@@ -32,7 +33,7 @@ const LanguageSwitcher = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [currentLang, setCurrentLang] = useState<ILang>({
     key: "uk",
-    label: "Україська",
+    label: "Укр",
   });
 
   const open = Boolean(anchorEl);
@@ -52,7 +53,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div>
+    <StyledLanguageSwitcher>
       <Button
         prefix="{<Language />}"
         id="demo-positioned-button"
@@ -62,7 +63,7 @@ const LanguageSwitcher = () => {
         onClick={handleClick}
         style={{ color: "white" }}
       >
-        {currentLang.label}
+        <Language/> {currentLang.label}
       </Button>
       <Menu
         id="demo-positioned-menu"
@@ -85,7 +86,7 @@ const LanguageSwitcher = () => {
           </MenuItem>
         ))}
       </Menu>
-    </div>
+    </StyledLanguageSwitcher>
   );
 };
 
