@@ -150,6 +150,10 @@
   },
   "charts":{
     "unpaid": "Unpaid bills",
-    "paid": "Paid bills"
+    "paid": "Paid bills",
+    "awaitingPayments": "Invoices awaiting payment",
+    "convertedLeads": "Converted leads",
+    "projectsInProgress": "Projects in progress",
+    "unfinishedTasks": "Unfinished tasks"
   }
 }

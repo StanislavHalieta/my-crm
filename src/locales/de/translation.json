@@ -150,6 +150,10 @@
   },
   "charts":{
     "unpaid": "Unbezahlte Rechnungen",
-    "paid": "Bezahlte Rechnungen"
+    "paid": "Bezahlte Rechnungen",
+    "awaitingPayments": "Rechnungen, deren Zahlung aussteht",
+    "convertedLeads": "Konvertierte Leads",
+    "projectsInProgress": "Laufende Projekte",
+    "unfinishedTasks": "Unerledigte Aufgaben"
   }
 }
