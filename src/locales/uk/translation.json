@@ -6,52 +6,90 @@
     "home_key": "Додому"
   },
   "menu": {
-    "products_key": "Товари / Склад",
-    "products": {
-      "manage": "Управління товарами",
-      "categories": "Категорії",
-      "stock": "Залишки",
-      "batch": "Партійний облік",
-      "codes": "Коди та штрихкоди",
-      "kits": "Комплекти / Компоненти",
-      "optimization": "Оптимізація складу"
+    "auth_key": "Авторизація",
+    "auth": {
+      "login": "Вхід",
+      "register": "Реєстрація",
+      "roles": "Ролі"
     },
-    "purchases_key": "Закупівлі",
-    "purchases": {
-      "orders": "Замовлення постачальникам",
-      "vendors": "Управління постачальниками",
-      "deliveryTerms": "Терміни доставки",
-      "linkToProduction": "Зв'язок з виробництвом / замовленням",
-      "expenses": "Витрати на доставку та імпорт",
-      "analysis": "Аналіз цін та умов"
+    "clients_key": "Клієнти",
+    "clients": {
+      "cards": "Картки клієнтів",
+      "history": "Історія клієнтів",
+      "contacts": "Контакти",
+      "analytics": "Аналітика клієнтів",
+      "segmentation": "Сегментація"
+    },
+    "email_key": "Електронна пошта",
+    "email": {
+      "confirmation": "Підтвердження",
+      "reminders": "Нагадування",
+      "service": "Сервісні листи",
+      "marketing": "Маркетингові розсилки"
+    },
+    "sms_key": "SMS",
+    "sms": {
+      "reminders": "Нагадування",
+      "notifications": "Сповіщення"
+    },
+    "ipTelephony_key": "IP-телефонія",
+    "ipTelephony": {
+      "calls_key": "Дзвінки",
+      "calls": {
+        "incoming": "Вхідні дзвінки",
+        "outgoing": "Вихідні дзвінки",
+        "recordings": "Записи дзвінків"
+      },
+      "clientCards": "Картки клієнтів"
+    },
+    "tasks_key": "Задачі",
+    "tasks": {
+      "statuses": "Статуси завдань",
+      "taskManager": "Менеджер завдань",
+      "messages": "Повідомлення",
+      "chat": "Чат"
+    },
+    "delivery_key": "Доставка",
+    "delivery": {
+      "novaPoshta": "Нова Пошта",
+      "ukrPoshta": "Укрпошта",
+      "meest": "Meest",
+      "justin": "Justin",
+      "dhl": "DHL",
+      "fedex": "FedEx",
+      "international": "Міжнародна доставка"
+    },
+    "marketplaces_key": "Маркетплейси",
+    "marketplaces": {
+      "prom": "Prom.ua",
+      "rozetka": "Rozetka",
+      "amazon": "Amazon",
+      "ebay": "eBay",
+      "etsy": "Etsy"
     },
     "production_key": "Виробництво",
     "production": {
-      "bom": "Рецептури та специфікації",
-      "planning": "Планування виробництва",
-      "tracking": "Контроль виробничого процесу",
-      "costs": "Витрати матеріалів і часу",
-      "orders": "Виробничі замовлення",
-      "quality": "Контроль якості продукції",
-      "reports": "Звіти з виробництва"
+      "orders": "Замовлення",
+      "materials": "Матеріали",
+      "statuses": "Статуси виробництва"
     },
     "sales_key": "Продажі",
     "sales": {
-      "orders": "Замовлення клієнтів",
-      "documents": "Комерційні пропозиції, рахунки, акти",
-      "pricing": "Гнучке ціноутворення",
-      "multiCurrency": "Підтримка мультивалюти",
-      "export": "Експорт документів (PDF, Email)",
-      "statuses": "Статуси замовлень",
-      "returns": "Управління поверненнями"
+      "orders": "Замовлення",
+      "analytics": "Аналітика продажів",
+      "customers": "Покупці"
     },
-    "clients_key": "Клієнти / Контрагенти",
-    "clients": {
-      "cards": "Картки клієнтів і постачальників",
-      "history": "Історія взаємодій",
-      "contacts": "Контакти, адреси, менеджери",
-      "analytics": "Статистика по клієнтах",
-      "segmentation": "Сегментація (VIP, боржники, нові)"
+    "finance_key": "Фінанси",
+    "finance": {
+      "banks": "Банки",
+      "taxes": "Податки",
+      "reports": "Фінансові звіти"
+    },
+    "analytics_key": "Аналітика",
+    "analytics": {
+      "reports": "Звіти",
+      "kpis": "KPI",
+      "custom": "Кастомна аналітика"
     }
   },
   "charts": {

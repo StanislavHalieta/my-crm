@@ -1,76 +1,35 @@
-import {
-  Inventory2Outlined,
-  ShoppingCartOutlined,
-  PrecisionManufacturing,
-  PointOfSaleOutlined,
-  GroupsOutlined,
-  Home,
-} from "@mui/icons-material";
-import { SvgIconTypeMap } from "@mui/material";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
+import { SvgIconTypeMap } from "@mui/material/SvgIcon";
+import {
+  GroupsOutlined,
+  PersonOutlined,
+  EmailOutlined,
+  SmsOutlined,
+  CallOutlined,
+  AssignmentOutlined,
+  LocalShippingOutlined,
+  StorefrontOutlined,
+  MonetizationOnOutlined,
+  AccountBalanceOutlined,
+  AssessmentOutlined,
+} from "@mui/icons-material";
 
-export const mainMenu: IMainMenu[] = [
+export interface IMainMenu {
+  key: string;
+  label: string;
+  Icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string };
+  children?: IMainMenu[];
+}
+
+const mainMenu: IMainMenu[] = [
   {
-    key: "",
-    label: "home.home_key",
-    Icon: Home,
-  },
-  {
-    key: "products",
-    label: "menu.products",
-    Icon: Inventory2Outlined,
+    key: "auth",
+    label: "menu.auth",
+    Icon: PersonOutlined,
     children: [
-      { key: "products.manage", label: "menu.products.manage" },
-      { key: "products.categories", label: "menu.products.categories" },
-      { key: "products.stock", label: "menu.products.stock" },
-      { key: "products.batch", label: "menu.products.batch" },
-      { key: "products.codes", label: "menu.products.codes" },
-      { key: "products.kits", label: "menu.products.kits" },
-      { key: "products.optimization", label: "menu.products.optimization" },
-    ],
-  },
-  {
-    key: "purchases",
-    label: "menu.purchases",
-    Icon: ShoppingCartOutlined,
-    children: [
-      { key: "purchases.orders", label: "menu.purchases.orders" },
-      { key: "purchases.vendors", label: "menu.purchases.vendors" },
-      { key: "purchases.deliveryTerms", label: "menu.purchases.deliveryTerms" },
-      {
-        key: "purchases.linkToProduction",
-        label: "menu.purchases.linkToProduction",
-      },
-      { key: "purchases.expenses", label: "menu.purchases.expenses" },
-      { key: "purchases.analysis", label: "menu.purchases.analysis" },
-    ],
-  },
-  {
-    key: "production",
-    label: "menu.production",
-    Icon: PrecisionManufacturing,
-    children: [
-      { key: "production.bom", label: "menu.production.bom" },
-      { key: "production.planning", label: "menu.production.planning" },
-      { key: "production.tracking", label: "menu.production.tracking" },
-      { key: "production.costs", label: "menu.production.costs" },
-      { key: "production.orders", label: "menu.production.orders" },
-      { key: "production.quality", label: "menu.production.quality" },
-      { key: "production.reports", label: "menu.production.reports" },
-    ],
-  },
-  {
-    key: "sales",
-    label: "menu.sales",
-    Icon: PointOfSaleOutlined,
-    children: [
-      { key: "sales.orders", label: "menu.sales.orders" },
-      { key: "sales.documents", label: "menu.sales.documents" },
-      { key: "sales.pricing", label: "menu.sales.pricing" },
-      { key: "sales.multiCurrency", label: "menu.sales.multiCurrency" },
-      { key: "sales.export", label: "menu.sales.export" },
-      { key: "sales.statuses", label: "menu.sales.statuses" },
-      { key: "sales.returns", label: "menu.sales.returns" },
+      { key: "auth.login", label: "menu.auth.login" },
+      { key: "auth.register", label: "menu.auth.register" },
+      { key: "auth.roles", label: "menu.auth.roles" },
     ],
   },
   {
@@ -85,11 +44,123 @@ export const mainMenu: IMainMenu[] = [
       { key: "clients.segmentation", label: "menu.clients.segmentation" },
     ],
   },
+  {
+    key: "email",
+    label: "menu.email",
+    Icon: EmailOutlined,
+    children: [
+      { key: "email.confirmation", label: "menu.email.confirmation" },
+      { key: "email.reminders", label: "menu.email.reminders" },
+      { key: "email.service", label: "menu.email.service" },
+      { key: "email.marketing", label: "menu.email.marketing" },
+    ],
+  },
+  {
+    key: "sms",
+    label: "menu.sms",
+    Icon: SmsOutlined,
+    children: [
+      { key: "sms.reminders", label: "menu.sms.reminders" },
+      { key: "sms.notifications", label: "menu.sms.notifications" },
+    ],
+  },
+  {
+    key: "ipTelephony",
+    label: "menu.ipTelephony",
+    Icon: CallOutlined,
+    children: [
+      {
+        key: "ipTelephony.calls.incoming",
+        label: "menu.ipTelephony.calls.incoming",
+      },
+      {
+        key: "ipTelephony.calls.outgoing",
+        label: "menu.ipTelephony.calls.outgoing",
+      },
+      {
+        key: "ipTelephony.calls.recordings",
+        label: "menu.ipTelephony.calls.recordings",
+      },
+      { key: "ipTelephony.clientCards", label: "menu.ipTelephony.clientCards" },
+    ],
+  },
+  {
+    key: "tasks",
+    label: "menu.tasks",
+    Icon: AssignmentOutlined,
+    children: [
+      { key: "tasks.statuses", label: "menu.tasks.statuses" },
+      { key: "tasks.taskManager", label: "menu.tasks.taskManager" },
+      { key: "tasks.messages", label: "menu.tasks.messages" },
+      { key: "tasks.chat", label: "menu.tasks.chat" },
+    ],
+  },
+  {
+    key: "delivery",
+    label: "menu.delivery",
+    Icon: LocalShippingOutlined,
+    children: [
+      { key: "delivery.novaPoshta", label: "menu.delivery.novaPoshta" },
+      { key: "delivery.ukrPoshta", label: "menu.delivery.ukrPoshta" },
+      { key: "delivery.meest", label: "menu.delivery.meest" },
+      { key: "delivery.justin", label: "menu.delivery.justin" },
+      { key: "delivery.dhl", label: "menu.delivery.dhl" },
+      { key: "delivery.fedex", label: "menu.delivery.fedex" },
+      { key: "delivery.international", label: "menu.delivery.international" },
+    ],
+  },
+  {
+    key: "marketplaces",
+    label: "menu.marketplaces",
+    Icon: StorefrontOutlined,
+    children: [
+      { key: "marketplaces.prom", label: "menu.marketplaces.prom" },
+      { key: "marketplaces.rozetka", label: "menu.marketplaces.rozetka" },
+      { key: "marketplaces.amazon", label: "menu.marketplaces.amazon" },
+      { key: "marketplaces.ebay", label: "menu.marketplaces.ebay" },
+      { key: "marketplaces.etsy", label: "menu.marketplaces.etsy" },
+    ],
+  },
+  {
+    key: "production",
+    label: "menu.production",
+    Icon: AssignmentOutlined,
+    children: [
+      { key: "production.orders", label: "menu.production.orders" },
+      { key: "production.materials", label: "menu.production.materials" },
+      { key: "production.statuses", label: "menu.production.statuses" },
+    ],
+  },
+  {
+    key: "sales",
+    label: "menu.sales",
+    Icon: MonetizationOnOutlined,
+    children: [
+      { key: "sales.orders", label: "menu.sales.orders" },
+      { key: "sales.analytics", label: "menu.sales.analytics" },
+      { key: "sales.customers", label: "menu.sales.customers" },
+    ],
+  },
+  {
+    key: "finance",
+    label: "menu.finance",
+    Icon: AccountBalanceOutlined,
+    children: [
+      { key: "finance.banks", label: "menu.finance.banks" },
+      { key: "finance.taxes", label: "menu.finance.taxes" },
+      { key: "finance.reports", label: "menu.finance.reports" },
+    ],
+  },
+  {
+    key: "analytics",
+    label: "menu.analytics",
+    Icon: AssessmentOutlined,
+    children: [
+      { key: "analytics.reports", label: "menu.analytics.reports" },
+      { key: "analytics.kpis", label: "menu.analytics.kpis" },
+      { key: "analytics.custom", label: "menu.analytics.custom" },
+    ],
+  },
 ];
 
-export interface IMainMenu {
-  key: string;
-  label: string;
-  Icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string };
-  children?: IMainMenu[];
-}
+export default mainMenu;
