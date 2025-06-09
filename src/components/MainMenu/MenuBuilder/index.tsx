@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
+  Box,
   Collapse,
   List,
   ListItemButton,
@@ -30,7 +31,12 @@ const MenuBuilder: FC<MainMenuBuiderProps> = ({ menu, depth = 0 }) => {
   return (
     <List
       disablePadding
-      sx={{ maxHeight: "calc(100vh - 64px)", overflowY: "auto" }}
+      sx={{
+        maxHeight: "calc(100vh - 120px)",
+        overflow: "auto",
+        scrollbarWidth: "none",
+        msOverflowStyle: "none",
+      }}
     >
       {menu.map(({ key, label, Icon, children }) => {
         const translated = children ? t(`${label}_key`) : t(label);
@@ -38,7 +44,7 @@ const MenuBuilder: FC<MainMenuBuiderProps> = ({ menu, depth = 0 }) => {
         const isOpen = openItems[key];
 
         return (
-          <div key={key}>
+          <Box key={key} sx={{ overflow: "auto" }}>
             <ListItemButton
               component={!hasChildren ? StyledNavLink : "button"}
               to={!hasChildren ? `/${key.replaceAll(".", "/")}` : undefined}
@@ -54,11 +60,15 @@ const MenuBuilder: FC<MainMenuBuiderProps> = ({ menu, depth = 0 }) => {
               {hasChildren && (isOpen ? <ExpandLess /> : <ExpandMore />)}
             </ListItemButton>
             {hasChildren && (
-              <Collapse in={isOpen} timeout="auto" unmountOnExit>
+              <Collapse
+                in={isOpen}
+                timeout="auto"
+                unmountOnExit
+              >
                 <MenuBuilder menu={children} depth={depth + 1} />
               </Collapse>
             )}
-          </div>
+          </Box>
         );
       })}
     </List>

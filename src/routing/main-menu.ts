@@ -12,6 +12,7 @@ import {
   MonetizationOnOutlined,
   AccountBalanceOutlined,
   AssessmentOutlined,
+  Home,
 } from "@mui/icons-material";
 
 export interface IMainMenu {
@@ -23,12 +24,17 @@ export interface IMainMenu {
 
 const mainMenu: IMainMenu[] = [
   {
-    key: "auth",
+    label: "menu.home",
+    key: "",
+    Icon: Home,
+  },
+  {
     label: "menu.auth",
+    key: "auth",
     Icon: PersonOutlined,
     children: [
-      { key: "auth.login", label: "menu.auth.login" },
-      { key: "auth.register", label: "menu.auth.register" },
+      { key: "login", label: "menu.auth.login" },
+      { key: "register", label: "menu.auth.register" },
       { key: "auth.roles", label: "menu.auth.roles" },
     ],
   },

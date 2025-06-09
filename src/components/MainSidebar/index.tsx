@@ -6,7 +6,7 @@ interface MainSidebarProps {}
 
 const MainSidebar: FC<MainSidebarProps> = () => {
   return (
-    <Sidebar>
+    <Sidebar sx={{ overflow: "visible" }}>
       <MainMenu />
     </Sidebar>
   );
