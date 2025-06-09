@@ -11,6 +11,7 @@ const MainRouter: FC<MainRouterProps> = () => {
       <Route path="/sales" element={<SalesPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="*" element={<NotFoundPage />} />
+      <Route path="/login" element={<LoginPage />} />
     </Routes>
   );
 };

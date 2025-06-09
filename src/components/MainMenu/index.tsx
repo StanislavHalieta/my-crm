@@ -27,7 +27,7 @@ interface MainMenuProps {}
 const MainMenu: FC<MainMenuProps> = () => {
   return (
     <Paper elevation={2}>
-      <MenuBuilder menu={mainMenu}/>
+      <MenuBuilder menu={mainMenu} />
     </Paper>
   );
 };
