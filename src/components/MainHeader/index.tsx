@@ -11,7 +11,7 @@ import {
   StyledSearch,
 } from "./styles";
 import { Search as SearchIcon } from "@mui/icons-material";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 interface MainHeaderProps {}
 

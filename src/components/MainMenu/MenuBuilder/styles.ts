@@ -1,6 +1,6 @@
 import { ListItemButton } from "@mui/material";
 import { NavLink } from "react-router";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;

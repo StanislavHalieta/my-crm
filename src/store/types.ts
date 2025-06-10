@@ -1,3 +1,8 @@
+import { store } from "./rootState";
+
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch
+
 export interface IProduct {
   product: {
     name: "string";

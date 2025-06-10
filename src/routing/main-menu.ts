@@ -1,8 +1,7 @@
-import { OverridableComponent } from "@mui/material/OverridableComponent";
-import { SvgIconTypeMap } from "@mui/material/SvgIcon";
+import type { SvgIconTypeMap } from "@mui/material";
+import type { OverridableComponent } from "@mui/material/OverridableComponent";
 import {
   GroupsOutlined,
-  PersonOutlined,
   EmailOutlined,
   SmsOutlined,
   CallOutlined,
@@ -13,12 +12,12 @@ import {
   AccountBalanceOutlined,
   AssessmentOutlined,
   Home,
-} from "@mui/icons-material";
+} from "@mui/icons-material"
 
 export interface IMainMenu {
   key: string;
   label: string;
-  Icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string };
+  Icon?: OverridableComponent<SvgIconTypeMap<Record<string, never>, "svg">> & { muiName: string };
   children?: IMainMenu[];
 }
 
@@ -28,16 +27,16 @@ const mainMenu: IMainMenu[] = [
     key: "",
     Icon: Home,
   },
-  {
-    label: "menu.auth",
-    key: "auth",
-    Icon: PersonOutlined,
-    children: [
-      { key: "login", label: "menu.auth.login" },
-      { key: "register", label: "menu.auth.register" },
-      { key: "auth.roles", label: "menu.auth.roles" },
-    ],
-  },
+  // {
+  //   label: "menu.auth",
+  //   key: "auth",
+  //   Icon: PersonOutlined,
+  //   children: [
+  //     { key: "login", label: "menu.auth.login" },
+  //     { key: "register", label: "menu.auth.register" },
+  //     { key: "auth.roles", label: "menu.auth.roles" },
+  //   ],
+  // },
   {
     key: "clients",
     label: "menu.clients",

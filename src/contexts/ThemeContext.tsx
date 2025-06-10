@@ -1,7 +1,7 @@
 // src/contexts/ThemeContext.tsx
-import { createContext, useContext, useMemo, useState, ReactNode } from "react";
+import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
 import { ThemeProvider as MuiThemeProvider, CssBaseline } from "@mui/material";
-import { ThemeProvider as StyledProvider } from "styled-components";
+import { ThemeProvider as StyledProvider } from "@emotion/react";
 import { lightTheme, darkTheme } from "../theme";
 
 const ThemeToggleContext = createContext({

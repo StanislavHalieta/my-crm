@@ -9,8 +9,8 @@ const MainRouter: FC<MainRouterProps> = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/sales" element={<SalesPage />} />
-      <Route path="*" element={<NotFoundPage />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };

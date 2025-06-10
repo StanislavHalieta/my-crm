@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { useState, type FC } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Box,
@@ -9,8 +9,8 @@ import {
   ListItemText,
 } from "@mui/material";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
-import { IMainMenu } from "../../../routing/main-menu";
 import { StyledNavLink } from "./styles";
+import type { IMainMenu } from "../../../routing/main-menu";
 
 interface MainMenuBuiderProps {
   menu: IMainMenu[];

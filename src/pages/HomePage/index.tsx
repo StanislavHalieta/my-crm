@@ -1,5 +1,4 @@
-import React, { FC } from "react";
-import styled from "styled-components";
+import { type FC } from "react";
 import { Card, CardContent, Typography, Grid, Box } from "@mui/material";
 import {
   PieChart,
@@ -11,6 +10,7 @@ import {
   XAxis,
   Tooltip,
 } from "recharts";
+import styled from "@emotion/styled";
 
 const COLORS = ["#0057b7", "#ffd700", "#8884d8", "#82ca9d"];
 
@@ -55,7 +55,7 @@ const HomePage: FC = () => {
               <ResponsiveContainer width="100%" height={200}>
                 <PieChart>
                   <Pie data={chartData} dataKey="value" outerRadius={80} label>
-                    {chartData.map((entry, index) => (
+                    {chartData.map((_, index) => (
                       <Cell
                         key={`cell-${index}`}
                         fill={COLORS[index % COLORS.length]}

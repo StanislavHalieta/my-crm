@@ -1,5 +1,5 @@
 import { alpha, Box, InputBase } from "@mui/material";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const StyledMainHeader = styled(Box)`
   justify-content: space-between;

@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const StyledApp = styled(Box)`
   height: 100vh;
