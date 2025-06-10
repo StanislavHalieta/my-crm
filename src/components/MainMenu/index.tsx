@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import Paper from "@mui/material/Paper";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Typography from "@mui/material/Typography";
@@ -22,7 +22,9 @@ import { StyledNavLink } from "./styles";
 // import { OverridableComponent } from "@mui/material/OverridableComponent";
 // import { SvgIconTypeMap } from "@mui/material";
 
-interface MainMenuProps {}
+interface MainMenuProps {
+  ""?:""
+}
 
 const MainMenu: FC<MainMenuProps> = () => {
   return (
