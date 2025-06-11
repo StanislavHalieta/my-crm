@@ -1,7 +1,10 @@
-import { type FC } from "react";
+import { useEffect, type FC } from "react";
 import { Card, CardContent, Typography, Grid, Box } from "@mui/material";
 import styled from "@emotion/styled";
-import { MainChart, MainPieChart } from "../../components";
+import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
+import { fetchHomePage, selectHome } from "../../store/home/homeSlice";
+
+const COLORS = ["#0057b7", "#ffd700", "#8884d8", "#82ca9d"];
 
 const Container = styled(Box)`
   padding: 24px;
@@ -16,6 +19,17 @@ const StyledCard = styled(Card)`
 `;
 
 const HomePage: FC = () => {
+  const dispatch = useAppDispatch();
+  const data = useAppSelector(selectHome);
+
+  useEffect(() => {
+    dispatch(fetchHomePage(""));
+  }, [dispatch]);
+
+  useEffect(() => {
+    console.log("On home page: ", data);
+  }, [data]);
+
   return (
     <Container>
       <Grid container spacing={3}>
