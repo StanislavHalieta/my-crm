@@ -1,5 +1,5 @@
 import HttpService from "../services/HTTPService";
-import { IProduct } from "../store/home/types";
+import { IProduct, IProductsResp } from "../store/home/types";
 
 const api = new HttpService("https://dummyjson.com", {
   "Content-Type": "application/json",
@@ -11,7 +11,9 @@ api.setAuthToken(jwtToken);
 
 export async function fetchProductsAPI() {
   try {
-    return await api.get<IProduct[]>("/products");
+    const resp = await api.get<IProductsResp>("/products");
+
+    return resp.data
   } catch (error) {
     return error;
   }
@@ -19,7 +21,7 @@ export async function fetchProductsAPI() {
 
 export async function fetchProductAPI(productID: string | number) {
   try {
-    return await api.get<IProduct[]>(`/products/${productID}`);
+    return await api.get<IProduct>(`/products/${productID}`);
   } catch (error) {
     return error;
   }

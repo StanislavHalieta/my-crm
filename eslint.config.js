@@ -23,6 +23,12 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+
+      // Додаємо правило no-unused-vars з ігноруванням змінних, що починаються з _
+      '@typescript-eslint/no-unused-vars': ['warn', {
+        varsIgnorePattern: '^_',
+        argsIgnorePattern: '^_',
+      }],
     },
   },
-)
+);
