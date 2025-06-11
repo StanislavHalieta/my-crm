@@ -1,7 +1,11 @@
 import { type FC } from "react";
 import { Card, CardContent, Typography, Grid, Box } from "@mui/material";
 import styled from "@emotion/styled";
+import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
+import { fetchHomePage, selectHome } from "../../store/home/homeSlice";
 import { MainChart, MainPieChart } from "../../components";
+
+const COLORS = ["#0057b7", "#ffd700", "#8884d8", "#82ca9d"];
 
 const Container = styled(Box)`
   padding: 24px;
