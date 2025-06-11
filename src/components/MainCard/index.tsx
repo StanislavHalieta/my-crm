@@ -1,27 +1,25 @@
-import { FC, useState } from "react";
+import { FC, MouseEventHandler, useState } from "react";
 import { StyledMainCard } from "./styles";
 import { CardActionArea, CardContent, Typography } from "@mui/material";
 
-
-interface ICard{
-    id: number | string,
-    title: string,
-    description: string,
+export interface ICard {
+  id: number | string;
+  title: string;
+  description: string;
 }
 
 interface MainCardProps {
-    card: ICard
+  card: ICard;
 }
 
-
-const MainCard: FC<MainCardProps> = ({card}) => {
+const MainCard: FC<MainCardProps> = ({ card }) => {
   const [selectedCard, setSelectedCard] = useState<string | number>(0);
+  const { id, title, description } = card;
 
   return (
     <StyledMainCard>
       <CardActionArea
-        onClick={() => setSelectedCard(card.id)}
-        data-active={selectedCard === card.id ? "" : undefined}
+        data-active={selectedCard === id ? "" : undefined}
         sx={{
           height: "100%",
           "&[data-active]": {
@@ -33,11 +31,11 @@ const MainCard: FC<MainCardProps> = ({card}) => {
         }}
       >
         <CardContent sx={{ height: "100%" }}>
-          <Typography variant="h5" component="div">
-            {card.title}
+          <Typography variant="h5" component="h5">
+            {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {card.description}
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
