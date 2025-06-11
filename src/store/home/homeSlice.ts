@@ -1,31 +1,43 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import type { RootState } from "../types";
+import type {  RootState } from "../types";
+import { IProduct } from "./types";
 
 interface HomeState {
-  value: number;
+  data: IProduct[];
+  error: string | null;
+  loading: boolean;
 }
 
 const initialState: HomeState = {
-  value: 0,
+  data: [],
+  error: null,
+  loading: false,
 };
 
 export const homeSlice = createSlice({
   name: "home",
   initialState,
   reducers: {
-    increment: (state, { payload }: PayloadAction<number>) => {
-      state.value += payload;
+    fetchHomePage: (state, { payload }: PayloadAction<string>) => {
+      console.log(payload);
+      state.loading = true;
     },
-    decrement: (state) => {
-      state.value -= 1;
+    getHomePageData: (state, { payload }: PayloadAction<IProduct[]>) => {
+      state.loading = false;
+      state.data = payload;
+      console.log(payload);
     },
-    getHomePage: () => {}
+    getHomeDataError: (state, { payload }: PayloadAction<string>) => {
+      state.loading = false;
+      state.error = payload;
+    },
   },
 });
 
-export const {decrement, increment, getHomePage} = homeSlice.actions;
+export const { fetchHomePage, getHomePageData, getHomeDataError } =
+  homeSlice.actions;
 
-export const selectCount = (state: RootState) => state.home.value;
+export const selectHome = (state: RootState) => state.home.data;
 
 export default homeSlice.reducer;

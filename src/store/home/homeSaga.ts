@@ -1,17 +1,22 @@
-import { put, takeEvery } from "redux-saga/effects"
-import { getHomePage } from "./homeSlice";
+import { call, put, takeLatest } from "redux-saga/effects";
+import { fetchHomePage, getHomeDataError, getHomePageData } from "./homeSlice";
+import type { IProduct } from "./types";
+import { fetchProductsAPI } from "../../api/productsAPI";
+import { PayloadAction } from "@reduxjs/toolkit";
 
-function* fetchHomeData(action: any) {
+function* fetchHomeData(actions?: PayloadAction<string | number>) {
   try {
-    // const user = yield call(Api.fetchUser, action.payload.userId)
-    // yield put({ type: counte, user: user })
-  } catch (e: any) {
-    yield put({ type: "USER_FETCH_FAILED", message: e.message });
+    // if (actions?.payload) console.log("Payload: ", actions?.payload);
+    const data: IProduct[] = yield call(fetchProductsAPI);
+    console.log("On saga: ", data);
+    
+    yield put(getHomePageData(data));
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : "Unknown error";
+    yield put(getHomeDataError(message));
   }
 }
 
-function* homePageSaga() {
-  yield takeEvery(getHomePage.name, fetchHomeData);
+export default function* homePageSaga() {
+  yield takeLatest(fetchHomePage, fetchHomeData);
 }
-
-export default homePageSaga;
