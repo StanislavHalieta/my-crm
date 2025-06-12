@@ -5,9 +5,9 @@ const api = new HttpService("https://dummyjson.com", {
   "Content-Type": "application/json",
 });
 
-const jwtToken = "";
-
-api.setAuthToken(jwtToken);
+// Auth token
+// const jwtToken = "";
+// api.setAuthToken(jwtToken);
 
 export async function fetchProductsAPI() {
   try {
