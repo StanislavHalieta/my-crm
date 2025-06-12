@@ -2,23 +2,26 @@ import { useEffect, type FC } from "react";
 import { Grid } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage, selectHome } from "../../store/home/homeSlice";
-import { MainCard, MainChart, MainPieChart } from "../../components";
+import { HomeLeads, MainCard, MainChart, MainPieChart } from "../../components";
 import { ICard } from "../../components/MainCard";
 import { StyledHomePage, StyledHomePageGrid } from "./styles";
-import calls from "../../mocks/calls.json"
-import { callsSummary } from "../../helpers";
+import { callsSummary, emailsSummary } from "../../helpers";
+import calls from "../../mocks/calls.json";
+import emails from "../../mocks/emails.json";
 
-const {inbound, outbound, total} = callsSummary(calls)
+const { inbound, outbound, total: totalCals } = callsSummary(calls);
+const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
+
 const cards: ICard[] = [
   {
     description: `Вхідні: ${inbound} | Вихідні: ${outbound}`,
     id: "1",
-    title: `Всього дзвінків: ${total}`,
+    title: `Всього дзвінків: ${totalCals}`,
   },
   {
-    description: "Відправлено: 892 | Відкрито: 462",
+    description: `Відправлено: ${sent} | Відкрито: ${received} | В черзі на відправку ${queued}`,
     id: "2",
-    title: "Email розсилки",
+    title: `Email розсилки ${totalEmails}`,
   },
   {
     description: "Онлайн: 6 | Офлайн: 2",
@@ -71,6 +74,9 @@ const HomePage: FC = () => {
             <MainCard card={card} />
           </Grid>
         ))}
+        <Grid>
+          <HomeLeads />
+        </Grid>
       </StyledHomePageGrid>
     </StyledHomePage>
   );

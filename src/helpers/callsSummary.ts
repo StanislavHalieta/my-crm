@@ -1,11 +1,10 @@
 import { ECallDirection, ICall } from "../api/respTypes";
 
 interface IAccumCalls {
-  inbound: number;
+  inbound : number;
   outbound: number;
-  total: number;
+  total   : number;
 }
-
 
 const callsSummary = (calls: ICall[]) => calls.reduce<IAccumCalls>(
   (accum, call) => {
