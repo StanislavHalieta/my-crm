@@ -1,10 +1,17 @@
-import { useEffect, type FC } from "react";
+import { memo, useCallback, useEffect, useState, type FC } from "react";
 import { Grid } from "@mui/material";
+import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage, selectHome } from "../../store/home/homeSlice";
-import { HomeLeads, MainCard, MainChart, MainPieChart } from "../../components";
+import {
+  // Board,
+  // HomeLeads,
+  MainCard,
+  MainChart,
+  MainPieChart,
+} from "../../components";
 import { ICard } from "../../components/MainCard";
-import { StyledHomePage, StyledHomePageGrid } from "./styles";
+import { QuoteItem, StyledHomePage, StyledHomePageGrid } from "./styles";
 import { callsSummary, emailsSummary } from "../../helpers";
 import calls from "../../mocks/calls.json";
 import emails from "../../mocks/emails.json";
@@ -61,22 +68,22 @@ const HomePage: FC = () => {
     <StyledHomePage>
       <StyledHomePageGrid container spacing={3}>
         {/* Воронка продажів */}
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid size={{ xs: 4, md: 4 }}>
           <MainPieChart />
         </Grid>
         {/* Графік замовлень */}
-        <Grid size={{ xs: 12, md: 8 }}>
+        <Grid size={{ xs: 4, md: 8 }}>
           <MainChart />
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
-          <Grid size={{ xs: 12, md: 4 }} key={card.id}>
+          <Grid size={{ xs: 2, md: 4 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}
-        <Grid>
+        {/* <Grid sx={{ xs: 12, md: 4 }}>
           <HomeLeads />
-        </Grid>
+        </Grid> */}
       </StyledHomePageGrid>
     </StyledHomePage>
   );
