@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import { LinePlot, AreaPlot, ChartsXAxis, ChartsYAxis } from "@mui/x-charts";
 import { StyledMainChart } from "./styles";
 

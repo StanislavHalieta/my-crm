@@ -44,7 +44,7 @@ const MenuBuilder: FC<MainMenuBuiderProps> = ({ menu, depth = 0 }) => {
         const isOpen = openItems[key];
 
         return (
-          <Box key={key} sx={{ overflow: "auto" }}>
+          <Box key={key} sx={{ overflow: "hidden" }}>
             <ListItemButton
               component={!hasChildren ? StyledNavLink : "button"}
               to={!hasChildren ? `/${key.replaceAll(".", "/")}` : undefined}
@@ -60,11 +60,7 @@ const MenuBuilder: FC<MainMenuBuiderProps> = ({ menu, depth = 0 }) => {
               {hasChildren && (isOpen ? <ExpandLess /> : <ExpandMore />)}
             </ListItemButton>
             {hasChildren && (
-              <Collapse
-                in={isOpen}
-                timeout="auto"
-                unmountOnExit
-              >
+              <Collapse in={isOpen} timeout="auto" unmountOnExit>
                 <MenuBuilder menu={children} depth={depth + 1} />
               </Collapse>
             )}

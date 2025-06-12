@@ -2,9 +2,13 @@ import { Box, Slider } from "@mui/material";
 import { Grid } from "@mui/system";
 import styled from "@emotion/styled";
 
-export const StyledHomePage = styled(Box)``
+export const StyledHomePage = styled(Box)`
+  padding: 24px;
+  background: ${({ theme }) => theme.palette.background.default};
+  color: ${({ theme }) => theme.palette.primary.contrastText};
+`;
 
-export const StyledHomePageGrid = styled(Grid)``
+export const StyledHomePageGrid = styled(Grid)``;
 
 export const StyledAirbnbSlider = styled(Slider)(({ theme }) => ({
   color: "#3a8589",

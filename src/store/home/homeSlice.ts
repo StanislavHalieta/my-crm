@@ -20,13 +20,11 @@ export const homeSlice = createSlice({
   initialState,
   reducers: {
     fetchHomePage: (state, { payload }: PayloadAction<string>) => {
-      console.log(payload);
       state.loading = true;
     },
     getHomePageData: (state, { payload }: PayloadAction<IProduct[]>) => {
       state.loading = false;
       state.data = payload;
-      console.log(payload);
     },
     getHomeDataError: (state, { payload }: PayloadAction<string>) => {
       state.loading = false;

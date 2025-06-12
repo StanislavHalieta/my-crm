@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "@emotion/styled";
 
 // Контейнер карти і заголовка
 export const Card = styled.div`
@@ -15,14 +15,15 @@ export const Title = styled.h2`
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 16px;
-  color: #222222;
+  color: ${({ theme }) => theme.palette.background.default};
 `;
 
 // Мок графіка — стилізований прямокутник
 export const MockChart = styled.div`
   width: 100%;
   height: 300px;
-  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  background: ${({ theme }) =>
+    `linear-gradient(135deg, #1890ff 0%, #40a9ff 100%)`};
   border-radius: 8px;
   display: flex;
   align-items: center;
