@@ -27,6 +27,8 @@ const chartData:IPieChart[] = [
 
 const COLORS = ["#0057b7", "#ffd700", "#8884d8", "#82ca9d"];
 
+const COLORS = ["#0057b7", "#ffd700", "#8884d8", "#82ca9d"];
+
 const MainPieChart: FC<MainPieChartProps> = ({data}) => {
   // const { t } = useTranslation();
   return (
