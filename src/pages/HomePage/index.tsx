@@ -77,7 +77,9 @@ const parseCardData = (data: typeof cards_1) => {
   });
 };
 
-const {inbound, outbound, total} = callsSummary(calls)
+const { inbound, outbound, total: totalCals } = callsSummary(calls);
+const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
+
 const cards: ICard[] = [
   {
     description: `Вхідні: ${inbound} | Вихідні: ${outbound}`,

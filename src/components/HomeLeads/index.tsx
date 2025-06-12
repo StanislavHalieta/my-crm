@@ -5,10 +5,10 @@ import Step from "@mui/material/Step";
 import StepButton from "@mui/material/StepButton";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { ELeadsStage } from "../../api/respTypes";
 import { useTranslation } from "react-i18next";
 import { leadsSummary } from "../../helpers";
 import leads from "../../mocks/leads.json";
-import { ELeadsStage } from "../../store/leads/types";
 
 interface HomeLeadsProps {
   activeStep?: boolean;
@@ -29,7 +29,7 @@ const HomeLeads: FC<HomeLeadsProps> = () => {
 
   const s = Object.values(summaryLeads);
   console.log(s);
-
+  
   const totalSteps = () => {
     return steps.length;
   };
@@ -49,7 +49,9 @@ const HomeLeads: FC<HomeLeadsProps> = () => {
   const handleNext = () => {
     const newActiveStep =
       isLastStep() && !allStepsCompleted()
-        ? steps.findIndex((step, i) => !(i in completed))
+        ? // It's the last step, but not all steps have been completed,
+          // find the first step that has been completed
+          steps.findIndex((step, i) => !(i in completed))
         : activeStep + 1;
     setActiveStep(newActiveStep);
   };
@@ -122,6 +124,7 @@ const HomeLeads: FC<HomeLeadsProps> = () => {
                     variant="caption"
                     sx={{ display: "inline-block" }}
                   >
+
                     Step {activeStep + 1} already completed
                   </Typography>
                 ) : (
