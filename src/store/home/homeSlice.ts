@@ -19,7 +19,7 @@ export const homeSlice = createSlice({
   name: "home",
   initialState,
   reducers: {
-    fetchHomePage: (state, { payload }: PayloadAction<string>) => {
+    fetchHomePage: (state, _payload: PayloadAction<string>) => {
       state.loading = true;
     },
     getHomePageData: (state, { payload }: PayloadAction<IProduct[]>) => {

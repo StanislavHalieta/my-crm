@@ -1,0 +1,82 @@
+[
+  {
+    "id": "lead001",
+    "client_id": "client001",
+    "source": "website",
+    "stage": "new",
+    "assigned_to": "user3",
+    "created_at": "2025-01-10 10:00:00"
+  },
+  {
+    "id": "lead002",
+    "client_id": "client002",
+    "source": "email",
+    "stage": "qualified",
+    "assigned_to": "user5",
+    "created_at": "2025-01-15 12:30:00"
+  },
+  {
+    "id": "lead003",
+    "client_id": "client003",
+    "source": "phone",
+    "stage": "proposal",
+    "assigned_to": "user2",
+    "created_at": "2025-02-01 09:45:00"
+  },
+  {
+    "id": "lead004",
+    "client_id": "client004",
+    "source": "social",
+    "stage": "won",
+    "assigned_to": "user7",
+    "created_at": "2025-02-10 14:10:00"
+  },
+  {
+    "id": "lead005",
+    "client_id": "client005",
+    "source": "website",
+    "stage": "lost",
+    "assigned_to": "user4",
+    "created_at": "2025-02-20 11:20:00"
+  },
+  {
+    "id": "lead006",
+    "client_id": "client006",
+    "source": "email",
+    "stage": "qualified",
+    "assigned_to": "user1",
+    "created_at": "2025-03-01 08:50:00"
+  },
+  {
+    "id": "lead007",
+    "client_id": "client007",
+    "source": "phone",
+    "stage": "new",
+    "assigned_to": "user6",
+    "created_at": "2025-03-12 13:15:00"
+  },
+  {
+    "id": "lead008",
+    "client_id": "client008",
+    "source": "social",
+    "stage": "proposal",
+    "assigned_to": "user9",
+    "created_at": "2025-03-25 17:00:00"
+  },
+  {
+    "id": "lead009",
+    "client_id": "client009",
+    "source": "website",
+    "stage": "won",
+    "assigned_to": "user2",
+    "created_at": "2025-04-05 15:30:00"
+  },
+  {
+    "id": "lead010",
+    "client_id": "client010",
+    "source": "phone",
+    "stage": "lost",
+    "assigned_to": "user8",
+    "created_at": "2025-04-15 10:25:00"
+  }
+]

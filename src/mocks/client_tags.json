@@ -1,0 +1,12 @@
+[
+  { "client_id": "client001", "tag_id": "tag001" },
+  { "client_id": "client001", "tag_id": "tag005" },
+  { "client_id": "client002", "tag_id": "tag002" },
+  { "client_id": "client003", "tag_id": "tag003" },
+  { "client_id": "client004", "tag_id": "tag004" },
+  { "client_id": "client005", "tag_id": "tag006" },
+  { "client_id": "client006", "tag_id": "tag007" },
+  { "client_id": "client007", "tag_id": "tag008" },
+  { "client_id": "client008", "tag_id": "tag009" },
+  { "client_id": "client009", "tag_id": "tag010" }
+]

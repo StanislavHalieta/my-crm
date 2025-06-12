@@ -1,0 +1,102 @@
+[
+  {
+    "id": "task001",
+    "title": "Follow-up with client",
+    "description": "Call the client to discuss the proposal.",
+    "status": "open",
+    "assigned_to": "user1",
+    "due_date": "2025-06-15",
+    "related_type": "client",
+    "related_id": "client001"
+  },
+  {
+    "id": "task002",
+    "title": "Prepare invoice",
+    "description": "Create invoice for recent deal.",
+    "status": "completed",
+    "assigned_to": "user2",
+    "due_date": "2025-06-10",
+    "related_type": "deal",
+    "related_id": "deal001"
+  },
+  {
+    "id": "task003",
+    "title": "Schedule meeting",
+    "description": "Book Zoom call with lead.",
+    "status": "in progress",
+    "assigned_to": "user3",
+    "due_date": "2025-06-12",
+    "related_type": "lead",
+    "related_id": "lead005"
+  },
+  {
+    "id": "task004",
+    "title": "Send product catalog",
+    "description": "Email the product list to new client.",
+    "status": "open",
+    "assigned_to": "user4",
+    "due_date": "2025-06-14",
+    "related_type": "client",
+    "related_id": "client002"
+  },
+  {
+    "id": "task005",
+    "title": "Review deal terms",
+    "description": "Analyze and update deal agreement.",
+    "status": "completed",
+    "assigned_to": "user5",
+    "due_date": "2025-06-09",
+    "related_type": "deal",
+    "related_id": "deal003"
+  },
+  {
+    "id": "task006",
+    "title": "Update CRM tags",
+    "description": "Clean up client tags and segment lists.",
+    "status": "open",
+    "assigned_to": "user6",
+    "due_date": "2025-06-20",
+    "related_type": "client",
+    "related_id": "client004"
+  },
+  {
+    "id": "task007",
+    "title": "Finalize contract",
+    "description": "Get signed contract back from lead.",
+    "status": "in progress",
+    "assigned_to": "user1",
+    "due_date": "2025-06-11",
+    "related_type": "lead",
+    "related_id": "lead008"
+  },
+  {
+    "id": "task008",
+    "title": "Create presentation",
+    "description": "Build pitch deck for client meeting.",
+    "status": "completed",
+    "assigned_to": "user2",
+    "due_date": "2025-06-08",
+    "related_type": "client",
+    "related_id": "client005"
+  },
+  {
+    "id": "task009",
+    "title": "Assign products",
+    "description": "Link sold products to deals.",
+    "status": "open",
+    "assigned_to": "user3",
+    "due_date": "2025-06-13",
+    "related_type": "deal",
+    "related_id": "deal006"
+  },
+  {
+    "id": "task010",
+    "title": "Send reminder email",
+    "description": "Remind client about upcoming meeting.",
+    "status": "completed",
+    "assigned_to": "user4",
+    "due_date": "2025-06-07",
+    "related_type": "client",
+    "related_id": "client006"
+  }
+]

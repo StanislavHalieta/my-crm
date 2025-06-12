@@ -5,12 +5,15 @@ import { fetchHomePage, selectHome } from "../../store/home/homeSlice";
 import { MainCard, MainChart, MainPieChart } from "../../components";
 import { ICard } from "../../components/MainCard";
 import { StyledHomePage, StyledHomePageGrid } from "./styles";
+import calls from "../../mocks/calls.json"
+import { callsSummary } from "../../helpers";
 
+const {inbound, outbound, total} = callsSummary(calls)
 const cards: ICard[] = [
   {
-    description: "Вхідні: 140 | Вихідні: 172",
+    description: `Вхідні: ${inbound} | Вихідні: ${outbound}`,
     id: "1",
-    title: "Всього дзвінків: 312",
+    title: `Всього дзвінків: ${total}`,
   },
   {
     description: "Відправлено: 892 | Відкрито: 462",
@@ -64,7 +67,7 @@ const HomePage: FC = () => {
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
-          <Grid size={{ xs: 12, md: 4 }}>
+          <Grid size={{ xs: 12, md: 4 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}

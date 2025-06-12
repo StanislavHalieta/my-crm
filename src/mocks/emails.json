@@ -1,0 +1,82 @@
+[
+  {
+    "id": "em001",
+    "client_id": "client001",
+    "subject": "Welcome to our service!",
+    "body": "Thank you for registering with us.",
+    "status": "sent",
+    "sent_at": "2025-06-01 09:00:00"
+  },
+  {
+    "id": "em002",
+    "client_id": "client002",
+    "subject": "Invoice available",
+    "body": "Your invoice is now available in your account.",
+    "status": "sent",
+    "sent_at": "2025-06-02 10:15:00"
+  },
+  {
+    "id": "em003",
+    "client_id": "client003",
+    "subject": "Your order has shipped",
+    "body": "Track your shipment using the link below.",
+    "status": "sent",
+    "sent_at": "2025-06-03 13:45:00"
+  },
+  {
+    "id": "em004",
+    "client_id": "client004",
+    "subject": "Follow-up on your inquiry",
+    "body": "Let us know if you have any more questions.",
+    "status": "failed",
+    "sent_at": "2025-06-04 11:30:00"
+  },
+  {
+    "id": "em005",
+    "client_id": "client005",
+    "subject": "Special offer just for you",
+    "body": "Use promo code SUMMER25 to get 25% off.",
+    "status": "sent",
+    "sent_at": "2025-06-05 08:20:00"
+  },
+  {
+    "id": "em006",
+    "client_id": "client006",
+    "subject": "Reminder: Upcoming payment",
+    "body": "Don't forget your payment is due soon.",
+    "status": "sent",
+    "sent_at": "2025-06-06 16:00:00"
+  },
+  {
+    "id": "em007",
+    "client_id": "client007",
+    "subject": "Support Ticket Update",
+    "body": "Your support ticket has been updated.",
+    "status": "sent",
+    "sent_at": "2025-06-07 14:40:00"
+  },
+  {
+    "id": "em008",
+    "client_id": "client008",
+    "subject": "Newsletter June",
+    "body": "Check out our new products this month!",
+    "status": "sent",
+    "sent_at": "2025-06-08 10:00:00"
+  },
+  {
+    "id": "em009",
+    "client_id": "client009",
+    "subject": "Account Verification",
+    "body": "Click here to verify your email address.",
+    "status": "bounced",
+    "sent_at": "2025-06-09 07:45:00"
+  },
+  {
+    "id": "em010",
+    "client_id": "client010",
+    "subject": "Survey Invitation",
+    "body": "Help us improve by filling out a short survey.",
+    "status": "sent",
+    "sent_at": "2025-06-10 12:00:00"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sms001",
+    "client_id": "client001",
+    "message": "Your verification code is 123456",
+    "status": "sent",
+    "sent_at": "2025-06-01 09:15:00"
+  },
+  {
+    "id": "sms002",
+    "client_id": "client002",
+    "message": "Reminder: Your appointment is tomorrow at 14:00",
+    "status": "sent",
+    "sent_at": "2025-06-02 12:00:00"
+  },
+  {
+    "id": "sms003",
+    "client_id": "client003",
+    "message": "Your order has been shipped!",
+    "status": "sent",
+    "sent_at": "2025-06-03 18:30:00"
+  },
+  {
+    "id": "sms004",
+    "client_id": "client004",
+    "message": "Promo: Get 10% off your next purchase!",
+    "status": "failed",
+    "sent_at": "2025-06-04 15:20:00"
+  },
+  {
+    "id": "sms005",
+    "client_id": "client005",
+    "message": "Your subscription has been renewed.",
+    "status": "sent",
+    "sent_at": "2025-06-05 07:40:00"
+  },
+  {
+    "id": "sms006",
+    "client_id": "client006",
+    "message": "Alert: Login from new device detected",
+    "status": "sent",
+    "sent_at": "2025-06-06 20:15:00"
+  },
+  {
+    "id": "sms007",
+    "client_id": "client007",
+    "message": "We miss you! Come back and get a gift.",
+    "status": "sent",
+    "sent_at": "2025-06-07 09:30:00"
+  },
+  {
+    "id": "sms008",
+    "client_id": "client008",
+    "message": "Payment received. Thank you!",
+    "status": "sent",
+    "sent_at": "2025-06-08 14:45:00"
+  },
+  {
+    "id": "sms009",
+    "client_id": "client009",
+    "message": "You have a new message in your account.",
+    "status": "pending",
+    "sent_at": "2025-06-09 11:10:00"
+  },
+  {
+    "id": "sms010",
+    "client_id": "client010",
+    "message": "Confirm your attendance: YES or NO",
+    "status": "sent",
+    "sent_at": "2025-06-10 17:55:00"
+  }
+]

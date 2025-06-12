@@ -5,7 +5,9 @@ import { StyledMainChart } from "./styles";
 const dataX = [1, 2, 3, 5, 8, 10];
 const dataY = [2, 5.5, 2, 8.5, 1.5, 5];
 
-interface MainChartProps {}
+interface MainChartProps {
+  data?: Record<string, unknown>[]
+}
 
 const MainChart: FC<MainChartProps> = () => {
   return (
