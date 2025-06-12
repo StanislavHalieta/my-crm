@@ -6,14 +6,9 @@ export interface ICard {
   id: number | string;
   title: string;
   description: string;
-export interface ICard {
-  id: number | string;
-  title: string;
-  description: string;
 }
 
 interface MainCardProps {
-  card: ICard;
   card: ICard;
 }
 
@@ -36,11 +31,8 @@ const MainCard: FC<MainCardProps> = ({ card }) => {
         <CardContent sx={{ height: "100%" }}>
           <Typography variant="h5" component="h5">
             {title}
-          <Typography variant="h5" component="h5">
-            {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {description}
             {description}
           </Typography>
         </CardContent>
