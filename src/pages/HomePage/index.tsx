@@ -2,20 +2,26 @@ import { useEffect, type FC } from "react";
 import { Grid } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage, selectHome } from "../../store/home/homeSlice";
-import { MainCard, MainChart, MainPieChart } from "../../components";
+import { HomeLeads, MainCard, MainChart, MainPieChart } from "../../components";
 import { ICard } from "../../components/MainCard";
 import { StyledHomePage, StyledHomePageGrid } from "./styles";
+import { callsSummary, emailsSummary } from "../../helpers";
+import calls from "../../mocks/calls.json";
+import emails from "../../mocks/emails.json";
+
+const { inbound, outbound, total: totalCals } = callsSummary(calls);
+const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
 
 const cards: ICard[] = [
   {
-    description: "Вхідні: 140 | Вихідні: 172",
+    description: `Вхідні: ${inbound} | Вихідні: ${outbound}`,
     id: "1",
-    title: "Всього дзвінків: 312",
+    title: `Всього дзвінків: ${totalCals}`,
   },
   {
-    description: "Відправлено: 892 | Відкрито: 462",
+    description: `Відправлено: ${sent} | Відкрито: ${received} | В черзі на відправку ${queued}`,
     id: "2",
-    title: "Email розсилки",
+    title: `Email розсилки ${totalEmails}`,
   },
   {
     description: "Онлайн: 6 | Офлайн: 2",
@@ -64,10 +70,13 @@ const HomePage: FC = () => {
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
-          <Grid size={{ xs: 12, md: 4 }}>
+          <Grid size={{ xs: 12, md: 4 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}
+        <Grid>
+          <HomeLeads />
+        </Grid>
       </StyledHomePageGrid>
     </StyledHomePage>
   );

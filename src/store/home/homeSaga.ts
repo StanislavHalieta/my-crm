@@ -4,7 +4,7 @@ import type { IProductsResp } from "./types";
 import { fetchProductsAPI } from "../../api/productsAPI";
 import { PayloadAction } from "@reduxjs/toolkit";
 
-function* fetchHomeData(_actions?: PayloadAction<string | number>) {
+function* fetchHomeData(_actions: PayloadAction<string | number>) {
   try {
     const data: IProductsResp = yield call(fetchProductsAPI);
 

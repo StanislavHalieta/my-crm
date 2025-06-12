@@ -1,0 +1,224 @@
+[
+  {
+    "id": "lead001",
+    "full_name": "Anna Smith",
+    "email": "anna@example.com",
+    "phone": "+123456789",
+    "source": "website",
+    "stage": "new",
+    "assigned_to": "user1",
+    "created_at": "2025-06-01 10:00:00",
+    "priority": "high",
+    "tags": ["hot", "B2C"],
+    "lead_score": 82,
+    "location": "New York",
+    "industry": "Retail"
+  },
+  {
+    "id": "lead002",
+    "full_name": "Tom Fisher",
+    "email": "tom@company.com",
+    "source": "ads",
+    "stage": "new",
+    "assigned_to": "user2",
+    "created_at": "2025-06-01 10:20:00",
+    "priority": "medium",
+    "lead_score": 55,
+    "industry": "Construction"
+  },
+  {
+    "id": "lead003",
+    "company_name": "Softwave Inc.",
+    "source": "referral",
+    "stage": "contacted",
+    "assigned_to": "user3",
+    "created_at": "2025-06-01 11:00:00",
+    "lead_score": 60,
+    "tags": ["B2B"]
+  },
+  {
+    "id": "lead004",
+    "full_name": "Linda Green",
+    "email": "linda@example.com",
+    "phone": "+198765432",
+    "source": "cold_call",
+    "stage": "contacted",
+    "assigned_to": "user1",
+    "created_at": "2025-06-01 11:30:00",
+    "notes": "Попросила передзвонити через тиждень",
+    "lead_score": 40
+  },
+  {
+    "id": "lead005",
+    "full_name": "David Moore",
+    "source": "website",
+    "stage": "qualified",
+    "assigned_to": "user2",
+    "created_at": "2025-06-01 12:00:00",
+    "budget": 5000,
+    "industry": "Manufacturing"
+  },
+  {
+    "id": "lead006",
+    "full_name": "Emily Watson",
+    "source": "email",
+    "stage": "qualified",
+    "assigned_to": "user3",
+    "created_at": "2025-06-01 12:10:00",
+    "priority": "high"
+  },
+  {
+    "id": "lead007",
+    "company_name": "QuickDev",
+    "source": "social",
+    "stage": "interested",
+    "assigned_to": "user1",
+    "created_at": "2025-06-01 12:30:00",
+    "tags": ["tech", "demo_requested"]
+  },
+  {
+    "id": "lead008",
+    "full_name": "Alex Brown",
+    "source": "website",
+    "stage": "interested",
+    "assigned_to": "user2",
+    "created_at": "2025-06-01 12:40:00",
+    "notes": "Залишив заявку через Facebook"
+  },
+  {
+    "id": "lead009",
+    "company_name": "GlobalTech",
+    "source": "ads",
+    "stage": "proposal_sent",
+    "assigned_to": "user3",
+    "created_at": "2025-06-01 13:00:00",
+    "website": "https://globaltech.io"
+  },
+  {
+    "id": "lead010",
+    "full_name": "Michael Lee",
+    "source": "referral",
+    "stage": "proposal_sent",
+    "assigned_to": "user1",
+    "created_at": "2025-06-01 13:10:00",
+    "priority": "medium"
+  },
+  {
+    "id": "lead011",
+    "full_name": "Sophie Young",
+    "source": "website",
+    "stage": "negotiation",
+    "assigned_to": "user2",
+    "created_at": "2025-06-01 13:30:00"
+  },
+  {
+    "id": "lead012",
+    "company_name": "BizCorp",
+    "source": "email",
+    "stage": "negotiation",
+    "assigned_to": "user3",
+    "created_at": "2025-06-01 14:00:00",
+    "budget": 10000
+  },
+  {
+    "id": "lead013",
+    "full_name": "Rachel Adams",
+    "source": "website",
+    "stage": "won",
+    "assigned_to": "user1",
+    "created_at": "2025-06-01 14:20:00"
+  },
+  {
+    "id": "lead014",
+    "company_name": "AlphaGroup",
+    "source": "cold_call",
+    "stage": "won",
+    "assigned_to": "user2",
+    "created_at": "2025-06-01 14:30:00"
+  },
+  {
+    "id": "lead015",
+    "full_name": "Ivan Novak",
+    "source": "ads",
+    "stage": "lost",
+    "assigned_to": "user3",
+    "created_at": "2025-06-01 14:45:00"
+  },
+  {
+    "id": "lead016",
+    "full_name": "Elena Petrova",
+    "source": "website",
+    "stage": "lost",
+    "assigned_to": "user1",
+    "created_at": "2025-06-01 15:00:00",
+    "notes": "Вибрали конкурентів"
+  },
+  {
+    "id": "lead017",
+    "company_name": "NextStage",
+    "source": "email",
+    "stage": "cold",
+    "assigned_to": "user2",
+    "created_at": "2025-06-01 15:20:00"
+  },
+  {
+    "id": "lead018",
+    "full_name": "Oleh Kravets",
+    "source": "social",
+    "stage": "cold",
+    "assigned_to": "user3",
+    "created_at": "2025-06-01 15:30:00"
+  },
+  {
+    "id": "lead019",
+    "company_name": "Unknown Corp",
+    "source": "website",
+    "stage": "unreachable",
+    "assigned_to": "user1",
+    "created_at": "2025-06-01 16:00:00"
+  },
+  {
+    "id": "lead020",
+    "full_name": "Sasha Gray",
+    "source": "referral",
+    "stage": "unreachable",
+    "assigned_to": "user2",
+    "created_at": "2025-06-01 16:10:00"
+  },
+  {
+    "id": "lead021",
+    "full_name": "Spam Bot 1",
+    "email": "bot1@spam.com",
+    "source": "website",
+    "stage": "spam",
+    "assigned_to": "user3",
+    "created_at": "2025-06-01 16:30:00"
+  },
+  {
+    "id": "lead022",
+    "full_name": "Spam Bot 2",
+    "email": "bot2@spam.com",
+    "source": "email",
+    "stage": "spam",
+    "assigned_to": "user1",
+    "created_at": "2025-06-01 16:45:00"
+  },
+  {
+    "id": "lead023",
+    "full_name": "John Duplicate",
+    "email": "john@example.com",
+    "source": "social",
+    "stage": "duplicate",
+    "assigned_to": "user2",
+    "created_at": "2025-06-01 17:00:00"
+  },
+  {
+    "id": "lead024",
+    "full_name": "Jane Duplicate",
+    "email": "jane@example.com",
+    "source": "website",
+    "stage": "duplicate",
+    "assigned_to": "user3",
+    "created_at": "2025-06-01 17:10:00"
+  }
+]

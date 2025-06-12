@@ -8,3 +8,4 @@ export { default as MainPieChart } from "./MainPieChart";
 export { default as MainCard } from "./MainCard";
 export { default as MainSlider } from "./MainSlider";
 export { default as FunnelSales } from "./FunnelSales";
+export { default as HomeLeads } from "./HomeLeads"

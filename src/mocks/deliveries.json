@@ -1,0 +1,72 @@
+[
+  {
+    "id": "del001",
+    "order_id": "ord001",
+    "provider": "Nova Poshta",
+    "tracking_number": "NP123456789UA",
+    "status": "shipped"
+  },
+  {
+    "id": "del002",
+    "order_id": "ord002",
+    "provider": "Ukrposhta",
+    "tracking_number": "UP987654321UA",
+    "status": "in transit"
+  },
+  {
+    "id": "del003",
+    "order_id": "ord003",
+    "provider": "Meest",
+    "tracking_number": "MST11223344UA",
+    "status": "delivered"
+  },
+  {
+    "id": "del004",
+    "order_id": "ord004",
+    "provider": "Nova Poshta",
+    "tracking_number": "NP4455667788UA",
+    "status": "cancelled"
+  },
+  {
+    "id": "del005",
+    "order_id": "ord005",
+    "provider": "Ukrposhta",
+    "tracking_number": "UP2233445566UA",
+    "status": "shipped"
+  },
+  {
+    "id": "del006",
+    "order_id": "ord006",
+    "provider": "Meest",
+    "tracking_number": "MST33445566UA",
+    "status": "in transit"
+  },
+  {
+    "id": "del007",
+    "order_id": "ord007",
+    "provider": "Nova Poshta",
+    "tracking_number": "NP9988776655UA",
+    "status": "pending"
+  },
+  {
+    "id": "del008",
+    "order_id": "ord008",
+    "provider": "Ukrposhta",
+    "tracking_number": "UP5566778899UA",
+    "status": "delivered"
+  },
+  {
+    "id": "del009",
+    "order_id": "ord009",
+    "provider": "Meest",
+    "tracking_number": "MST77889900UA",
+    "status": "shipped"
+  },
+  {
+    "id": "del010",
+    "order_id": "ord010",
+    "provider": "Nova Poshta",
+    "tracking_number": "NP1010101010UA",
+    "status": "in transit"
+  }
+]

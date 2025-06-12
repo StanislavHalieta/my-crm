@@ -1,0 +1,82 @@
+[
+  {
+    "id": "35ghghm",
+    "name": "Jon Doe",
+    "email": "my-email@example.com",
+    "password_hash": "5a6a69b9c1d2e3f4abc1234567890def",
+    "role_id": "admin",
+    "created_at": "2024-12-01 10:15:00"
+  },
+  {
+    "id": "7f9d1ab2",
+    "name": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "password_hash": "81a7c0e8d32e4a019c9489f8a1b57c3a",
+    "role_id": "manager",
+    "created_at": "2025-01-15 09:00:00"
+  },
+  {
+    "id": "ad8e92c3",
+    "name": "Bob Johnson",
+    "email": "bob.j@example.com",
+    "password_hash": "0d76fadc3e4c21b91ea2f574c2f1b9c4",
+    "role_id": "sales",
+    "created_at": "2025-02-10 14:45:00"
+  },
+  {
+    "id": "e3a9f52b",
+    "name": "Carol White",
+    "email": "carol.white@example.com",
+    "password_hash": "bbf24f2b9e8039c42af3dc44e73856ab",
+    "role_id": "support",
+    "created_at": "2025-03-22 12:20:00"
+  },
+  {
+    "id": "c4b8dd1a",
+    "name": "David Lee",
+    "email": "david.lee@example.com",
+    "password_hash": "fe2a8c5d4b77bc6ee7dd5a504233c9dd",
+    "role_id": "sales",
+    "created_at": "2025-04-05 08:00:00"
+  },
+  {
+    "id": "f77b3e4d",
+    "name": "Eva Brown",
+    "email": "eva.brown@example.com",
+    "password_hash": "a9cd23349b7f3e34aa82d1e1f33df8be",
+    "role_id": "manager",
+    "created_at": "2025-04-20 16:30:00"
+  },
+  {
+    "id": "9a11c6de",
+    "name": "Frank Miller",
+    "email": "frank.miller@example.com",
+    "password_hash": "db3fdabde2a74c5eab3d92c4aa1d5f31",
+    "role_id": "support",
+    "created_at": "2025-05-01 11:00:00"
+  },
+  {
+    "id": "b9e8e442",
+    "name": "Grace Wilson",
+    "email": "grace.w@example.com",
+    "password_hash": "92a4f3b5cb6ad67b4452a719d7c86f98",
+    "role_id": "admin",
+    "created_at": "2025-05-10 09:50:00"
+  },
+  {
+    "id": "d5a2f3b0",
+    "name": "Henry Adams",
+    "email": "henry.adams@example.com",
+    "password_hash": "0b1e3c7d4a5e9345f0a3f71be9375e8c",
+    "role_id": "sales",
+    "created_at": "2025-05-25 15:15:00"
+  },
+  {
+    "id": "ee4bb93f",
+    "name": "Isla Cooper",
+    "email": "isla.cooper@example.com",
+    "password_hash": "f5a66a23aa89c7a0dd7e2ccf5c38e613",
+    "role_id": "manager",
+    "created_at": "2025-06-10 17:40:00"
+  }
+]
