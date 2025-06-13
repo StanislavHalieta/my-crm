@@ -28,6 +28,7 @@
   },
   {
     "id": "lead003",
+    "full_name": "Tom",
     "company_name": "Softwave Inc.",
     "source": "referral",
     "stage": "contacted",
@@ -69,6 +70,7 @@
   },
   {
     "id": "lead007",
+    "full_name": "Fisher",
     "company_name": "QuickDev",
     "source": "social",
     "stage": "interested",
@@ -87,6 +89,7 @@
   },
   {
     "id": "lead009",
+    "full_name": "Global",
     "company_name": "GlobalTech",
     "source": "ads",
     "stage": "proposal_sent",
@@ -113,6 +116,7 @@
   },
   {
     "id": "lead012",
+    "full_name": "Sophie",    
     "company_name": "BizCorp",
     "source": "email",
     "stage": "negotiation",
@@ -130,6 +134,7 @@
   },
   {
     "id": "lead014",
+    "full_name": "Young",
     "company_name": "AlphaGroup",
     "source": "cold_call",
     "stage": "won",
@@ -139,7 +144,7 @@
   {
     "id": "lead015",
     "full_name": "Ivan Novak",
-    "source": "ads",
+    "source": "won",
     "stage": "lost",
     "assigned_to": "user3",
     "created_at": "2025-06-01 14:45:00"
@@ -155,6 +160,7 @@
   },
   {
     "id": "lead017",
+    "full_name": "Alex",
     "company_name": "NextStage",
     "source": "email",
     "stage": "cold",
@@ -171,6 +177,7 @@
   },
   {
     "id": "lead019",
+    "full_name": "Sophie Lloid",
     "company_name": "Unknown Corp",
     "source": "website",
     "stage": "unreachable",
@@ -199,7 +206,7 @@
     "full_name": "Spam Bot 2",
     "email": "bot2@spam.com",
     "source": "email",
-    "stage": "spam",
+    "stage": "unreachable",
     "assigned_to": "user1",
     "created_at": "2025-06-01 16:45:00"
   },
