@@ -1,4 +1,4 @@
-import { ELeadsStage, ILead } from "../api/respTypes";
+import { ELeadsStage, ILead } from "../store/leads/types";
 
 interface IAccumLeads {
   newLead: number; // — новий лід, тільки зібраний/створений

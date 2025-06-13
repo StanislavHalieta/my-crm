@@ -9,3 +9,4 @@ export { default as MainCard } from "./MainCard";
 export { default as MainSlider } from "./MainSlider";
 export { default as FunnelSales } from "./FunnelSales";
 export { default as HomeLeads } from "./HomeLeads"
+export { default as Kanban } from "./Kanban"

@@ -1,13 +1,19 @@
 import { useEffect, type FC } from "react";
 import { Grid } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
-import { fetchHomePage, selectHome } from "../../store/home/homeSlice";
-import { HomeLeads, MainCard, MainChart, MainPieChart } from "../../components";
+import { fetchHomePage } from "../../store/home/homeSlice";
+import { Kanban, MainCard, MainChart, MainPieChart } from "../../components";
 import { ICard } from "../../components/MainCard";
 import { StyledHomePage, StyledHomePageGrid } from "./styles";
 import { callsSummary, emailsSummary } from "../../helpers";
 import calls from "../../mocks/calls.json";
 import emails from "../../mocks/emails.json";
+import {
+  fetchLeads,
+  selectLeads,
+  selectLeadsForKanban,
+  setLeadsForKanban,
+} from "../../store/leads/leadsStore";
 
 const { inbound, outbound, total: totalCals } = callsSummary(calls);
 const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
@@ -47,16 +53,21 @@ const cards: ICard[] = [
 
 const HomePage: FC = () => {
   const dispatch = useAppDispatch();
-  const data = useAppSelector(selectHome);
+  const leadsForKanban = useAppSelector(selectLeadsForKanban);
+  const leads = useAppSelector(selectLeads);
 
   useEffect(() => {
     dispatch(fetchHomePage(""));
+    dispatch(fetchLeads(""));
   }, [dispatch]);
 
   useEffect(() => {
-    console.log("On home page: ", data);
-  }, [data]);
-
+    dispatch(setLeadsForKanban());
+  }, [leads, dispatch]);
+  useEffect(() => {
+    console.log(leadsForKanban);
+  }, [leadsForKanban]);
+  
   return (
     <StyledHomePage>
       <StyledHomePageGrid container spacing={3}>
@@ -75,7 +86,7 @@ const HomePage: FC = () => {
           </Grid>
         ))}
         <Grid>
-          <HomeLeads />
+          <Kanban />
         </Grid>
       </StyledHomePageGrid>
     </StyledHomePage>
