@@ -1,6 +1,6 @@
 // CustomActiveShapePieChart.tsx
-import React, { useState } from "react";
-import { PieChart, Pie,  Cell, ResponsiveContainer } from "recharts";
+import { FC, useState } from "react";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { renderActiveShape } from "./renderActiveShape";
 
 const data = [
@@ -12,8 +12,14 @@ const data = [
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
-
-const ShapePieChart: React.FC = () => {
+interface ShapePieChartProps {
+  width?: number;
+  height?: number;
+}
+const ShapePieChart: FC<ShapePieChartProps> = ({
+  width = 450,
+  height = 220,
+}) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const onPieEnter = (_: any, index: number) => {
@@ -21,8 +27,8 @@ const ShapePieChart: React.FC = () => {
   };
 
   return (
-    <div style={{width: 450, height: 200}}>
-      <ResponsiveContainer width="100%" height="125%">
+    <div style={{ width, height }}>
+      <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             activeIndex={activeIndex}
@@ -30,7 +36,7 @@ const ShapePieChart: React.FC = () => {
             data={data}
             cx="50%"
             cy="50%"
-            innerRadius={60}
+            innerRadius={70}
             outerRadius={80}
             fill="#8884d8"
             dataKey="value"

@@ -6,7 +6,7 @@ import {
   useState,
   type FC,
 } from "react";
-import { Box, Grid, useTheme } from "@mui/material";
+import { Box, Grid, Typography, useTheme } from "@mui/material";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage } from "../../store/home/homeSlice";
@@ -123,23 +123,24 @@ const HomePage: FC = () => {
     <StyledHomePage>
       <StyledHomePageGrid container spacing={2}>
         {/* Воронка продажів */}
-        <Grid size={{ xs: 4, md: 8 }}>
+        <Grid container size={{ xs: 2, md: 8, lg: 12 }}>
+          <Typography>Me chart</Typography>
           <ShapePieChart />
-        </Grid>
-        {/* Графік замовлень */}
-        <Grid size={{ xs: 2, md: 8 }}>
-          <MainChart xAxis yAxis />
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
-          <Grid size={{ xs: 2, md: 4 }} key={card.id}>
+          <Grid container size={{ xs: 2, md: 4, lg: 2 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}
-        <Grid size={{ xs: 2, md: 6 }}>
-          {/* <Kanban /> */}
-          <SpeedPieChart />
+        {/* Графік замовлень */}
+        <Grid container size={{ xs: 2, md: 8 }}>
+          <MainChart xAxis yAxis />
         </Grid>
+        {/* <Grid size={{ xs: 2, md: 6 }}> */}
+        {/* <Kanban /> */}
+        {/* <SpeedPieChart />
+        </Grid> */}
       </StyledHomePageGrid>
     </StyledHomePage>
   );
