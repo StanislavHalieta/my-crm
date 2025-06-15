@@ -11,3 +11,5 @@ export { default as FunnelSales } from "./FunnelSales";
 export { default as Kanban } from "./Kanban"
 export { default as HomeLeads } from "./HomeLeads";
 export { default as Board } from "./Board";
+export { default as SpeedPieChart } from "./SpeedPieChart";
+export { default as ShapePieChart } from "./ShapePieChart";

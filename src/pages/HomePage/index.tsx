@@ -1,9 +1,23 @@
-import { memo, useCallback, useEffect, useState, type FC } from "react";
-import { Grid } from "@mui/material";
+import {
+  memo,
+  PureComponent,
+  useCallback,
+  useEffect,
+  useState,
+  type FC,
+} from "react";
+import { Box, Grid, useTheme } from "@mui/material";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage } from "../../store/home/homeSlice";
-import { Kanban, MainCard, MainChart, MainPieChart } from "../../components";
+import {
+  Kanban,
+  MainCard,
+  MainChart,
+  MainPieChart,
+  ShapePieChart,
+  SpeedPieChart,
+} from "../../components";
 import { ICard } from "../../components/MainCard";
 import { QuoteItem, StyledHomePage, StyledHomePageGrid } from "./styles";
 import { callsSummary, emailsSummary } from "../../helpers";
@@ -15,6 +29,22 @@ import {
   selectLeadsForKanban,
   setLeadsForKanban,
 } from "../../store/leads/leadsStore";
+import {
+  CartesianGrid,
+  Cell,
+  Funnel,
+  FunnelChart,
+  LabelList,
+  Line,
+  LineChart,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+  Tooltip,
+  Treemap,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const { inbound, outbound, total: totalCals } = callsSummary(calls);
 const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
@@ -52,8 +82,27 @@ const cards: ICard[] = [
   },
 ];
 
+const COLORS = [
+  "#8889DD",
+  "#9597E4",
+  "#8DC77B",
+  "#A5D297",
+  "#E2CF45",
+  "#F8C12D",
+];
+
+const colors = [
+  "#8889DD",
+  "#9597E4",
+  "#8DC77B",
+  "#A5D297",
+  "#E2CF45",
+  "#F8C12D",
+];
+
 const HomePage: FC = () => {
   const dispatch = useAppDispatch();
+  const theme = useTheme();
   const leadsForKanban = useAppSelector(selectLeadsForKanban);
   const leads = useAppSelector(selectLeads);
 
@@ -68,17 +117,17 @@ const HomePage: FC = () => {
   useEffect(() => {
     console.log(leadsForKanban);
   }, [leadsForKanban]);
-  
+
   return (
     <StyledHomePage>
       <StyledHomePageGrid container spacing={3}>
         {/* Воронка продажів */}
-        <Grid size={{ xs: 4, md: 4 }}>
-          <MainPieChart />
+        <Grid size={{ xs: 4, md: 8 }}>
+          <ShapePieChart />
         </Grid>
         {/* Графік замовлень */}
-        <Grid size={{ xs: 4, md: 8 }}>
-          <MainChart />
+        <Grid size={{ xs: 2, md: 8 }}>
+          <MainChart xAxis yAxis />
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
@@ -86,8 +135,9 @@ const HomePage: FC = () => {
             <MainCard card={card} />
           </Grid>
         ))}
-        <Grid>
-          <Kanban />
+        <Grid size={{ xs: 2, md: 6 }}>
+          {/* <Kanban /> */}
+          <SpeedPieChart />
         </Grid>
       </StyledHomePageGrid>
     </StyledHomePage>

@@ -25,6 +25,8 @@ export const lightTheme = createTheme({
     primary: {
       main: colors.blue, // #007bff
       contrastText: colors.white, // #ffffff
+      dark: "",
+      light: "",
     },
     gradients: {
       blue_06: colors.blue_06, // #2196f399
@@ -56,6 +58,24 @@ export const lightTheme = createTheme({
     },
     h3: {
       color: colors.blueDark,
+    },
+    h4: {
+      color: colors.blueDark,
+    },
+    h5: {
+      color: colors.blueDark,
+    },
+    h6: {
+      color: colors.blueDark,
+    },
+    body1: {
+      color: colors.blueDark,
+    },
+    body2: {
+      color: colors.blueDark,
+    },
+    button: {
+      color: colors.blue_06,
     },
   },
 });

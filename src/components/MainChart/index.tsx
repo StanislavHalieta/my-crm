@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import { LinePlot, AreaPlot, ChartsXAxis, ChartsYAxis } from "@mui/x-charts";
 import { StyledMainChart } from "./styles";
+import { useTheme } from "@mui/material";
 
 const dataX = [1, 2, 3, 5, 8, 10];
 const dataY = [2, 5.5, 2, 8.5, 1.5, 5];
@@ -12,6 +13,7 @@ interface MainChartProps {
 }
 
 const MainChart: FC<MainChartProps> = ({ xAxis, yAxis }) => {
+  const theme = useTheme();
   return (
     <StyledMainChart
       xAxis={[{ scaleType: "point", data: dataX }]}
@@ -20,7 +22,7 @@ const MainChart: FC<MainChartProps> = ({ xAxis, yAxis }) => {
           type: "line",
           data: dataY,
           area: true,
-          color: "#2196f3", // лінія
+          color: theme.palette.primary.main, // лінія
         },
       ]}
     >
