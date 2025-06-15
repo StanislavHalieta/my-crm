@@ -1,75 +1,51 @@
-import { FC, useState } from "react";
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+// CustomActiveShapePieChart.tsx
+import React, { useState } from "react";
+import { PieChart, Pie,  Cell, ResponsiveContainer } from "recharts";
 import { renderActiveShape } from "./renderActiveShape";
-import { useTheme } from "@emotion/react";
-import { StyledShapePieChart } from "./styles";
-import { Typography } from "@mui/material";
-import { useTranslation } from "react-i18next";
 
-export interface IShapePieChartData {
-  key: string | number;
-  name: string;
-  value: number;
-}
+const data = [
+  { name: "Group A", value: 400 },
+  { name: "Group B", value: 300 },
+  { name: "Group C", value: 300 },
+  { name: "Group D", value: 200 },
+];
 
-interface ShapePieChartProps {
-  data: IShapePieChartData[];
-  title: string,
-  dataKey?: string;
-  width?: number | string;
-  height?: number | string;
-  innerRadius?: number;
-  outerRadius?: number;
-}
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
-const ShapePieChart: FC<ShapePieChartProps> = ({
-  width = 450,
-  height = 280,
-  innerRadius = 70,
-  outerRadius = 80,
-  dataKey = "value",
-  data = [],
-  title
-}) => {
+
+const ShapePieChart: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const { t } = useTranslation();
 
-  const theme = useTheme();
-  const COLORS = Object.values(theme.palette.charts);
-
-  const onPieEnter = (_: unknown, index: number) => {
+  const onPieEnter = (_: any, index: number) => {
     setActiveIndex(index);
   };
 
   return (
-    <StyledShapePieChart width={width} height={height}>
-      <Typography>{t(title)}</Typography>
-      <ResponsiveContainer width="100%" height="100%">
+    <div style={{width: 450, height: 200}}>
+      <ResponsiveContainer width="100%" height="125%">
         <PieChart>
           <Pie
             activeIndex={activeIndex}
-            activeShape={(props) =>
-              renderActiveShape({
-                ...props,
-                textColor: theme.palette.primary.light,
-                valueColor: theme.palette.primary.dark,
-              })
-            }
+            activeShape={renderActiveShape}
             data={data}
             cx="50%"
             cy="50%"
-            innerRadius={innerRadius}
-            outerRadius={outerRadius}
-            dataKey={dataKey}
+            innerRadius={60}
+            outerRadius={80}
+            fill="#8884d8"
+            dataKey="value"
             onMouseEnter={onPieEnter}
           >
-            {data.map(({ key }, index) => (
-              <Cell key={`cell-${key}`} fill={COLORS[index % COLORS.length]} />
+            {data.map((_, index) => (
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
             ))}
           </Pie>
         </PieChart>
       </ResponsiveContainer>
-    </StyledShapePieChart>
+    </div>
   );
 };
 
