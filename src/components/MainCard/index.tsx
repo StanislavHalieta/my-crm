@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, MouseEventHandler, useState } from "react";
 import { StyledMainCard } from "./styles";
 import { CardActionArea, CardContent, Typography } from "@mui/material";
 
@@ -18,12 +18,13 @@ interface MainCardProps {
 }
 
 const MainCard: FC<MainCardProps> = ({ card }) => {
-  const { title, description } = card;
+  const [selectedCard, setSelectedCard] = useState<string | number>(0);
+  const { id, title, description } = card;
 
   return (
     <StyledMainCard key={id}>
       <CardActionArea
-        // data-active={selectedCard === id ? "" : undefined}
+        data-active={selectedCard === id ? "" : undefined}
         sx={{
           height: "100%",
           "&[data-active]": {
