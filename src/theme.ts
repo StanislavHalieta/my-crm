@@ -13,6 +13,8 @@ const colors = {
   bgDark: "#121212", // #121212
   paperDark: "#1e1e1e", // #1e1e1e
   textPrimary: "#0d47a1", // #0d47a1
+  blue_06: "#2196f399", // #2196f399
+  transperent: "#00000000", // #00000000
   fontMain: "'Roboto SemiCondensed', 'Segoe UI', sans-serif",
   borderRadius: 5,
 };
@@ -23,6 +25,12 @@ export const lightTheme = createTheme({
     primary: {
       main: colors.blue, // #007bff
       contrastText: colors.white, // #ffffff
+      dark: "",
+      light: "",
+    },
+    gradients: {
+      blue_06: colors.blue_06, // #2196f399
+      transperent: colors.transperent, // #00000000
     },
     secondary: {
       main: colors.yellow, // #ffd700
@@ -50,6 +58,24 @@ export const lightTheme = createTheme({
     },
     h3: {
       color: colors.blueDark,
+    },
+    h4: {
+      color: colors.blueDark,
+    },
+    h5: {
+      color: colors.blueDark,
+    },
+    h6: {
+      color: colors.blueDark,
+    },
+    body1: {
+      color: colors.blueDark,
+    },
+    body2: {
+      color: colors.blueDark,
+    },
+    button: {
+      color: colors.blue_06,
     },
   },
 });

@@ -2,6 +2,14 @@ import { Box, Slider } from "@mui/material";
 import { Grid } from "@mui/system";
 import styled from "@emotion/styled";
 
+export const QuoteItem = styled.div`
+  width: 200px;
+  border: 1px solid grey;
+  margin-bottom: 8px;
+  background-color: lightblue;
+  padding: 8px;
+`;
+
 export const StyledHomePage = styled(Box)`
   padding: 24px;
   background: ${({ theme }) => theme.palette.background.default};

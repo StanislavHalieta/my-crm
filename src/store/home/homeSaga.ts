@@ -7,6 +7,7 @@ import { PayloadAction } from "@reduxjs/toolkit";
 function* fetchHomeData(_actions: PayloadAction<string | number>) {
   try {
     const data: IProductsResp = yield call(fetchProductsAPI);
+
     yield put(getHomePageData(data.products));
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : "Unknown error";

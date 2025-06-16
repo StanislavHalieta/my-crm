@@ -1,10 +1,25 @@
-import { useEffect, type FC } from "react";
-import { Grid } from "@mui/material";
+import {
+  memo,
+  PureComponent,
+  useCallback,
+  useEffect,
+  useState,
+  type FC,
+} from "react";
+import { Box, Grid, Typography, useTheme } from "@mui/material";
+import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage } from "../../store/home/homeSlice";
-import { Kanban, MainCard, MainChart, MainPieChart } from "../../components";
+import {
+  Kanban,
+  MainCard,
+  MainChart,
+  MainPieChart,
+  ShapePieChart,
+  SpeedPieChart,
+} from "../../components";
 import { ICard } from "../../components/MainCard";
-import { StyledHomePage, StyledHomePageGrid } from "./styles";
+import { QuoteItem, StyledHomePage, StyledHomePageGrid } from "./styles";
 import { callsSummary, emailsSummary } from "../../helpers";
 import calls from "../../mocks/calls.json";
 import emails from "../../mocks/emails.json";
@@ -14,6 +29,22 @@ import {
   selectLeadsForKanban,
   setLeadsForKanban,
 } from "../../store/leads/leadsStore";
+import {
+  CartesianGrid,
+  Cell,
+  Funnel,
+  FunnelChart,
+  LabelList,
+  Line,
+  LineChart,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+  Tooltip,
+  Treemap,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const { inbound, outbound, total: totalCals } = callsSummary(calls);
 const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
@@ -51,8 +82,27 @@ const cards: ICard[] = [
   },
 ];
 
+const COLORS = [
+  "#8889DD",
+  "#9597E4",
+  "#8DC77B",
+  "#A5D297",
+  "#E2CF45",
+  "#F8C12D",
+];
+
+const colors = [
+  "#8889DD",
+  "#9597E4",
+  "#8DC77B",
+  "#A5D297",
+  "#E2CF45",
+  "#F8C12D",
+];
+
 const HomePage: FC = () => {
   const dispatch = useAppDispatch();
+  const theme = useTheme();
   const leadsForKanban = useAppSelector(selectLeadsForKanban);
   const leads = useAppSelector(selectLeads);
 
@@ -67,27 +117,29 @@ const HomePage: FC = () => {
   useEffect(() => {
     console.log(leadsForKanban);
   }, [leadsForKanban]);
-  
+
   return (
     <StyledHomePage>
-      <StyledHomePageGrid container spacing={3}>
+      <StyledHomePageGrid container spacing={2}>
         {/* Воронка продажів */}
-        <Grid size={{ xs: 12, md: 4 }}>
-          <MainPieChart />
-        </Grid>
-        {/* Графік замовлень */}
-        <Grid size={{ xs: 12, md: 8 }}>
-          <MainChart />
+        <Grid container size={{ xs: 2, md: 8, lg: 12 }}>
+          <Typography>Me chart</Typography>
+          <ShapePieChart />
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
-          <Grid size={{ xs: 12, md: 4 }} key={card.id}>
+          <Grid container size={{ xs: 2, md: 4, lg: 2 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}
-        <Grid>
-          <Kanban />
+        {/* Графік замовлень */}
+        <Grid container size={{ xs: 2, md: 8 }}>
+          <MainChart xAxis yAxis />
         </Grid>
+        {/* <Grid size={{ xs: 2, md: 6 }}> */}
+        {/* <Kanban /> */}
+        {/* <SpeedPieChart />
+        </Grid> */}
       </StyledHomePageGrid>
     </StyledHomePage>
   );
