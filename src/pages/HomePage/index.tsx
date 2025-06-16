@@ -91,12 +91,12 @@ const HomePage: FC = () => {
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
-          <Grid container size={{ xs: 2, md: 4, lg: 3 }} key={card.id}>
+          <Grid container size={{ xs: 2, md: 3, lg: 4 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}
         {/* Графік замовлень */}
-        <Grid container size={{ xs: 2, md: 8 }}>
+        <Grid container size={{ xs: 2, md: 5, lg: 12 }}>
           <MainChart xAxis yAxis />
         </Grid>
         {/* <Grid size={{ xs: 2, md: 6 }}> */}

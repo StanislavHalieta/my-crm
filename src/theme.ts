@@ -22,7 +22,7 @@ const colors = {
   textPrimary: "#0d47a1", // #0d47a1
   blue_06: "#2196f399", // #2196f399
   yellow_06: "#ffd900", //#ffd900
-  transperent: "#00000000", // #00000000
+  transperent: "#007bff00", //#007bff00
   chart_1: "#0057B7", // #0057B7
   chart_2: "#FFD700", // #FFD700
   chart_3: "#00C2FF", // #00C2FF
@@ -54,11 +54,11 @@ export const lightTheme = createTheme({
     },
     gradients: {
       chart: colors.blue_06, // #2196f399
-      transperent: colors.transperent, // #00000000
+      transperent: "#2195f300", //#2195f300
       line: colors.yellow_06
     },
     secondary: {
-      main: colors.yellow, // #ffd700
+      main: colors.yellow, //#ffd90000
     },
     background: {
       default: colors.blueLight, // #e0f0ff
@@ -132,7 +132,7 @@ export const darkTheme = createTheme({
     },
     gradients: {
       chart: colors.yellow_06,
-      transperent: colors.transperent,
+      transperent: "#ffd90000", //#ffd90000
       line: colors.blue_06
     },
     text: {
