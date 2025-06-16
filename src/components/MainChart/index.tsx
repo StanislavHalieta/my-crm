@@ -47,22 +47,23 @@ const MainChart: FC<MainChartProps> = ({ xAxis, yAxis }) => {
   // const data = parseData(mockChartData);
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <StyledMainChart data={mockChartData} >
-        <defs>
-          <linearGradient id="gradientFill" x1="0" y1="0" x2="0" y2="1">
-            <stop
-              offset="0%"
-              stopColor={theme.palette.gradients.chart}
-              stopOpacity={60}
-            />
-            <stop
-              offset="100%"
-              stopColor={theme.palette.gradients.transperent}
-              stopOpacity={0}
-            />
-          </linearGradient>
-        </defs>
+    <StyledMainChart
+      xAxis={[{ scaleType: "linear", data: dataX }]}
+      series={[
+        {
+          type: "line",
+          data: dataY,
+          area: true,
+          color: theme.palette.gradients.line, 
+        },
+      ]}
+    >
+      <defs>
+        <linearGradient id="gradientFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={theme.palette.gradients.chart} />
+          <stop offset="100%" stopColor={theme.palette.gradients.transperent} />
+        </linearGradient>
+      </defs>
 
         <AreaPlot
           slots={{
