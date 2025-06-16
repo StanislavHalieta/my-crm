@@ -1,21 +1,36 @@
+import { Sector } from "recharts";
 
-import {Sector } from "recharts";
+interface RenderActiveShapeProps {
+  cx: number;
+  cy: number;
+  midAngle: number;
+  innerRadius: number;
+  outerRadius: number;
+  startAngle: number;
+  endAngle: number;
+  fill: string;
+  payload: Record<string, string | number>;
+  percent: number;
+  value: number;
+  textColor?: string
+  valueColor?: string
+}
 
-export const renderActiveShape = (props: any) => {
-  const {
-    cx,
-    cy,
-    midAngle,
-    innerRadius,
-    outerRadius,
-    startAngle,
-    endAngle,
-    fill,
-    payload,
-    percent,
-    value,
-  } = props;
-
+export const renderActiveShape = ({
+  cx,
+  cy,
+  midAngle,
+  innerRadius,
+  outerRadius,
+  startAngle,
+  endAngle,
+  fill,
+  payload,
+  percent,
+  value,
+  textColor = "#999",
+  valueColor = "#333"
+}: RenderActiveShapeProps) => {
   const RADIAN = Math.PI / 180;
   const sin = Math.sin(-RADIAN * midAngle);
   const cos = Math.cos(-RADIAN * midAngle);
@@ -60,7 +75,7 @@ export const renderActiveShape = (props: any) => {
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
         textAnchor={textAnchor}
-        fill="#333"
+        fill={textColor}
       >
         {`Value: ${value}`}
       </text>
@@ -69,7 +84,7 @@ export const renderActiveShape = (props: any) => {
         y={ey}
         dy={18}
         textAnchor={textAnchor}
-        fill="#999"
+        fill={valueColor}
       >
         {`(${(percent * 100).toFixed(2)}%)`}
       </text>

@@ -1,28 +1,34 @@
-// CustomActiveShapePieChart.tsx
 import { FC, useState } from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { renderActiveShape } from "./renderActiveShape";
+import { useTheme } from "@emotion/react";
 
-const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
-];
-
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+export interface IShapePieChartData {
+  key: string | number;
+  name: string;
+  value: number;
+}
 
 interface ShapePieChartProps {
+  data: IShapePieChartData[];
   width?: number;
   height?: number;
+  innerRadius?: number;
+  outerRadius?: number;
 }
+
 const ShapePieChart: FC<ShapePieChartProps> = ({
   width = 450,
-  height = 220,
+  height = 250,
+  innerRadius = 70,
+  outerRadius = 80,
+  data = [],
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const theme = useTheme();
+  const COLORS = Object.values(theme.palette.charts);
 
-  const onPieEnter = (_: any, index: number) => {
+  const onPieEnter = (_: unknown, index: number) => {
     setActiveIndex(index);
   };
 
@@ -32,21 +38,17 @@ const ShapePieChart: FC<ShapePieChartProps> = ({
         <PieChart>
           <Pie
             activeIndex={activeIndex}
-            activeShape={renderActiveShape}
+            activeShape={(props)=>renderActiveShape({...props, textColor: theme.palette.primary.light, valueColor: theme.palette.primary.dark})}
             data={data}
             cx="50%"
             cy="50%"
-            innerRadius={70}
-            outerRadius={80}
-            fill="#8884d8"
+            innerRadius={innerRadius}
+            outerRadius={outerRadius}
             dataKey="value"
             onMouseEnter={onPieEnter}
           >
-            {data.map((_, index) => (
-              <Cell
-                key={`cell-${index}`}
-                fill={COLORS[index % COLORS.length]}
-              />
+            {data.map(({ key }, index) => (
+              <Cell key={`cell-${key}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
         </PieChart>

@@ -1,50 +1,20 @@
-import {
-  memo,
-  PureComponent,
-  useCallback,
-  useEffect,
-  useState,
-  type FC,
-} from "react";
-import { Box, Grid, Typography, useTheme } from "@mui/material";
-import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import { useEffect, type FC } from "react";
+import { Grid, Typography } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage } from "../../store/home/homeSlice";
-import {
-  Kanban,
-  MainCard,
-  MainChart,
-  MainPieChart,
-  ShapePieChart,
-  SpeedPieChart,
-} from "../../components";
+import { MainCard, MainChart, ShapePieChart } from "../../components";
 import { ICard } from "../../components/MainCard";
-import { QuoteItem, StyledHomePage, StyledHomePageGrid } from "./styles";
+import { StyledHomePage, StyledHomePageGrid } from "./styles";
 import { callsSummary, emailsSummary } from "../../helpers";
 import calls from "../../mocks/calls.json";
 import emails from "../../mocks/emails.json";
 import {
   fetchLeads,
   selectLeads,
-  selectLeadsForKanban,
+  // selectLeadsForKanban,
   setLeadsForKanban,
 } from "../../store/leads/leadsStore";
-import {
-  CartesianGrid,
-  Cell,
-  Funnel,
-  FunnelChart,
-  LabelList,
-  Line,
-  LineChart,
-  Pie,
-  PieChart,
-  ResponsiveContainer,
-  Tooltip,
-  Treemap,
-  XAxis,
-  YAxis,
-} from "recharts";
+import summaryShapePiChartData from "../../components/ShapePieChart/summaryShapePieChartData";
 
 const { inbound, outbound, total: totalCals } = callsSummary(calls);
 const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
@@ -82,28 +52,22 @@ const cards: ICard[] = [
   },
 ];
 
-const COLORS = [
-  "#8889DD",
-  "#9597E4",
-  "#8DC77B",
-  "#A5D297",
-  "#E2CF45",
-  "#F8C12D",
-];
-
-const colors = [
-  "#8889DD",
-  "#9597E4",
-  "#8DC77B",
-  "#A5D297",
-  "#E2CF45",
-  "#F8C12D",
+const mockData = [
+  { key: "1", name: "Group A", value: 400 },
+  { key: "2", name: "Group A", value: 100 },
+  { key: "3", name: "Group A", value: 200 },
+  { key: "4", name: "Group B", value: 300 },
+  { key: "5", name: "Group C", value: 300 },
+  { key: "6", name: "Group D", value: 200 },
+  { key: "7", name: "Group D", value: 80 },
+  { key: "8", name: "Group D", value: 53 },
+  { key: "9", name: "Group D", value: 75 },
+  { key: "10", name: "Group D", value: 10 },
 ];
 
 const HomePage: FC = () => {
   const dispatch = useAppDispatch();
-  const theme = useTheme();
-  const leadsForKanban = useAppSelector(selectLeadsForKanban);
+  // const leadsForKanban = useAppSelector(selectLeadsForKanban);
   const leads = useAppSelector(selectLeads);
 
   useEffect(() => {
@@ -114,9 +78,7 @@ const HomePage: FC = () => {
   useEffect(() => {
     dispatch(setLeadsForKanban());
   }, [leads, dispatch]);
-  useEffect(() => {
-    console.log(leadsForKanban);
-  }, [leadsForKanban]);
+
 
   return (
     <StyledHomePage>
@@ -124,11 +86,11 @@ const HomePage: FC = () => {
         {/* Воронка продажів */}
         <Grid container size={{ xs: 2, md: 8, lg: 12 }}>
           <Typography>Me chart</Typography>
-          <ShapePieChart />
+          <ShapePieChart data={summaryShapePiChartData(mockData)} />
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
-          <Grid container size={{ xs: 2, md: 4, lg: 2 }} key={card.id}>
+          <Grid container size={{ xs: 2, md: 4, lg: 3 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}

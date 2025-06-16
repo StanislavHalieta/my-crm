@@ -1,23 +1,33 @@
 import { PaletteColorOptions, PaletteColor } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
-  interface MyCustomColor extends PaletteColor {
+  interface GradientsColor extends PaletteColor {
     blue_06?: string;
     transperent?: string;
     outline?: string;
   }
 
-  interface MyCustomColorOptions extends PaletteColorOptions {
+  interface GradientColorOptions extends PaletteColorOptions {
     blue_06?: string;
     transperent?: string;
     outline?: string;
   }
-
+  interface ChartsColors {
+    "1"?: string,
+    "2"?: string,
+    "3"?: string,
+    "4"?: string,
+    "5"?: string,
+    "6"?: string,
+    "7"?: string
+  }
   interface Palette {
-    gradients: MyCustomColor;
+    gradients: GradientsColor;
+    charts: ChartsColors
   }
 
   interface PaletteOptions {
-    gradients?: MyCustomColorOptions;
+    gradients?: GradientColorOptions;
+    charts?: ChartsColors
   }
 }

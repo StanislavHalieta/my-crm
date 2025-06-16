@@ -1,5 +1,12 @@
-import { StyledMainCard } from "./components/MainCard/styles";
 import { createTheme } from "@mui/material/styles";
+
+// #0057B7 — офіційний синій (прапор України)
+// #FFD700 — яскравий жовтий (прапор України)
+// #00C2FF — сучасний бірюзово-блакитний, як акцент (для hover/світіння)
+// #FF6B00 — теплий помаранчевий для контрасту
+// #7DFF7A — м’ятно-зелений, добре читається на темному тлі
+// #E91E63 — насичений рожево-малиновий, додає життя
+// #CCCCCC — нейтральний сірий для неакцентних елементів, осі, фону
 
 const colors = {
   blueLight: "#e0f0ff", // #e0f0ff
@@ -15,6 +22,13 @@ const colors = {
   textPrimary: "#0d47a1", // #0d47a1
   blue_06: "#2196f399", // #2196f399
   transperent: "#00000000", // #00000000
+  chart_1: "#0057B7", // #0057B7
+  chart_2: "#FFD700", // #FFD700
+  chart_3: "#00C2FF", // #00C2FF
+  chart_4: "#FF6B00", // #FF6B00
+  chart_5: "#7DFF7A", // #7DFF7A
+  chart_6: "#E91E63", // #E91E63
+  chart_7: "#CCCCCC", // #CCCCCC
   fontMain: "'Roboto SemiCondensed', 'Segoe UI', sans-serif",
   borderRadius: 5,
 };
@@ -25,8 +39,17 @@ export const lightTheme = createTheme({
     primary: {
       main: colors.blue, // #007bff
       contrastText: colors.white, // #ffffff
-      dark: "",
-      light: "",
+      dark: "#333",
+      light: "#999",
+    },
+    charts: {
+      "1": colors.chart_1, // #0057B7
+      "2": colors.chart_2, // #FFD700
+      "3": colors.chart_3, // #00C2FF
+      "4": colors.chart_4, // #FF6B00
+      "5": colors.chart_5, // #7DFF7A
+      "6": colors.chart_6, // #E91E63
+      "7": colors.chart_7  // #CCCCCC
     },
     gradients: {
       blue_06: colors.blue_06, // #2196f399
@@ -86,6 +109,17 @@ export const darkTheme = createTheme({
     primary: {
       main: colors.blueDark, // #003166 замість світло-блакитного (напр. #2e2e2e) беремо твій --blue-light
       contrastText: colors.white,
+      dark: "#333",
+      light: "#999",
+    },
+    charts: {
+      "1": colors.chart_1, // #0057B7
+      "2": colors.chart_2, // #FFD700
+      "3": colors.chart_3, // #00C2FF
+      "4": colors.chart_4, // #FF6B00
+      "5": colors.chart_5, // #7DFF7A
+      "6": colors.chart_6, // #E91E63
+      "7": colors.chart_7  // #CCCCCC
     },
     secondary: {
       main: colors.yellowDark, // теплий жовтий (#ffcc00)
@@ -105,5 +139,32 @@ export const darkTheme = createTheme({
   typography: {
     fontFamily: colors.fontMain,
     fontSize: 14,
+    h1: {
+      color: colors.blueDark,
+    },
+    h2: {
+      color: colors.blueDark,
+    },
+    h3: {
+      color: colors.blueDark,
+    },
+    h4: {
+      color: colors.blueDark,
+    },
+    h5: {
+      color: colors.blueDark,
+    },
+    h6: {
+      color: colors.blueDark,
+    },
+    body1: {
+      color: colors.blueDark,
+    },
+    body2: {
+      color: colors.blueDark,
+    },
+    button: {
+      color: colors.blue_06,
+    },
   },
 });
