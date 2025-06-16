@@ -83,22 +83,23 @@ const HomePage: FC = () => {
     <StyledHomePage>
       <StyledHomePageGrid container spacing={2}>
         {/* Воронка продажів */}
-        <Grid container size={{ xs: 2, md: 6, lg: 8 }}>
+        <Grid container size={{ xs: 6, md: 6, lg: 6 }}>
           <ShapePieChart
             data={summaryShapePiChartData(mockData)}
             title="home.salesFunnel"
           />
         </Grid>
+        <Grid container size={{ xs: 6, md: 6, lg: 6 }}>
+          <MainChart xAxis yAxis />
+        </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
-          <Grid container size={{ xs: 2, md: 3, lg: 4 }} key={card.id}>
+          <Grid container size={{ xs: 2, md: 3, lg: 3 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}
         {/* Графік замовлень */}
-        <Grid container size={{ xs: 2, md: 5, lg: 12 }}>
-          <MainChart xAxis yAxis />
-        </Grid>
+        
         {/* <Grid size={{ xs: 2, md: 6 }}> */}
         {/* <Kanban /> */}
         {/* <SpeedPieChart />
