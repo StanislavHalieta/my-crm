@@ -145,6 +145,7 @@ const HomePage: FC = () => {
       <StyledHomePageGrid container spacing={2}>
         {/* Воронка продажів */}
         <Grid container size={{ xs: 6, md: 6, lg: 6 }}>
+        <Grid container size={{ xs: 6, md: 6, lg: 6 }}>
           <ShapePieChart
             data={summaryShapePiChartData(mockData)}
             title="home.salesFunnel"
@@ -153,14 +154,18 @@ const HomePage: FC = () => {
         <Grid container size={{ xs: 6, md: 6, lg: 6 }}>
           <MainChart xAxis yAxis />
         </Grid>
+        <Grid container size={{ xs: 6, md: 6, lg: 6 }}>
+          <MainChart xAxis yAxis />
+        </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (
+          <Grid container size={{ xs: 2, md: 3, lg: 3 }} key={card.id}>
           <Grid container size={{ xs: 2, md: 3, lg: 3 }} key={card.id}>
             <MainCard card={card} />
           </Grid>
         ))}
         {/* Графік замовлень */}
-
+        
         {/* <Grid size={{ xs: 2, md: 6 }}> */}
         {/* <Kanban /> */}
         {/* <SpeedPieChart />
