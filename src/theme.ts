@@ -1,4 +1,3 @@
-import { StyledMainCard } from "./components/MainCard/styles";
 import { createTheme } from "@mui/material/styles";
 
 // #0057B7 — офіційний синій (прапор України)

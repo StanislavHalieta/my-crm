@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage } from "../../store/home/homeSlice";
 import { MainCard, MainChart, ShapePieChart } from "../../components";
 import { ICard } from "../../components/MainCard";
-import { QuoteItem, StyledHomePage, StyledHomePageGrid } from "./styles";
+import { StyledHomePage, StyledHomePageGrid } from "./styles";
 import { callsSummary, emailsSummary } from "../../helpers";
 import calls from "../../mocks/calls.json";
 import emails from "../../mocks/emails.json";
