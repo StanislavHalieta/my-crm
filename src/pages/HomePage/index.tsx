@@ -1,5 +1,5 @@
 import { useEffect, type FC } from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../hooks/storeHooks";
 import { fetchHomePage } from "../../store/home/homeSlice";
 import { MainCard, MainChart, ShapePieChart } from "../../components";
@@ -53,11 +53,11 @@ const cards: ICard[] = [
 ];
 
 const mockData = [
-  { key: "1", name: "Group A", value: 400 },
-  { key: "2", name: "Group A", value: 100 },
-  { key: "3", name: "Group A", value: 200 },
-  { key: "4", name: "Group B", value: 300 },
-  { key: "5", name: "Group C", value: 300 },
+  { key: "1", name: "Group A", value: 268 },
+  { key: "2", name: "Group A", value: 134 },
+  { key: "3", name: "Group A", value: 211 },
+  { key: "4", name: "Group B", value: 326 },
+  { key: "5", name: "Group C", value: 298 },
   { key: "6", name: "Group D", value: 200 },
   { key: "7", name: "Group D", value: 80 },
   { key: "8", name: "Group D", value: 53 },
@@ -79,14 +79,15 @@ const HomePage: FC = () => {
     dispatch(setLeadsForKanban());
   }, [leads, dispatch]);
 
-
   return (
     <StyledHomePage>
       <StyledHomePageGrid container spacing={2}>
         {/* Воронка продажів */}
-        <Grid container size={{ xs: 2, md: 8, lg: 12 }}>
-          <Typography>Me chart</Typography>
-          <ShapePieChart data={summaryShapePiChartData(mockData)} />
+        <Grid container size={{ xs: 2, md: 6, lg: 8 }}>
+          <ShapePieChart
+            data={summaryShapePiChartData(mockData)}
+            title="home.salesFunnel"
+          />
         </Grid>
         {/* Інші метрики */}
         {cards.map((card) => (

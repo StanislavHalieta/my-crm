@@ -21,6 +21,7 @@ const colors = {
   paperDark: "#1e1e1e", // #1e1e1e
   textPrimary: "#0d47a1", // #0d47a1
   blue_06: "#2196f399", // #2196f399
+  yellow_06: "#ffd900", //#ffd900
   transperent: "#00000000", // #00000000
   chart_1: "#0057B7", // #0057B7
   chart_2: "#FFD700", // #FFD700
@@ -39,8 +40,8 @@ export const lightTheme = createTheme({
     primary: {
       main: colors.blue, // #007bff
       contrastText: colors.white, // #ffffff
-      dark: "#333",
-      light: "#999",
+      dark: "#333", // #333333
+      light: "#999", // #999999
     },
     charts: {
       "1": colors.chart_1, // #0057B7
@@ -49,11 +50,12 @@ export const lightTheme = createTheme({
       "4": colors.chart_4, // #FF6B00
       "5": colors.chart_5, // #7DFF7A
       "6": colors.chart_6, // #E91E63
-      "7": colors.chart_7  // #CCCCCC
+      "7": colors.chart_7, // #CCCCCC
     },
     gradients: {
-      blue_06: colors.blue_06, // #2196f399
+      chart: colors.blue_06, // #2196f399
       transperent: colors.transperent, // #00000000
+      line: colors.yellow_06
     },
     secondary: {
       main: colors.yellow, // #ffd700
@@ -109,8 +111,8 @@ export const darkTheme = createTheme({
     primary: {
       main: colors.blueDark, // #003166 замість світло-блакитного (напр. #2e2e2e) беремо твій --blue-light
       contrastText: colors.white,
-      dark: "#333",
-      light: "#999",
+      dark: "#999", //#999999
+      light: "#eee", // #eeeeee
     },
     charts: {
       "1": colors.chart_1, // #0057B7
@@ -119,7 +121,7 @@ export const darkTheme = createTheme({
       "4": colors.chart_4, // #FF6B00
       "5": colors.chart_5, // #7DFF7A
       "6": colors.chart_6, // #E91E63
-      "7": colors.chart_7  // #CCCCCC
+      "7": colors.chart_7, // #CCCCCC
     },
     secondary: {
       main: colors.yellowDark, // теплий жовтий (#ffcc00)
@@ -127,6 +129,11 @@ export const darkTheme = createTheme({
     background: {
       default: colors.bgDark, // #121212    // можна залишити темний фоновий колір
       paper: colors.paperDark, // #1e1e1e
+    },
+    gradients: {
+      chart: colors.yellow_06,
+      transperent: colors.transperent,
+      line: colors.blue_06
     },
     text: {
       primary: colors.white,
@@ -140,28 +147,28 @@ export const darkTheme = createTheme({
     fontFamily: colors.fontMain,
     fontSize: 14,
     h1: {
-      color: colors.blueDark,
+      color: colors.blueLight,
     },
     h2: {
-      color: colors.blueDark,
+      color: colors.blueLight,
     },
     h3: {
-      color: colors.blueDark,
+      color: colors.blueLight,
     },
     h4: {
-      color: colors.blueDark,
+      color: colors.blueLight,
     },
     h5: {
-      color: colors.blueDark,
+      color: colors.blueLight,
     },
     h6: {
-      color: colors.blueDark,
+      color: colors.blueLight,
     },
     body1: {
-      color: colors.blueDark,
+      color: colors.blueLight,
     },
     body2: {
-      color: colors.blueDark,
+      color: colors.blueLight,
     },
     button: {
       color: colors.blue_06,

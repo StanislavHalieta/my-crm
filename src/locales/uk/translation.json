@@ -3,7 +3,8 @@
     "name": "CRMUA"
   },
   "home": {
-    "home_key": "Додому"
+    "home_key": "Додому",
+    "salesFunnel": "Воронка продажів"
   },
   "menu": {
     "home": "Додому",

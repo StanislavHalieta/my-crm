@@ -5,12 +5,17 @@ declare module "@mui/material/styles" {
     blue_06?: string;
     transperent?: string;
     outline?: string;
+    chart?: string
+    line?: string 
   }
 
   interface GradientColorOptions extends PaletteColorOptions {
     blue_06?: string;
+    yellow_05?: string; 
     transperent?: string;
     outline?: string;
+    chart?: string
+    line?:string
   }
   interface ChartsColors {
     "1"?: string,

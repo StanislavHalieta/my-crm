@@ -16,20 +16,20 @@ const MainChart: FC<MainChartProps> = ({ xAxis, yAxis }) => {
   const theme = useTheme();
   return (
     <StyledMainChart
-      xAxis={[{ scaleType: "point", data: dataX }]}
+      xAxis={[{ scaleType: "linear", data: dataX }]}
       series={[
         {
           type: "line",
           data: dataY,
           area: true,
-          color: theme.palette.primary.main, // лінія
+          color: theme.palette.gradients.line, 
         },
       ]}
     >
       <defs>
         <linearGradient id="gradientFill" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgba(33, 150, 243, 0.6)" />
-          <stop offset="100%" stopColor="rgba(33, 150, 243, 0)" />
+          <stop offset="0%" stopColor={theme.palette.gradients.chart} />
+          <stop offset="100%" stopColor={theme.palette.gradients.transperent} />
         </linearGradient>
       </defs>
 
