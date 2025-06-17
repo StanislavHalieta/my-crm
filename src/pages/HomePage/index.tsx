@@ -19,6 +19,64 @@ import summaryShapePiChartData from "../../components/ShapePieChart/summaryShape
 const { inbound, outbound, total: totalCals } = callsSummary(calls);
 const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
 
+const cards_1 = {
+  calls: {
+    id: "1",
+    inbound: 5,
+    outbound: 8,
+  },
+  emailNewsletters: {
+    id: "2",
+    sent: 5,
+    received: 8,
+    queued: 3,
+  },
+  activeOperators: {
+    id: "3",
+    online: 10,
+    offline: 3,
+  },
+  tasks: {
+    id: "4",
+    active: 3,
+    closed: 10,
+    atWork: 5,
+  },
+  tax: {
+    id: "5",
+    VAT: 25354.54,
+    ESV: 1504.92,
+  },
+  reporting: {
+    id: "6",
+    closed: 8,
+    active: 5,
+  },
+};
+
+interface ICardP {
+  title: string;
+  v1?: number;
+  v2?: number;
+  v3?: number;
+  v4?: number;
+}
+
+const parseCardData = (data: typeof cards_1) => {
+  return Object.keys(data).map((card) => {
+    const ddd = {
+      title: card,
+      ...data[card]
+    }
+    return Object.keys(data[card]).map((key) => {
+      if(key !== "id"){
+        return ddd.v1 = data[card][key]
+      }
+      return data[card][key];
+    });
+  });
+};
+
 const cards: ICard[] = [
   {
     description: `Вхідні: ${inbound} | Вихідні: ${outbound}`,
@@ -69,6 +127,7 @@ const HomePage: FC = () => {
   const dispatch = useAppDispatch();
   // const leadsForKanban = useAppSelector(selectLeadsForKanban);
   const leads = useAppSelector(selectLeads);
+  console.log(parseCardData(cards_1));
 
   useEffect(() => {
     dispatch(fetchHomePage(""));
@@ -99,7 +158,7 @@ const HomePage: FC = () => {
           </Grid>
         ))}
         {/* Графік замовлень */}
-        
+
         {/* <Grid size={{ xs: 2, md: 6 }}> */}
         {/* <Kanban /> */}
         {/* <SpeedPieChart />
