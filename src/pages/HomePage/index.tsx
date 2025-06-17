@@ -66,19 +66,16 @@ const parseCardData = (data: typeof cards_1) => {
   return Object.keys(data).map((card) => {
     const ddd = {
       title: card,
-      ...data[card],
-    };
+      ...data[card]
+    }
     return Object.keys(data[card]).map((key) => {
-      if (key !== "id") {
-        return (ddd.v1 = data[card][key]);
+      if(key !== "id"){
+        return ddd.v1 = data[card][key]
       }
       return data[card][key];
     });
   });
 };
-
-const { inbound, outbound, total: totalCals } = callsSummary(calls);
-const { queued, received, sent, total: totalEmails } = emailsSummary(emails);
 
 const cards: ICard[] = [
   {
@@ -130,6 +127,7 @@ const HomePage: FC = () => {
   const dispatch = useAppDispatch();
   // const leadsForKanban = useAppSelector(selectLeadsForKanban);
   const leads = useAppSelector(selectLeads);
+  console.log(parseCardData(cards_1));
 
   useEffect(() => {
     dispatch(fetchHomePage(""));
@@ -165,7 +163,7 @@ const HomePage: FC = () => {
           </Grid>
         ))}
         {/* Графік замовлень */}
-        
+
         {/* <Grid size={{ xs: 2, md: 6 }}> */}
         {/* <Kanban /> */}
         {/* <SpeedPieChart />
