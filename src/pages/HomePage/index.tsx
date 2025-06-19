@@ -127,7 +127,6 @@ const HomePage: FC = () => {
   const dispatch = useAppDispatch();
   // const leadsForKanban = useAppSelector(selectLeadsForKanban);
   const leads = useAppSelector(selectLeads);
-  console.log(parseCardData(cards_1));
 
   useEffect(() => {
     dispatch(fetchHomePage(""));
