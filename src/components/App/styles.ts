@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const StyledApp = styled(Box)`
   height: 100vh;
@@ -7,4 +7,6 @@ export const StyledApp = styled(Box)`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background-color: ${({theme})=>theme?.palette?.background?.default};
+  color: ${({theme})=>theme?.palette?.background?.default};
 `;

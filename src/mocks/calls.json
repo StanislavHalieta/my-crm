@@ -1,0 +1,92 @@
+[
+  {
+    "id": "call001",
+    "client_id": "client001",
+    "user_id": "user1",
+    "duration": 180,
+    "direction": "outbound",
+    "recording_url": "https://example.com/rec/call001.mp3",
+    "date": "2025-06-01 10:00:00"
+  },
+  {
+    "id": "call002",
+    "client_id": "client002",
+    "user_id": "user3",
+    "duration": 240,
+    "direction": "inbound",
+    "recording_url": "https://example.com/rec/call002.mp3",
+    "date": "2025-06-02 11:20:00"
+  },
+  {
+    "id": "call003",
+    "client_id": "client003",
+    "user_id": "user5",
+    "duration": 120,
+    "direction": "outbound",
+    "recording_url": "https://example.com/rec/call003.mp3",
+    "date": "2025-06-03 13:45:00"
+  },
+  {
+    "id": "call004",
+    "client_id": "client004",
+    "user_id": "user2",
+    "duration": 305,
+    "direction": "inbound",
+    "recording_url": "https://example.com/rec/call004.mp3",
+    "date": "2025-06-04 16:10:00"
+  },
+  {
+    "id": "call005",
+    "client_id": "client005",
+    "user_id": "user4",
+    "duration": 75,
+    "direction": "outbound",
+    "recording_url": "https://example.com/rec/call005.mp3",
+    "date": "2025-06-05 12:30:00"
+  },
+  {
+    "id": "call006",
+    "client_id": "client006",
+    "user_id": "user7",
+    "duration": 200,
+    "direction": "inbound",
+    "recording_url": "https://example.com/rec/call006.mp3",
+    "date": "2025-06-06 09:40:00"
+  },
+  {
+    "id": "call007",
+    "client_id": "client007",
+    "user_id": "user9",
+    "duration": 100,
+    "direction": "outbound",
+    "recording_url": "https://example.com/rec/call007.mp3",
+    "date": "2025-06-07 18:00:00"
+  },
+  {
+    "id": "call008",
+    "client_id": "client008",
+    "user_id": "user6",
+    "duration": 160,
+    "direction": "inbound",
+    "recording_url": "https://example.com/rec/call008.mp3",
+    "date": "2025-06-08 14:20:00"
+  },
+  {
+    "id": "call009",
+    "client_id": "client009",
+    "user_id": "user10",
+    "duration": 90,
+    "direction": "outbound",
+    "recording_url": "https://example.com/rec/call009.mp3",
+    "date": "2025-06-09 11:50:00"
+  },
+  {
+    "id": "call010",
+    "client_id": "client010",
+    "user_id": "user8",
+    "duration": 220,
+    "direction": "inbound",
+    "recording_url": "https://example.com/rec/call010.mp3",
+    "date": "2025-06-10 15:30:00"
+  }
+]

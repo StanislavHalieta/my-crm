@@ -1,12 +1,6 @@
-import { NavLink } from "react-router";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const StyledMineMenu = styled.div`
-  background: #fff555;
+  background: ${({theme}) => theme.palette.secondary.main};
 `;
 
-export const StyledNavLink = styled(NavLink)`
-  a {
-    text-decoration: none;
-  }
-`;

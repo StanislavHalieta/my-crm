@@ -1,0 +1,72 @@
+[
+  {
+    "id": "inv001",
+    "deal_id": "deal001",
+    "amount": 1500.0,
+    "status": "paid",
+    "issued_at": "2025-06-01 10:00:00"
+  },
+  {
+    "id": "inv002",
+    "deal_id": "deal002",
+    "amount": 980.0,
+    "status": "unpaid",
+    "issued_at": "2025-06-02 14:30:00"
+  },
+  {
+    "id": "inv003",
+    "deal_id": "deal003",
+    "amount": 1200.5,
+    "status": "overdue",
+    "issued_at": "2025-06-03 09:15:00"
+  },
+  {
+    "id": "inv004",
+    "deal_id": "deal004",
+    "amount": 550.0,
+    "status": "paid",
+    "issued_at": "2025-06-04 12:20:00"
+  },
+  {
+    "id": "inv005",
+    "deal_id": "deal005",
+    "amount": 730.0,
+    "status": "cancelled",
+    "issued_at": "2025-06-05 11:45:00"
+  },
+  {
+    "id": "inv006",
+    "deal_id": "deal006",
+    "amount": 3200.0,
+    "status": "unpaid",
+    "issued_at": "2025-06-06 08:00:00"
+  },
+  {
+    "id": "inv007",
+    "deal_id": "deal007",
+    "amount": 1999.99,
+    "status": "paid",
+    "issued_at": "2025-06-07 16:00:00"
+  },
+  {
+    "id": "inv008",
+    "deal_id": "deal008",
+    "amount": 470.0,
+    "status": "overdue",
+    "issued_at": "2025-06-08 13:30:00"
+  },
+  {
+    "id": "inv009",
+    "deal_id": "deal009",
+    "amount": 875.75,
+    "status": "paid",
+    "issued_at": "2025-06-09 10:40:00"
+  },
+  {
+    "id": "inv010",
+    "deal_id": "deal010",
+    "amount": 625.0,
+    "status": "unpaid",
+    "issued_at": "2025-06-10 09:00:00"
+  }
+]

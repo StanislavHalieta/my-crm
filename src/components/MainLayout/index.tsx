@@ -1,5 +1,5 @@
 import { FC, ReactElement } from "react";
-import { Main } from "./stles";
+import { Main } from "./styles";
 import MainSidebar from "../MainSidebar";
 import MainContent from "../MainContent";
 

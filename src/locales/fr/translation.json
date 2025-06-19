@@ -1,0 +1,95 @@
+{
+  "header": {
+    "name": "CRMUA"
+  },
+  "home": {
+    "home_key": "Accueil"
+  },
+  "menu": {
+    "auth_key": "Autorisation",
+    "auth": {
+      "login": "Connexion",
+      "register": "Inscription",
+      "roles": "Rôles"
+    },
+    "clients_key": "Clients",
+    "clients": {
+      "cards": "Fiches clients",
+      "history": "Historique des clients",
+      "contacts": "Contacts",
+      "analytics": "Analyse clients",
+      "segmentation": "Segmentation"
+    },
+    "email_key": "Email",
+    "email": {
+      "confirmation": "Confirmation",
+      "reminders": "Rappels",
+      "service": "Emails de service",
+      "marketing": "Campagnes marketing"
+    },
+    "sms_key": "SMS",
+    "sms": {
+      "reminders": "Rappels",
+      "notifications": "Notifications"
+    },
+    "ipTelephony_key": "Téléphonie IP",
+    "ipTelephony": {
+      "calls_key": "Appels",
+      "calls": {
+        "incoming": "Appels entrants",
+        "outgoing": "Appels sortants",
+        "recordings": "Enregistrements d'appels"
+      },
+      "clientCards": "Fiches clients"
+    },
+    "tasks_key": "Tâches",
+    "tasks": {
+      "statuses": "Statuts des tâches",
+      "taskManager": "Gestionnaire de tâches",
+      "messages": "Messages",
+      "chat": "Chat"
+    },
+    "delivery_key": "Livraison",
+    "delivery": {
+      "novaPoshta": "Nova Poshta",
+      "ukrPoshta": "Ukrposhta",
+      "meest": "Meest",
+      "justin": "Justin",
+      "dhl": "DHL",
+      "fedex": "FedEx",
+      "international": "Livraison internationale"
+    },
+    "marketplaces_key": "Places de marché",
+    "marketplaces": {
+      "prom": "Prom.ua",
+      "rozetka": "Rozetka",
+      "amazon": "Amazon",
+      "ebay": "eBay",
+      "etsy": "Etsy"
+    },
+    "production_key": "Production",
+    "production": {
+      "orders": "Commandes",
+      "materials": "Matériaux",
+      "statuses": "Statuts de production"
+    },
+    "sales_key": "Ventes",
+    "sales": {
+      "orders": "Commandes",
+      "analytics": "Analyse des ventes",
+      "customers": "Clients"
+    },
+    "finance_key": "Finance",
+    "finance": {
+      "banks": "Banques",
+      "taxes": "Taxes",
+      "reports": "Rapports financiers"
+    },
+    "analytics_key": "Analyse",
+    "analytics": {
+      "reports": "Rapports",
+      "kpis": "KPIs",
+      "custom": "Analyse personnalisée"
+    }
+  }
+}

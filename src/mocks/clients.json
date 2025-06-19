@@ -1,0 +1,92 @@
+[
+  {
+    "id": "client001",
+    "name": "Acme Corp",
+    "email": "info@acme.com",
+    "phone": "+380501234567",
+    "status": "active",
+    "assigned_to": "user1",
+    "created_at": "2025-05-01"
+  },
+  {
+    "id": "client002",
+    "name": "Beta Ltd",
+    "email": "contact@beta.com",
+    "phone": "+380502345678",
+    "status": "inactive",
+    "assigned_to": "user2",
+    "created_at": "2025-05-02"
+  },
+  {
+    "id": "client003",
+    "name": "Gamma Group",
+    "email": "hello@gamma.com",
+    "phone": "+380503456789",
+    "status": "active",
+    "assigned_to": "user3",
+    "created_at": "2025-05-03"
+  },
+  {
+    "id": "client004",
+    "name": "Delta Inc",
+    "email": "sales@delta.com",
+    "phone": "+380504567890",
+    "status": "pending",
+    "assigned_to": "user4",
+    "created_at": "2025-05-04"
+  },
+  {
+    "id": "client005",
+    "name": "Epsilon LLC",
+    "email": "team@epsilon.com",
+    "phone": "+380505678901",
+    "status": "active",
+    "assigned_to": "user5",
+    "created_at": "2025-05-05"
+  },
+  {
+    "id": "client006",
+    "name": "Zeta Co",
+    "email": "zeta@zeta.com",
+    "phone": "+380506789012",
+    "status": "inactive",
+    "assigned_to": "user6",
+    "created_at": "2025-05-06"
+  },
+  {
+    "id": "client007",
+    "name": "Eta Partners",
+    "email": "eta@partners.com",
+    "phone": "+380507890123",
+    "status": "active",
+    "assigned_to": "user7",
+    "created_at": "2025-05-07"
+  },
+  {
+    "id": "client008",
+    "name": "Theta Services",
+    "email": "support@theta.com",
+    "phone": "+380508901234",
+    "status": "pending",
+    "assigned_to": "user8",
+    "created_at": "2025-05-08"
+  },
+  {
+    "id": "client009",
+    "name": "Iota Labs",
+    "email": "labs@iota.com",
+    "phone": "+380509012345",
+    "status": "active",
+    "assigned_to": "user9",
+    "created_at": "2025-05-09"
+  },
+  {
+    "id": "client010",
+    "name": "Kappa Ventures",
+    "email": "hello@kappa.com",
+    "phone": "+380501122334",
+    "status": "inactive",
+    "assigned_to": "user10",
+    "created_at": "2025-05-10"
+  }
+]

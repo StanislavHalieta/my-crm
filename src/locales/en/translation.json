@@ -1,0 +1,103 @@
+{
+  "header": {
+    "name": "CRMUA"
+  },
+  "home": {
+    "home_key": "Home"
+  },
+  "menu": {
+    "auth_key": "Authorization",
+    "auth": {
+      "login": "Login",
+      "register": "Register",
+      "roles": "Roles"
+    },
+    "clients_key": "Clients",
+    "clients": {
+      "cards": "Client Cards",
+      "history": "Client History",
+      "contacts": "Contacts",
+      "analytics": "Client Analytics",
+      "segmentation": "Segmentation"
+    },
+    "email_key": "Email",
+    "email": {
+      "confirmation": "Confirmation",
+      "reminders": "Reminders",
+      "service": "Service Emails",
+      "marketing": "Marketing Campaigns"
+    },
+    "sms_key": "SMS",
+    "sms": {
+      "reminders": "Reminders",
+      "notifications": "Notifications"
+    },
+    "ipTelephony_key": "IP Telephony",
+    "ipTelephony": {
+      "calls_key": "Calls",
+      "calls": {
+        "incoming": "Incoming Calls",
+        "outgoing": "Outgoing Calls",
+        "recordings": "Call Recordings"
+      },
+      "clientCards": "Client Cards"
+    },
+    "tasks_key": "Tasks",
+    "tasks": {
+      "statuses": "Task Statuses",
+      "taskManager": "Task Manager",
+      "messages": "Messages",
+      "chat": "Chat"
+    },
+    "delivery_key": "Delivery",
+    "delivery": {
+      "novaPoshta": "Nova Poshta",
+      "ukrPoshta": "Ukrposhta",
+      "meest": "Meest",
+      "justin": "Justin",
+      "dhl": "DHL",
+      "fedex": "FedEx",
+      "international": "International Delivery"
+    },
+    "marketplaces_key": "Marketplaces",
+    "marketplaces": {
+      "prom": "Prom.ua",
+      "rozetka": "Rozetka",
+      "amazon": "Amazon",
+      "ebay": "eBay",
+      "etsy": "Etsy"
+    },
+    "production_key": "Production",
+    "production": {
+      "orders": "Orders",
+      "materials": "Materials",
+      "statuses": "Production Statuses"
+    },
+    "sales_key": "Sales",
+    "sales": {
+      "orders": "Orders",
+      "analytics": "Sales Analytics",
+      "customers": "Customers"
+    },
+    "finance_key": "Finance",
+    "finance": {
+      "banks": "Banks",
+      "taxes": "Taxes",
+      "reports": "Financial Reports"
+    },
+    "analytics_key": "Analytics",
+    "analytics": {
+      "reports": "Reports",
+      "kpis": "KPIs",
+      "custom": "Custom Analytics"
+    }
+  },
+  "charts": {
+    "unpaid": "Unpaid bills",
+    "paid": "Paid bills",
+    "awaitingPayments": "Invoices awaiting payment",
+    "convertedLeads": "Converted leads",
+    "projectsInProgress": "Projects in progress",
+    "unfinishedTasks": "Unfinished tasks"
+  }
+}

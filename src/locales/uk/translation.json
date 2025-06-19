@@ -1,0 +1,121 @@
+{
+  "header": {
+    "name": "CRMUA"
+  },
+  "home": {
+    "home_key": "Додому",
+    "salesFunnel": "Воронка продажів"
+  },
+  "menu": {
+    "home": "Додому",
+    "auth_key": "Авторизація",
+    "auth": {
+      "login": "Вхід",
+      "register": "Реєстрація",
+      "roles": "Ролі"
+    },
+    "clients_key": "Клієнти",
+    "clients": {
+      "cards": "Картки клієнтів",
+      "history": "Історія клієнтів",
+      "contacts": "Контакти",
+      "analytics": "Аналітика клієнтів",
+      "segmentation": "Сегментація"
+    },
+    "email_key": "Електронна пошта",
+    "email": {
+      "confirmation": "Підтвердження",
+      "reminders": "Нагадування",
+      "service": "Сервісні листи",
+      "marketing": "Маркетингові розсилки"
+    },
+    "sms_key": "SMS",
+    "sms": {
+      "reminders": "Нагадування",
+      "notifications": "Сповіщення"
+    },
+    "ipTelephony_key": "IP-телефонія",
+    "ipTelephony": {
+      "calls_key": "Дзвінки",
+      "calls": {
+        "incoming": "Вхідні дзвінки",
+        "outgoing": "Вихідні дзвінки",
+        "recordings": "Записи дзвінків"
+      },
+      "clientCards": "Картки клієнтів"
+    },
+    "tasks_key": "Задачі",
+    "tasks": {
+      "statuses": "Статуси завдань",
+      "taskManager": "Менеджер завдань",
+      "messages": "Повідомлення",
+      "chat": "Чат"
+    },
+    "delivery_key": "Доставка",
+    "delivery": {
+      "novaPoshta": "Нова Пошта",
+      "ukrPoshta": "Укрпошта",
+      "meest": "Meest",
+      "justin": "Justin",
+      "dhl": "DHL",
+      "fedex": "FedEx",
+      "international": "Міжнародна доставка"
+    },
+    "marketplaces_key": "Маркетплейси",
+    "marketplaces": {
+      "prom": "Prom.ua",
+      "rozetka": "Rozetka",
+      "amazon": "Amazon",
+      "ebay": "eBay",
+      "etsy": "Etsy"
+    },
+    "production_key": "Виробництво",
+    "production": {
+      "orders": "Замовлення",
+      "materials": "Матеріали",
+      "statuses": "Статуси виробництва"
+    },
+    "sales_key": "Продажі",
+    "sales": {
+      "orders": "Замовлення",
+      "analytics": "Аналітика продажів",
+      "customers": "Покупці"
+    },
+    "finance_key": "Фінанси",
+    "finance": {
+      "banks": "Банки",
+      "taxes": "Податки",
+      "reports": "Фінансові звіти"
+    },
+    "analytics_key": "Аналітика",
+    "analytics": {
+      "reports": "Звіти",
+      "kpis": "KPI",
+      "custom": "Кастомна аналітика"
+    }
+  },
+  "leads": {
+    "stage": {
+      "new": "новий лід, тільки зібраний/створений",
+      "contacted": "вже встановлено перший контакт",
+      "qualified": "підтверджено, що лід підходить (є потенціал)",
+      "interested": "виявив інтерес, можлива зустріч або дзвінок",
+      "proposal_sent": "надіслано комерційну пропозицію",
+      "negotiation": "обговорення умов, ціни, термінів",
+      "won": "угоду укладено, лід став клієнтом",
+      "lost": "відмовився / нецільовий",
+      "cold": "тимчасово неактивний, поставлено на паузу",
+      "unreachable": "неможливо зв'язатись",
+      "spam": "фейковий, спам-лід",
+      "duplicate": "виявлено дубль"
+    }
+  },
+  "charts": {
+    "unpaid": "Неоплачені рахунки",
+    "paid": "Оплачені рахунки",
+    "awaitingPayments": "Рахунки в очікуванні оплати",
+    "convertedLeads": "Конвертовані ліди",
+    "projectsInProgress": "Проекти в процесі",
+    "unfinishedTasks": "Незавершені завдання"
+  }
+}

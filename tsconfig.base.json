@@ -1,0 +1,19 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "es2021"],
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "ESNext",
+    "strict": true,
+    "noImplicitAny": false,
+    "strictFunctionTypes": false,
+    "skipLibCheck": true,
+    "noEmit": true
+  }
+}

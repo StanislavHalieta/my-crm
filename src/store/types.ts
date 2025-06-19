@@ -1,3 +1,11 @@
+import type { PayloadAction } from "@reduxjs/toolkit";
+import { store } from "./rootState";
+
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch
+export type SagaPayloadAction<T = unknown> = Partial<PayloadAction<T>>;
+export type IData = Record<string, unknown>[];
+
 export interface IProduct {
   product: {
     name: "string";

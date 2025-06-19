@@ -1,0 +1,12 @@
+[
+  { "id": "tag001", "name": "VIP" },
+  { "id": "tag002", "name": "New" },
+  { "id": "tag003", "name": "Prospect" },
+  { "id": "tag004", "name": "Cold" },
+  { "id": "tag005", "name": "Warm" },
+  { "id": "tag006", "name": "Hot" },
+  { "id": "tag007", "name": "Newsletter" },
+  { "id": "tag008", "name": "Trial" },
+  { "id": "tag009", "name": "Renewal" },
+  { "id": "tag010", "name": "Demo" }
+]
