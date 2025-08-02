@@ -102,6 +102,24 @@ export const lightTheme = createTheme({
     button: {
       color: colors.blue_06,
     },
+    h4: {
+      color: colors.blueDark,
+    },
+    h5: {
+      color: colors.blueDark,
+    },
+    h6: {
+      color: colors.blueDark,
+    },
+    body1: {
+      color: colors.blueDark,
+    },
+    body2: {
+      color: colors.blueDark,
+    },
+    button: {
+      color: colors.blue_06,
+    },
   },
 });
 

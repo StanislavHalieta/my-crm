@@ -4,7 +4,10 @@ import dayjs from "dayjs";
 import { LinePlot, AreaPlot } from "@mui/x-charts";
 import { StyledMainChart } from "./styles";
 import { useTheme } from "@mui/material";
+<<<<<<< HEAD
 import mockChartData from "../../mocks/mockChartData.json";
+=======
+>>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
 
 // export enum ETrend {
 //   up = "up",
@@ -12,6 +15,7 @@ import mockChartData from "../../mocks/mockChartData.json";
 //   flat = "flat",
 // }
 
+<<<<<<< HEAD
 // export enum ECategory {
 //   sales = "sales",
 //   leads = "leads",
@@ -55,6 +59,42 @@ const MainChart: FC<MainChartProps> = ({ xAxis, yAxis }) => {
               offset="0%"
               stopColor={theme.palette.gradients.chart}
               stopOpacity={60}
+=======
+interface MainChartProps {
+  data?: Record<string, unknown>[];
+  xAxis?: boolean;
+  yAxis?: boolean;
+}
+
+const MainChart: FC<MainChartProps> = ({ xAxis, yAxis }) => {
+  const theme = useTheme();
+  return (
+    <StyledMainChart
+      xAxis={[{ scaleType: "point", data: dataX }]}
+      series={[
+        {
+          type: "line",
+          data: dataY,
+          area: true,
+          color: theme.palette.primary.main, // лінія
+        },
+      ]}
+    >
+      <defs>
+        <linearGradient id="gradientFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="rgba(33, 150, 243, 0.6)" />
+          <stop offset="100%" stopColor="rgba(33, 150, 243, 0)" />
+        </linearGradient>
+      </defs>
+
+      <AreaPlot
+        slots={{
+          area: (props) => (
+            <path
+              {...props}
+              fill="url(#gradientFill)" // ← ось тут магія
+              stroke="none"
+>>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
             />
             <stop
               offset="100%"
