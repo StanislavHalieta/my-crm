@@ -4,20 +4,23 @@ import dayjs from "dayjs";
 import { LinePlot, AreaPlot } from "@mui/x-charts";
 import { StyledMainChart } from "./styles";
 import { useTheme } from "@mui/material";
-import parseData from "./parseData";
+<<<<<<< HEAD
 import mockChartData from "../../mocks/mockChartData.json";
+=======
+>>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
 
-export enum ETrend {
-  up = "up",
-  down = "down",
-  flat = "flat",
-}
+// export enum ETrend {
+//   up = "up",
+//   down = "down",
+//   flat = "flat",
+// }
 
-export enum ECategory {
-  sales = "sales",
-  leads = "leads",
-  support = "support",
-}
+<<<<<<< HEAD
+// export enum ECategory {
+//   sales = "sales",
+//   leads = "leads",
+//   support = "support",
+// }
 
 export enum ERegion {
   North ="North",
@@ -51,31 +54,58 @@ const MainChart: FC<MainChartProps> = ({ xAxis, yAxis }) => {
   const { dataX, dataY } = parseData(mockChartData);
 
   return (
+    <ResponsiveContainer width="100%" height="100%">
+      <StyledMainChart data={mockChartData} >
+        <defs>
+          <linearGradient id="gradientFill" x1="0" y1="0" x2="0" y2="1">
+            <stop
+              offset="0%"
+              stopColor={theme.palette.gradients.chart}
+              stopOpacity={60}
+=======
+interface MainChartProps {
+  data?: Record<string, unknown>[];
+  xAxis?: boolean;
+  yAxis?: boolean;
+}
+
+const MainChart: FC<MainChartProps> = ({ xAxis, yAxis }) => {
+  const theme = useTheme();
+  return (
     <StyledMainChart
-      xAxis={[{ scaleType: "linear", data: dataX }]}
+      xAxis={[{ scaleType: "point", data: dataX }]}
       series={[
         {
           type: "line",
           data: dataY,
           area: true,
-          color: theme.palette.gradients.line,
+          color: theme.palette.primary.main, // лінія
         },
       ]}
     >
       <defs>
         <linearGradient id="gradientFill" x1="0" y1="0" x2="0" y2="1">
-          <stop
-            offset="0%"
-            stopColor={theme.palette.gradients.chart}
-            stopOpacity={60}
-          />
-          <stop
-            offset="100%"
-            stopColor={theme.palette.gradients.transperent}
-            stopOpacity={0}
-          />
+          <stop offset="0%" stopColor="rgba(33, 150, 243, 0.6)" />
+          <stop offset="100%" stopColor="rgba(33, 150, 243, 0)" />
         </linearGradient>
       </defs>
+
+      <AreaPlot
+        slots={{
+          area: (props) => (
+            <path
+              {...props}
+              fill="url(#gradientFill)" // ← ось тут магія
+              stroke="none"
+>>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
+            />
+            <stop
+              offset="100%"
+              stopColor={theme.palette.gradients.transperent}
+              stopOpacity={0}
+            />
+          </linearGradient>
+        </defs>
 
         <AreaPlot
           slots={{
