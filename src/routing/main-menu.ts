@@ -12,12 +12,15 @@ import {
   AccountBalanceOutlined,
   AssessmentOutlined,
   Home,
-} from "@mui/icons-material"
+  PersonOutlined,
+} from "@mui/icons-material";
 
 export interface IMainMenu {
   key: string;
   label: string;
-  Icon?: OverridableComponent<SvgIconTypeMap<Record<string, never>, "svg">> & { muiName: string };
+  Icon?: OverridableComponent<SvgIconTypeMap<Record<string, never>, "svg">> & {
+    muiName: string;
+  };
   children?: IMainMenu[];
 }
 
@@ -26,6 +29,16 @@ const mainMenu: IMainMenu[] = [
     label: "menu.home",
     key: "",
     Icon: Home,
+  },
+  {
+    label: "menu.auth",
+    key: "auth",
+    Icon: PersonOutlined,
+    children: [
+      { key: "login", label: "menu.auth.login" },
+      { key: "register", label: "menu.auth.register" },
+      { key: "auth.roles", label: "menu.auth.roles" },
+    ],
   },
   // {
   //   label: "menu.auth",

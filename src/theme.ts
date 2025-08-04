@@ -1,4 +1,3 @@
-import { StyledMainCard } from "./components/MainCard/styles";
 import { createTheme } from "@mui/material/styles";
 
 // #0057B7 — офіційний синій (прапор України)
@@ -24,8 +23,6 @@ const colors = {
   blue_06: "#2196f399", // #2196f399
   yellow_06: "#ffd900", //#ffd900
   transperent: "#007bff00", //#007bff00
-  yellow_06: "#ffd900", //#ffd900
-  transperent: "#00000000", // #00000000
   chart_1: "#0057B7", // #0057B7
   chart_2: "#FFD700", // #FFD700
   chart_3: "#00C2FF", // #00C2FF
@@ -45,8 +42,6 @@ export const lightTheme = createTheme({
       contrastText: colors.white, // #ffffff
       dark: "#333", // #333333
       light: "#999", // #999999
-      dark: "#333", // #333333
-      light: "#999", // #999999
     },
     charts: {
       "1": colors.chart_1, // #0057B7
@@ -56,15 +51,11 @@ export const lightTheme = createTheme({
       "5": colors.chart_5, // #7DFF7A
       "6": colors.chart_6, // #E91E63
       "7": colors.chart_7, // #CCCCCC
-      "7": colors.chart_7, // #CCCCCC
     },
     gradients: {
       chart: colors.blue_06, // #2196f399
       transperent: "#2195f300", //#2195f300
-      line: colors.yellow_06
-      chart: colors.blue_06, // #2196f399
-      transperent: colors.transperent, // #00000000
-      line: colors.yellow_06
+      line: colors.yellow_06,
     },
     secondary: {
       main: colors.yellow, //#ffd90000
@@ -111,24 +102,6 @@ export const lightTheme = createTheme({
     button: {
       color: colors.blue_06,
     },
-    h4: {
-      color: colors.blueDark,
-    },
-    h5: {
-      color: colors.blueDark,
-    },
-    h6: {
-      color: colors.blueDark,
-    },
-    body1: {
-      color: colors.blueDark,
-    },
-    body2: {
-      color: colors.blueDark,
-    },
-    button: {
-      color: colors.blue_06,
-    },
   },
 });
 
@@ -140,8 +113,6 @@ export const darkTheme = createTheme({
       contrastText: colors.white,
       dark: "#999", //#999999
       light: "#eee", // #eeeeee
-      dark: "#999", //#999999
-      light: "#eee", // #eeeeee
     },
     charts: {
       "1": colors.chart_1, // #0057B7
@@ -150,7 +121,6 @@ export const darkTheme = createTheme({
       "4": colors.chart_4, // #FF6B00
       "5": colors.chart_5, // #7DFF7A
       "6": colors.chart_6, // #E91E63
-      "7": colors.chart_7, // #CCCCCC
       "7": colors.chart_7, // #CCCCCC
     },
     secondary: {
@@ -163,12 +133,7 @@ export const darkTheme = createTheme({
     gradients: {
       chart: colors.yellow_06,
       transperent: "#ffd90000", //#ffd90000
-      line: colors.blue_06
-    },
-    gradients: {
-      chart: colors.yellow_06,
-      transperent: colors.transperent,
-      line: colors.blue_06
+      line: colors.blue_06,
     },
     text: {
       primary: colors.white,
@@ -183,34 +148,26 @@ export const darkTheme = createTheme({
     fontSize: 14,
     h1: {
       color: colors.blueLight,
-      color: colors.blueLight,
     },
     h2: {
-      color: colors.blueLight,
       color: colors.blueLight,
     },
     h3: {
       color: colors.blueLight,
-      color: colors.blueLight,
     },
     h4: {
-      color: colors.blueLight,
       color: colors.blueLight,
     },
     h5: {
       color: colors.blueLight,
-      color: colors.blueLight,
     },
     h6: {
-      color: colors.blueLight,
       color: colors.blueLight,
     },
     body1: {
       color: colors.blueLight,
-      color: colors.blueLight,
     },
     body2: {
-      color: colors.blueLight,
       color: colors.blueLight,
     },
     button: {

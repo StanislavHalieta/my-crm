@@ -1,10 +1,8 @@
 import type { FC } from "react";
-import type { FC } from "react";
 import { StyledMainPieChart } from "./styles";
 // import { useTranslation } from "react-i18next";
 import { CardContent, Typography } from "@mui/material";
 import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
-
 
 // interface IPieChart {
 //   id: number | string;
@@ -24,6 +22,7 @@ const chartData = [
 
 const COLORS = ["#0057b7", "#ffd700", "#8884d8", "#82ca9d"];
 
+interface MainPieChartProps {}
 const MainPieChart: FC<MainPieChartProps> = () => {
   // const { t } = useTranslation();
   return (

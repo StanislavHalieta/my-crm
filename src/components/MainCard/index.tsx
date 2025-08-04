@@ -13,19 +13,13 @@ interface MainCardProps {
 }
 
 const MainCard: FC<MainCardProps> = ({ card }) => {
-<<<<<<< HEAD
-=======
   const [selectedCard, setSelectedCard] = useState<string | number>(0);
->>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
   const { id, title, description } = card;
 
   return (
     <StyledMainCard key={id}>
       <CardActionArea
-<<<<<<< HEAD
-=======
         data-active={selectedCard === id ? "" : undefined}
->>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
         sx={{
           height: "100%",
           "&[data-active]": {

@@ -9,7 +9,6 @@ function* fetchHomeData(_actions: PayloadAction<string | number>) {
     const data: IProductsResp = yield call(fetchProductsAPI);
 
     yield put(getHomePageData(data.products));
->>>>>>> 421980b (Backup)
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : "Unknown error";
     yield put(getHomeDataError(message));

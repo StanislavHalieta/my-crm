@@ -1,40 +1,4 @@
-<<<<<<< HEAD
 import { Sector } from "recharts";
-
-interface RenderActiveShapeProps {
-  cx: number;
-  cy: number;
-  midAngle: number;
-  innerRadius: number;
-  outerRadius: number;
-  startAngle: number;
-  endAngle: number;
-  fill: string;
-  payload: Record<string, string | number>;
-  percent: number;
-  value: number;
-  textColor?: string
-  valueColor?: string
-}
-
-export const renderActiveShape = ({
-  cx,
-  cy,
-  midAngle,
-  innerRadius,
-  outerRadius,
-  startAngle,
-  endAngle,
-  fill,
-  payload,
-  percent,
-  value,
-  textColor = "#999",
-  valueColor = "#333"
-}: RenderActiveShapeProps) => {
-=======
-
-import {Sector } from "recharts";
 
 export const renderActiveShape = (props: any) => {
   const {
@@ -51,7 +15,6 @@ export const renderActiveShape = (props: any) => {
     value,
   } = props;
 
->>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
   const RADIAN = Math.PI / 180;
   const sin = Math.sin(-RADIAN * midAngle);
   const cos = Math.cos(-RADIAN * midAngle);
@@ -96,11 +59,7 @@ export const renderActiveShape = (props: any) => {
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
         textAnchor={textAnchor}
-<<<<<<< HEAD
-        fill={textColor}
-=======
         fill="#333"
->>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
       >
         {`Value: ${value}`}
       </text>
@@ -109,18 +68,10 @@ export const renderActiveShape = (props: any) => {
         y={ey}
         dy={18}
         textAnchor={textAnchor}
-<<<<<<< HEAD
-        fill={valueColor}
-=======
         fill="#999"
->>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
       >
         {`(${(percent * 100).toFixed(2)}%)`}
       </text>
     </g>
   );
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 4aecd837a40a3190a031f8a1b2cc7bf4842badc3
